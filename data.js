@@ -1,0 +1,495 @@
+/* ============================================================
+   CINEMATIC STAYS — CONTENT FILE
+   ============================================================
+   This is the ONLY file you (or a future Claude session) need
+   to edit to add, remove, or update hotels. The design and the
+   filters never need to change — they read from this file
+   automatically.
+
+   HOW TO ADD A NEW HOTEL:
+   1. Copy one of the objects below (from "{" to "},").
+   2. Paste it into the HOTELS array (anywhere between the [ and ]).
+   3. Change the values. Every field is required — if one is
+      missing, the site will skip that hotel and print a warning
+      in the browser console (F12 > Console) instead of breaking
+      the whole page.
+   4. Save the file. Refresh index.html. Done — no HTML/CSS edits
+      needed, and any new city/genre/era automatically shows up
+      as a new filter option.
+
+   FIELD GUIDE:
+   - id            : unique short code, lowercase, no spaces (e.g. "plaza-nyc")
+   - name          : hotel's real name
+   - city          : city or region shown in the "Destination" filter
+   - cityEmoji     : one emoji representing the city
+   - country       : country name
+   - genre         : movie genre shown in the "Genre" filter (Comedy, Romance, Crime, Horror, Action, Drama, ...)
+   - genreEmoji    : one emoji representing the genre
+   - era           : decade shown in the "Era" filter (e.g. "1990s")
+   - movies        : array of movie title(s) the hotel appeared in
+   - scene         : 1-2 sentence description of the movie connection
+   - bookingUrl    : the Booking.com hotel page URL (affiliate ID is added automatically, see CONFIG below)
+   - photo         : direct image URL of the REAL hotel (see PHOTO POLICY below)
+   - photoCredit   : "Author (Wikimedia Commons, License)" — required for attribution
+   - photoGradient : CSS gradient fallback shown if "photo" fails to load or is left blank
+
+   PHOTO POLICY — read before adding a new hotel:
+   Never use a screenshot/frame from the movie itself. Film stills are
+   copyrighted, and using them on a monetized affiliate site is a real
+   infringement risk. Instead, every hotel photo must be:
+     1. A REAL photo of the actual hotel (not the movie scene) — this
+        proves the place exists and is bookable.
+     2. Sourced from Wikimedia Commons ONLY (commons.wikimedia.org),
+        because those images carry clear, verifiable free licenses
+        (Public Domain or Creative Commons). Do not use Getty, Alamy,
+        random blogs, or the hotel's own marketing site — licensing is
+        unclear or restrictive on those.
+     3. Paired with the on-card movie-title badge (already handled by
+        script.js/styles.css) so it's unmistakable which film the hotel
+        is tied to, right on top of the proof that it's a real, bookable
+        hotel.
+     4. Given a "photoCredit" matching exactly what's on the Commons
+        file page (author name + license) — this is legally required
+        for CC-BY / CC-BY-SA licensed images and shows automatically
+        under the photo.
+   To find one: search "[hotel name] wikimedia commons", open the
+   Category or File page, and use the "Original file" link for the
+   direct upload.wikimedia.org URL.
+   ============================================================ */
+
+const CONFIG = {
+  // Once you have a Booking.com Affiliate Partner ID, put it here.
+  // Every "Check availability" link will automatically include it —
+  // you never need to edit individual hotel links.
+  affiliateId: null,
+  siteName: "Cinematic Stays",
+};
+
+const HOTELS = [
+  {
+    id: "plaza-nyc",
+    name: "The Plaza, A Fairmont Hotel",
+    city: "New York",
+    cityEmoji: "🗽",
+    country: "USA",
+    genre: "Comedy",
+    genreEmoji: "😂",
+    era: "1990s",
+    movies: ["Home Alone 2", "Sleepless in Seattle"],
+    scene: "Kevin McCallister checked in here alone in Home Alone 2 — the lobby and suites are instantly recognizable.",
+    bookingUrl: "https://www.booking.com/hotel/us/the-plaza.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Plaza_Hotel_April_2008.JPG",
+    photoCredit: "OptimumPx (Wikimedia Commons, Public Domain)",
+    photoGradient: "linear-gradient(135deg,#8e7cc3,#5b4a8a)",
+  },
+  {
+    id: "beverly-wilshire",
+    name: "Beverly Wilshire, A Four Seasons Hotel",
+    city: "Los Angeles",
+    cityEmoji: "🌴",
+    country: "USA",
+    genre: "Romance",
+    genreEmoji: "💘",
+    era: "1990s",
+    movies: ["Pretty Woman"],
+    scene: "The hotel where Vivian and Edward's story unfolds — still offers a \"Pretty Woman\" suite experience.",
+    bookingUrl: "https://www.booking.com/hotel/us/beverly-wilshire-beverly-hills-a-four-seasons.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/3/30/BeverlyWilshire01.jpg",
+    photoCredit: "Minnaert (Wikimedia Commons, Public Domain)",
+    photoGradient: "linear-gradient(135deg,#e0a96d,#b97b3e)",
+  },
+  {
+    id: "fontainebleau-miami",
+    name: "Fontainebleau Miami Beach",
+    city: "Miami",
+    cityEmoji: "🌊",
+    country: "USA",
+    genre: "Action",
+    genreEmoji: "🕶️",
+    era: "1960s",
+    movies: ["Goldfinger", "Scarface"],
+    scene: "James Bond stayed here in Goldfinger; Tony Montana called it \"paradise\" in Scarface.",
+    bookingUrl: "https://www.booking.com/hotel/us/fontainebleau-miami-beach.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Fontainebleau_Hotel_-_Miami_Beach_Florida_%284549435559%29.jpg",
+    photoCredit: "David Berkowitz (Wikimedia Commons, CC BY 2.0)",
+    photoGradient: "linear-gradient(135deg,#4fb3bf,#2c7a8c)",
+  },
+  {
+    id: "bellagio-vegas",
+    name: "Bellagio",
+    city: "Las Vegas",
+    cityEmoji: "🎰",
+    country: "USA",
+    genre: "Crime",
+    genreEmoji: "🕵️",
+    era: "2000s",
+    movies: ["Ocean's Eleven"],
+    scene: "The fountains, the vault, the heist — Ocean's Eleven made this Vegas icon a movie star in its own right.",
+    bookingUrl: "https://www.booking.com/hotel/us/bellagio-las-vegas.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Bellagio_%2815675836063%29.jpg",
+    photoCredit: "Tomás Del Coro (Wikimedia Commons, CC BY-SA 2.0)",
+    photoGradient: "linear-gradient(135deg,#d4af37,#8a6d1a)",
+  },
+  {
+    id: "caesars-palace",
+    name: "Caesars Palace",
+    city: "Las Vegas",
+    cityEmoji: "🎰",
+    country: "USA",
+    genre: "Comedy",
+    genreEmoji: "😂",
+    era: "2000s",
+    movies: ["The Hangover"],
+    scene: "The infamous rooftop, lobby, and pool from The Hangover — book the room, skip the tiger.",
+    bookingUrl: "https://www.booking.com/hotel/us/caesars-palace.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Caesars_Palace_hotel_%28Las_Vegas%29_Front_yard.JPG",
+    photoCredit: "Laslovarga (Wikimedia Commons, CC BY-SA 3.0)",
+    photoGradient: "linear-gradient(135deg,#c9482e,#8f2f1c)",
+  },
+  {
+    id: "hotel-del-coronado",
+    name: "Hotel del Coronado",
+    city: "San Diego",
+    cityEmoji: "🏖️",
+    country: "USA",
+    genre: "Comedy",
+    genreEmoji: "😂",
+    era: "1950s",
+    movies: ["Some Like It Hot"],
+    scene: "The grand Victorian beach hotel that stood in for Florida in the 1959 classic.",
+    bookingUrl: "https://www.booking.com/hotel/us/hotel-del-coronado.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/a/a8/2019_Hotel_del_Coronado_from_beach.jpg",
+    photoCredit: "Beyond My Ken (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#e07a5f,#c14f36)",
+  },
+  {
+    id: "timberline-lodge",
+    name: "Timberline Lodge",
+    city: "Oregon",
+    cityEmoji: "🏔️",
+    country: "USA",
+    genre: "Horror",
+    genreEmoji: "🔪",
+    era: "1980s",
+    movies: ["The Shining"],
+    scene: "The real Overlook Hotel exteriors from Kubrick's The Shining — no Room 237, we promise.",
+    bookingUrl: "https://www.booking.com/hotel/us/timberline-lodge.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/0/0a/2017-07-15_Timberline_01.jpg",
+    photoCredit: "Kingofthedead (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#3d5a5c,#1f3335)",
+  },
+  {
+    id: "park-hyatt-tokyo",
+    name: "Park Hyatt Tokyo",
+    city: "Tokyo",
+    cityEmoji: "🗼",
+    country: "Japan",
+    genre: "Drama",
+    genreEmoji: "🎞️",
+    era: "2000s",
+    movies: ["Lost in Translation"],
+    scene: "The New York Bar on the 52nd floor, where Bob and Charlotte first meet.",
+    bookingUrl: "https://www.booking.com/hotel/jp/park-hyatt-tokyo.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/1/11/ParkHyattTokyoFront.JPG",
+    photoCredit: "moore (Wikimedia Commons, CC BY-SA 3.0)",
+    photoGradient: "linear-gradient(135deg,#7d8ca3,#3f4b5e)",
+  },
+  {
+    id: "fairmont-banff-springs",
+    name: "Fairmont Banff Springs",
+    city: "Banff",
+    cityEmoji: "🏔️",
+    country: "Canada",
+    genre: "Drama",
+    genreEmoji: "🎭",
+    era: "1950s",
+    movies: ["River of No Return"],
+    scene: "Marilyn Monroe and Joe DiMaggio stayed at this Scottish Baronial-style castle hotel in 1953 while she filmed this Western adventure in the surrounding Rockies.",
+    bookingUrl: "https://www.booking.com/hotel/ca/fairmont-banff-srpings.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Banff_Springs_Hotel1.jpg",
+    photoCredit: "Diderot~commonswiki (Wikimedia Commons, CC BY-SA 3.0)",
+    photoGradient: "linear-gradient(135deg,#5c7a63,#2f4a38)",
+  },
+  {
+    id: "fairmont-chateau-frontenac",
+    name: "Fairmont Le Château Frontenac",
+    city: "Quebec City",
+    cityEmoji: "🏰",
+    country: "Canada",
+    genre: "Thriller",
+    genreEmoji: "🔪",
+    era: "1950s",
+    movies: ["I Confess"],
+    scene: "Alfred Hitchcock used Quebec City's Old Town and this castle-like landmark's dramatic silhouette throughout his 1953 thriller.",
+    bookingUrl: "https://www.booking.com/hotel/ca/fairmont-chateau-frontenac.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Ch%C3%A2teau_Frontenac_02.jpg",
+    photoCredit: "Bernard Gagnon (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#3b5266,#1c2c38)",
+  },
+  {
+    id: "millennium-biltmore-los-angeles",
+    name: "The Biltmore Los Angeles (Millennium Biltmore Hotel)",
+    city: "Los Angeles",
+    cityEmoji: "🌴",
+    country: "USA",
+    genre: "Comedy",
+    genreEmoji: "👻",
+    era: "1980s",
+    movies: ["Ghostbusters"],
+    scene: "The hotel's opulent lobby became the fictional 'Sedgwick Hotel' ballroom, where Venkman, Stantz, and Spengler take their first ghost-catching job.",
+    bookingUrl: "https://www.booking.com/hotel/us/millennium-biltmore.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/8/80/Millennium_Biltmore_Hotel%2C_Los_Angeles.jpg",
+    photoCredit: "Downtowngal (Wikimedia Commons, CC BY-SA 3.0)",
+    photoGradient: "linear-gradient(135deg,#8a7355,#4a3d2c)",
+  },
+  {
+    id: "hollywood-roosevelt",
+    name: "The Hollywood Roosevelt",
+    city: "Los Angeles",
+    cityEmoji: "🎬",
+    country: "USA",
+    genre: "Drama",
+    genreEmoji: "🎭",
+    era: "2000s",
+    movies: ["The Aviator"],
+    scene: "Martin Scorsese used the hotel's ornate lobby and grand staircase to recreate 1930s-40s Hollywood for this Howard Hughes biopic.",
+    bookingUrl: "https://www.booking.com/hotel/us/h-roosevelt-hollywood-california.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/9/97/Hollywood_Roosevelt_Hotel_2015.jpg",
+    photoCredit: "Jason Chang (Wikimedia Commons, CC BY-SA 3.0)",
+    photoGradient: "linear-gradient(135deg,#b08d57,#6b5530)",
+  },
+  {
+    id: "chateau-marmont",
+    name: "Chateau Marmont",
+    city: "West Hollywood",
+    cityEmoji: "🌃",
+    country: "USA",
+    genre: "Drama",
+    genreEmoji: "🎭",
+    era: "2010s",
+    movies: ["Somewhere", "La La Land"],
+    scene: "Sofia Coppola shot most of Somewhere on location here, and Damien Chazelle later filmed key La La Land scenes in Room 59 of the same hotel.",
+    bookingUrl: "https://www.booking.com/hotel/us/chateau-marmont.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Chateau_Marmont_West_Hollywood_%2851017770156%29.jpg",
+    photoCredit: "Tony Mariotti (Wikimedia Commons, CC BY 2.0)",
+    photoGradient: "linear-gradient(135deg,#6d5a4f,#3a2e28)",
+  },
+  {
+    id: "the-stanley-hotel",
+    name: "The Stanley Hotel",
+    city: "Estes Park",
+    cityEmoji: "❄️",
+    country: "USA",
+    genre: "Horror",
+    genreEmoji: "🪓",
+    era: "1990s",
+    movies: ["The Shining (1997 miniseries)", "Dumb and Dumber"],
+    scene: "This Colorado hotel inspired Stephen King's original novel, and he returned to film here for the 1997 TV miniseries; it also played the 'Danbury Hotel' in Dumb and Dumber.",
+    bookingUrl: "https://www.booking.com/hotel/us/the-stanley.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/8/88/The_Stanley_Hotel.JPG",
+    photoCredit: "Renoman58 (Wikimedia Commons, CC BY-SA 3.0)",
+    photoGradient: "linear-gradient(135deg,#e8e6e8,#9a9aa0)",
+  },
+  {
+    id: "peabody-memphis",
+    name: "The Peabody Memphis",
+    city: "Memphis",
+    cityEmoji: "🎸",
+    country: "USA",
+    genre: "Thriller",
+    genreEmoji: "⚖️",
+    era: "1990s",
+    movies: ["The Firm"],
+    scene: "This grand Southern hotel's rooftop hosts a pivotal party scene in the Tom Cruise legal thriller, and its interior is where Mitch McDeere confronts the Morolto brothers.",
+    bookingUrl: "https://www.booking.com/hotel/us/peabody-memphis.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/e/e7/PeabodyHotel.JPG",
+    photoCredit: "Airtuna08 (Wikimedia Commons, CC BY 3.0)",
+    photoGradient: "linear-gradient(135deg,#7a6248,#4a3a2a)",
+  },
+  {
+    id: "willard-intercontinental-dc",
+    name: "Willard InterContinental Washington",
+    city: "Washington",
+    cityEmoji: "🏛️",
+    country: "USA",
+    genre: "Sci-Fi",
+    genreEmoji: "🔮",
+    era: "2000s",
+    movies: ["Minority Report"],
+    scene: "Steven Spielberg filmed the finale of this sci-fi thriller here, shooting Tom Cruise and Max von Sydow's climactic confrontation in the Willard Room and Peacock Alley.",
+    bookingUrl: "https://www.booking.com/hotel/us/inter-continental-hotels-resorts-the-willard-washington-dc.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/1/17/Willard_InterContinental.JPG",
+    photoCredit: "AgnosticPreachersKid (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#4f5b6e,#282e38)",
+  },
+  {
+    id: "hotel-monteleone",
+    name: "Hotel Monteleone",
+    city: "New Orleans",
+    cityEmoji: "🎷",
+    country: "USA",
+    genre: "Thriller",
+    genreEmoji: "🔍",
+    era: "1990s",
+    movies: ["Double Jeopardy"],
+    scene: "This French Quarter landmark's lobby and famed rotating Carousel Bar were dressed as a chic Armani shop for a key scene in this Ashley Judd thriller.",
+    bookingUrl: "https://www.booking.com/hotel/us/monteleone.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/7/79/Hotel_Monteleone_New_Orleans_October_2019_exterior.jpg",
+    photoCredit: "David Ohmer (Wikimedia Commons, CC BY 2.0)",
+    photoGradient: "linear-gradient(135deg,#9c7a4f,#5c4a2c)",
+  },
+  {
+    id: "grand-wailea-maui",
+    name: "Grand Wailea, A Waldorf Astoria Resort",
+    city: "Maui",
+    cityEmoji: "🌺",
+    country: "USA",
+    genre: "Comedy",
+    genreEmoji: "😂",
+    era: "2010s",
+    movies: ["Just Go with It"],
+    scene: "This lush Maui beachfront resort served as the luxury tropical getaway where Adam Sandler and Jennifer Aniston's characters fake a relationship.",
+    bookingUrl: "https://www.booking.com/hotel/us/grand-wailea-resort-spa.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Grand_Wailea_Resort_on_Maui_%288528532630%29.jpg",
+    photoCredit: "Dave Dugdale (Wikimedia Commons, CC BY-SA 2.0)",
+    photoGradient: "linear-gradient(135deg,#4fa89c,#2a6b62)",
+  },
+  {
+    id: "grandhotel-pupp-karlovy-vary",
+    name: "Grandhotel Pupp",
+    city: "Karlovy Vary",
+    cityEmoji: "🏰",
+    country: "Czech Republic",
+    genre: "Action",
+    genreEmoji: "🎯",
+    era: "2000s",
+    movies: ["Casino Royale"],
+    scene: "The Grandhotel Pupp doubled as the fictional Hotel Splendide in Montenegro, where Bond and Vesper share dinner and Bond invents the 'Vesper' martini.",
+    bookingUrl: "https://www.booking.com/hotel/cz/grandhotel-pupp.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Hotel_-_Grandhotel_Pupp%2C_Karlovy_Vary.JPG",
+    photoCredit: "Martin Mašek / Cassi.astronomy (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#c2a15a,#7a6032)",
+  },
+  {
+    id: "taj-lake-palace-udaipur",
+    name: "Taj Lake Palace",
+    city: "Udaipur",
+    cityEmoji: "🛶",
+    country: "India",
+    genre: "Action",
+    genreEmoji: "🎯",
+    era: "1980s",
+    movies: ["Octopussy"],
+    scene: "The floating marble palace on Lake Pichola served as Octopussy's lair, including the lily-pond ambush and terrace scenes between Bond and Octopussy.",
+    bookingUrl: "https://www.booking.com/hotel/in/taj-lake-palace.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Taj_Lake_Palace%2C_Udaipur.jpg",
+    photoCredit: "Imsourabh1996 (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#e8e0d0,#a89878)",
+  },
+  {
+    id: "la-mamounia-marrakech",
+    name: "La Mamounia",
+    city: "Marrakech",
+    cityEmoji: "🕌",
+    country: "Morocco",
+    genre: "Thriller",
+    genreEmoji: "🔪",
+    era: "1950s",
+    movies: ["The Man Who Knew Too Much"],
+    scene: "Alfred Hitchcock filmed scenes for this 1956 thriller starring James Stewart and Doris Day in the storied Marrakech palace-hotel's gardens and interiors.",
+    bookingUrl: "https://www.booking.com/hotel/ma/mamounia.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/f/f9/La_Mamounia_entrance.jpg",
+    photoCredit: "Pi3.124 (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#c76a4a,#7a3d28)",
+  },
+  {
+    id: "ritz-paris",
+    name: "Hôtel Ritz Paris",
+    city: "Paris",
+    cityEmoji: "🗼",
+    country: "France",
+    genre: "Romance",
+    genreEmoji: "💘",
+    era: "1950s",
+    movies: ["Love in the Afternoon"],
+    scene: "Billy Wilder's romance largely unfolds in a suite at the Ritz, where Audrey Hepburn's character falls for Gary Cooper's wealthy American playboy.",
+    bookingUrl: "https://www.booking.com/hotel/fr/ritz-paris-paris.en-gb.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/1/17/Hotel_Ritz_Paris.jpg",
+    photoCredit: "Vlastimil Juricek (Wikimedia Commons, Public Domain)",
+    photoGradient: "linear-gradient(135deg,#8e7c6a,#4a3f34)",
+  },
+  {
+    id: "hotel-danieli-venice",
+    name: "Hotel Danieli",
+    city: "Venice",
+    cityEmoji: "🛶",
+    country: "Italy",
+    genre: "Action",
+    genreEmoji: "🕶️",
+    era: "1960s",
+    movies: ["From Russia with Love"],
+    scene: "This Venetian palazzo-turned-hotel is a genuine James Bond filming location, appearing in From Russia with Love and again in Moonraker.",
+    bookingUrl: "https://www.booking.com/hotel/it/danieli-a-four-seasons-hotel-venice.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/2/28/Hotel_Danieli_%28Palazzo_Dandolo%29%2C_Venice_%2830642136270%29.jpg",
+    photoCredit: "Dimitris Kamaras (Wikimedia Commons, CC BY 2.0)",
+    photoGradient: "linear-gradient(135deg,#b8433a,#6e241e)",
+  },
+  {
+    id: "hotel-windsor-melbourne",
+    name: "The Hotel Windsor",
+    city: "Melbourne",
+    cityEmoji: "🇦🇺",
+    country: "Australia",
+    genre: "Crime",
+    genreEmoji: "🕵️",
+    era: "2010s",
+    movies: ["Miss Fisher's Murder Mysteries"],
+    scene: "Grand dame detective Phryne Fisher takes up residence at this 1883 Melbourne landmark, whose lavish interiors and facade appear throughout the series.",
+    bookingUrl: "https://www.booking.com/hotel/au/the-windsor.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/7/76/Hotel_Windsor%2C_Melbourne%2C_Australia.jpg",
+    photoCredit: "Mat Connolley (Wikimedia Commons, CC BY 2.5)",
+    photoGradient: "linear-gradient(135deg,#8a6d4f,#4a3a28)",
+  },
+  {
+    id: "copacabana-palace-rio",
+    name: "Copacabana Palace, A Belmond Hotel",
+    city: "Rio de Janeiro",
+    cityEmoji: "🏖️",
+    country: "Brazil",
+    genre: "Action",
+    genreEmoji: "🎯",
+    era: "1970s",
+    movies: ["Moonraker"],
+    scene: "Roger Moore's 007 stays at this iconic Copacabana Beach hotel during the film's Rio de Janeiro sequence, a confirmed on-location Bond filming site.",
+    bookingUrl: "https://www.booking.com/hotel/br/copacabana-palace.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Copacabana_Palace_-_Rio_de_Janeiro_-_20240709110621.jpg",
+    photoCredit: "Joalpe (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#e8d8b8,#a8885a)",
+  },
+  {
+    id: "ciragan-palace-kempinski-istanbul",
+    name: "Çırağan Palace Kempinski Istanbul",
+    city: "Istanbul",
+    cityEmoji: "🕌",
+    country: "Turkey",
+    genre: "Action",
+    genreEmoji: "🕶️",
+    era: "2010s",
+    movies: ["Skyfall"],
+    scene: "This former Ottoman palace on the Bosphorus served as Bond's refuge in Skyfall, with its infinity pool used for 007's recovery scenes.",
+    bookingUrl: "https://www.booking.com/hotel/tr/ciragan-palace-kempinski-istanbul.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/7/74/Ciragan_Palace_2014.JPG",
+    photoCredit: "Moroder (Wikimedia Commons, CC BY-SA 3.0)",
+    photoGradient: "linear-gradient(135deg,#5a7a8a,#2e4a56)",
+  },
+];
+
+/* NOTES FOR LATER:
+   - Real photos: once you have licensed/approved photos, replace
+     "photoGradient" usage in script.js with an <img src="..."> —
+     or simply add a new "photo" field with an image URL and we'll
+     wire it in without touching this file's structure.
+   - This file is plain JavaScript loaded via <script src="data.js">
+     (not fetch/JSON), so it works even when opening index.html
+     directly from your computer with no local server needed.
+*/

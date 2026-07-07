@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About & Disclosure — Cinematic Stays</title>
+<meta name="description" content="How Cinematic Stays verifies its hotels, our photo policy, and our Booking.com affiliate disclosure.">
+<link rel="canonical" href="https://www.cinematicstays.com/about.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About & Disclosure — Cinematic Stays">
+<meta property="og:description" content="How Cinematic Stays verifies its hotels, our photo policy, and our affiliate disclosure.">
+<meta property="og:url" content="https://www.cinematicstays.com/about.html">
+<meta property="og:site_name" content="Cinematic Stays">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">🎬 Cinematic<span class="grad">Stays</span></a>
+  <nav>
+    <a href="index.html">Hotels</a>
+    <a href="movies.html">By Movie</a>
+    <a href="about.html" class="active">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="kicker">📖 The Story</div>
+  <h1>Real places. <span class="grad">Real scenes.</span><br>Real bookings.</h1>
+  <p>Cinematic Stays exists for one reason: to separate the movie hotels you can actually visit from the ones that only ever existed on a studio backlot. Currently featuring <strong id="hotelCount">…</strong> hotels, and growing.</p>
+</section>
+
+<section class="about-content">
+
+  <div class="about-block">
+    <h2>🎯 What counts as a "Cinematic Stay"</h2>
+    <p>Every hotel on this site has to clear three bars before it's added: it has to be a real, currently operating hotel; it has to have a documented, verifiable connection to a specific film or TV show (not just a rumor); and it has to be independently bookable on Booking.com — no fictional sets, no defunct properties, no "inspired by" guesswork.</p>
+  </div>
+
+  <div class="about-block">
+    <h2>📷 Our photo policy</h2>
+    <p>We never use a screenshot or frame from the movie itself as a hotel's photo — film stills are copyrighted, and using them to promote paid bookings isn't something we're willing to risk or ask you to trust. Every photo here is a real photograph of the actual hotel, sourced only from Wikimedia Commons so the licensing (public domain or Creative Commons) is fully verifiable, with the photographer credited directly on the image. Each card also carries a clear movie badge and a "real, bookable hotel" tag, so it's never ambiguous which film it's tied to or that the place genuinely exists.</p>
+  </div>
+
+  <div class="about-block">
+    <h2>💬 Affiliate disclosure</h2>
+    <p>Cinematic Stays is a participant in the Booking.com Affiliate Partner Program. When you book a stay through a "Check availability" link on this site, we may earn a commission — at no extra cost to you. This never affects which hotels we feature or how we describe them; a hotel earns its place here because of its film history and its Booking.com availability, not because of any commercial arrangement with the property itself.</p>
+  </div>
+
+  <div class="about-block">
+    <h2>🔍 How this site is kept accurate</h2>
+    <p>Hotel details are pulled from a single, structured dataset that automatically builds the filters, groupings, and cards you see across the site — so every page always reflects the same underlying list, and there's one place to fix or update anything. If a listing is ever wrong or a hotel closes, we want to know: accuracy matters more to us than the size of the list.</p>
+  </div>
+
+</section>
+
+<footer>
+  Cinematic Stays is a participant in the Booking.com Affiliate Partner Program. As an affiliate, we may earn a commission on qualifying bookings made through links on this site, at no extra cost to you.
+  <div class="footer-links"><a href="about.html">About & Disclosure</a></div>
+</footer>
+
+<script src="supabase-config.js"></script>
+<script src="data.js"></script>
+<script src="data-loader.js"></script>
+<script src="hotel-utils.js"></script>
+<script>
+  (async function () {
+    const el = document.getElementById("hotelCount");
+    try {
+      const { hotels } = await loadHotels();
+      const { valid } = validateHotels(hotels);
+      el.textContent = valid.length;
+    } catch (e) {
+      el.textContent = "several";
+    }
+  })();
+</script>
+
+</body>
+</html>

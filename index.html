@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinematic Stays — Iconic Hotels From Your Favorite Movies</title>
+<meta name="description" content="Real, bookable hotels that appeared in famous movies — every one verified, every one on Booking.com. Browse by destination, genre, or era.">
+<link rel="canonical" href="https://www.cinematicstays.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cinematic Stays — Iconic Hotels From Your Favorite Movies">
+<meta property="og:description" content="Real, bookable hotels that appeared in famous movies — every one verified, every one on Booking.com.">
+<meta property="og:url" content="https://www.cinematicstays.com/">
+<meta property="og:site_name" content="Cinematic Stays">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cinematic Stays — Iconic Hotels From Your Favorite Movies">
+<meta name="twitter:description" content="Real, bookable hotels that appeared in famous movies — every one verified, every one on Booking.com.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">🎬 Cinematic<span class="grad">Stays</span></a>
+  <nav>
+    <a href="index.html" class="active">Hotels</a>
+    <a href="movies.html">By Movie</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="kicker">🍿 Real Hotels · Real Movie Scenes</div>
+  <h1>Sleep in <span class="grad">the room</span><br>where the scene actually happened.</h1>
+  <p>Every hotel here appeared on screen — and every one of them you can actually book. No sets, no lookalikes, just the real places, ready on Booking.com.</p>
+</section>
+
+<div class="data-error-banner" id="dataErrorBanner"></div>
+
+<div class="filter-bar">
+  <div class="search-row">
+    <span>🔍</span>
+    <input type="text" id="searchInput" placeholder="Search by hotel or movie name...">
+  </div>
+
+  <div class="filter-group">
+    <div class="label">📍 Destination</div>
+    <div class="pills" id="cityFilters" data-group="city"><!-- built automatically from data.js --></div>
+  </div>
+
+  <div class="filter-group">
+    <div class="label">🎭 Genre</div>
+    <div class="pills" id="genreFilters" data-group="genre"><!-- built automatically from data.js --></div>
+  </div>
+
+  <div class="filter-group">
+    <div class="label">📼 Era</div>
+    <div class="pills" id="eraFilters" data-group="era"><!-- built automatically from data.js --></div>
+  </div>
+
+  <div class="filter-footer">
+    <div class="result-count" id="resultCount">Showing 0 hotels</div>
+    <button class="clear-btn" id="clearBtn">Clear all filters</button>
+  </div>
+</div>
+
+<div class="grid" id="grid">
+  <div class="empty-state" id="emptyState">
+    <div class="emoji">🎬</div>
+    <div>No hotels match those filters yet. Try clearing a few.</div>
+  </div>
+</div>
+
+<footer>
+  Cinematic Stays is a participant in the Booking.com Affiliate Partner Program. As an affiliate, we may earn a commission on qualifying bookings made through links on this site, at no extra cost to you.
+  <div class="footer-links"><a href="about.html">About & Disclosure</a></div>
+</footer>
+
+<script src="supabase-config.js"></script>
+<script src="data.js"></script>
+<script src="data-loader.js"></script>
+<script src="hotel-utils.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

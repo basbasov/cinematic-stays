@@ -1,0 +1,153 @@
+/* ============================================================
+   CINEMATIC STAYS — ADMIN PANEL STYLES
+   ============================================================
+   Only loaded on admin.html. Reuses the same color variables
+   and fonts as styles.css so the admin panel feels on-brand.
+   ============================================================ */
+
+.admin-panel {
+  padding: 0 6vw 80px;
+  max-width: 760px;
+}
+
+.admin-card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 24px rgba(20,10,60,0.04);
+}
+.admin-card h2 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.admin-hint {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+.admin-hint-inline {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+#hotelForm label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--ink);
+}
+#hotelForm input,
+#hotelForm textarea {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: var(--pill-bg);
+  color: var(--ink);
+}
+#hotelForm input:focus,
+#hotelForm textarea:focus {
+  outline: 2px solid var(--grad-2);
+  outline-offset: 1px;
+}
+#hotelForm input:disabled {
+  opacity: 0.6;
+}
+
+.admin-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
+}
+
+.admin-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.admin-btn {
+  border: 1px solid var(--line);
+  background: var(--pill-bg);
+  padding: 10px 18px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--ink);
+}
+.admin-btn:hover { border-color: #d8d5ea; }
+.admin-btn.primary {
+  background: linear-gradient(90deg, var(--grad-1), var(--grad-2));
+  color: white;
+  border: none;
+}
+.admin-btn.small {
+  padding: 6px 14px;
+  font-size: 12px;
+}
+.admin-btn.danger {
+  color: #a83b26;
+}
+
+.admin-error {
+  display: none;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #fff4f2;
+  border: 1px solid #ffd6cf;
+  border-radius: 10px;
+  color: #a83b26;
+  font-size: 13px;
+}
+.admin-success {
+  display: none;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #f0fbf4;
+  border: 1px solid #bfe8cd;
+  border-radius: 10px;
+  color: #1e7a44;
+  font-size: 13px;
+}
+
+.admin-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.admin-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.admin-list-item:last-child { border-bottom: none; }
+.admin-list-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+}
+.admin-list-info strong { font-size: 14px; }
+.admin-list-info span { color: var(--muted); }
+.admin-list-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}

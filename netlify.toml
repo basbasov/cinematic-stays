@@ -1,0 +1,14 @@
+# ============================================================
+# CINEMATIC STAYS — NETLIFY CONFIG
+# ============================================================
+# This is a plain static site — no build step. Netlify just needs
+# to know to publish the project folder as-is.
+# ============================================================
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/admin.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>By Movie — Cinematic Stays</title>
+<meta name="description" content="Browse real, bookable movie hotels grouped by the film they appeared in — from Bond hotels to rom-com landmarks.">
+<link rel="canonical" href="https://www.cinematicstays.com/movies.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="By Movie — Cinematic Stays">
+<meta property="og:description" content="Browse real, bookable movie hotels grouped by the film they appeared in.">
+<meta property="og:url" content="https://www.cinematicstays.com/movies.html">
+<meta property="og:site_name" content="Cinematic Stays">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">🎬 Cinematic<span class="grad">Stays</span></a>
+  <nav>
+    <a href="index.html">Hotels</a>
+    <a href="movies.html" class="active">By Movie</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="kicker">🎞️ Browse By Film</div>
+  <h1>Every movie, <span class="grad">every hotel</span> it led us to.</h1>
+  <p>Same hotels as the main list — just organized by the film that made them famous, so you can jump straight from a favorite movie to where you can actually stay.</p>
+</section>
+
+<div class="data-error-banner" id="dataErrorBanner"></div>
+
+<div class="movie-groups" id="movieGroups">
+  <div class="empty-state" id="emptyState" style="display:none;">
+    <div class="emoji">🎬</div>
+    <div>No hotels to show yet.</div>
+  </div>
+</div>
+
+<footer>
+  Cinematic Stays is a participant in the Booking.com Affiliate Partner Program. As an affiliate, we may earn a commission on qualifying bookings made through links on this site, at no extra cost to you.
+  <div class="footer-links"><a href="about.html">About & Disclosure</a></div>
+</footer>
+
+<script src="supabase-config.js"></script>
+<script src="data.js"></script>
+<script src="data-loader.js"></script>
+<script src="hotel-utils.js"></script>
+<script src="movies.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+-- ============================================================
+-- CINEMATIC STAYS — SUPABASE DATABASE SETUP
+-- ============================================================
+-- Run this once in your Supabase project's SQL Editor
+-- (Project → SQL Editor → New query → paste all of this → Run).
+-- It creates the hotels table, locks it down with Row Level
+-- Security (public can read, only logged-in admins can write),
+-- and seeds it with all 26 hotels currently on the site.
+-- ============================================================
+
+create table if not exists hotels (
+  id text primary key,
+  name text not null,
+  city text not null,
+  city_emoji text not null,
+  country text,
+  genre text not null,
+  genre_emoji text not null,
+  era text not null,
+  movies text[] not null,
+  scene text not null,
+  booking_url text not null,
+  photo text,
+  photo_credit text,
+  photo_gradient text not null,
+  created_at timestamptz not null default now()
+);
+
+-- Row Level Security: anyone can read (the public site needs this),
+-- but only signed-in users (your admin login) can add/edit/delete.
+alter table hotels enable row level security;
+
+drop policy if exists "Public can read hotels" on hotels;
+create policy "Public can read hotels"
+  on hotels for select
+  using (true);
+
+drop policy if exists "Signed-in users can insert hotels" on hotels;
+create policy "Signed-in users can insert hotels"
+  on hotels for insert
+  to authenticated
+  with check (true);
+
+drop policy if exists "Signed-in users can update hotels" on hotels;
+create policy "Signed-in users can update hotels"
+  on hotels for update
+  to authenticated
+  using (true)
+  with check (true);
+
+drop policy if exists "Signed-in users can delete hotels" on hotels;
+create policy "Signed-in users can delete hotels"
+  on hotels for delete
+  to authenticated
+  using (true);
+
+-- Seed data: all 26 hotels currently on the site.
+-- Safe to re-run — ON CONFLICT DO NOTHING skips ones already there.
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('plaza-nyc', 'The Plaza, A Fairmont Hotel', 'New York', '🗽', 'USA', 'Comedy', '😂', '1990s', ARRAY['Home Alone 2', 'Sleepless in Seattle']::text[], 'Kevin McCallister checked in here alone in Home Alone 2 — the lobby and suites are instantly recognizable.', 'https://www.booking.com/hotel/us/the-plaza.html', 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Plaza_Hotel_April_2008.JPG', 'OptimumPx (Wikimedia Commons, Public Domain)', 'linear-gradient(135deg,#8e7cc3,#5b4a8a)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('beverly-wilshire', 'Beverly Wilshire, A Four Seasons Hotel', 'Los Angeles', '🌴', 'USA', 'Romance', '💘', '1990s', ARRAY['Pretty Woman']::text[], 'The hotel where Vivian and Edward''s story unfolds — still offers a "Pretty Woman" suite experience.', 'https://www.booking.com/hotel/us/beverly-wilshire-beverly-hills-a-four-seasons.html', 'https://upload.wikimedia.org/wikipedia/commons/3/30/BeverlyWilshire01.jpg', 'Minnaert (Wikimedia Commons, Public Domain)', 'linear-gradient(135deg,#e0a96d,#b97b3e)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('fontainebleau-miami', 'Fontainebleau Miami Beach', 'Miami', '🌊', 'USA', 'Action', '🕶️', '1960s', ARRAY['Goldfinger', 'Scarface']::text[], 'James Bond stayed here in Goldfinger; Tony Montana called it "paradise" in Scarface.', 'https://www.booking.com/hotel/us/fontainebleau-miami-beach.html', 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Fontainebleau_Hotel_-_Miami_Beach_Florida_%284549435559%29.jpg', 'David Berkowitz (Wikimedia Commons, CC BY 2.0)', 'linear-gradient(135deg,#4fb3bf,#2c7a8c)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('bellagio-vegas', 'Bellagio', 'Las Vegas', '🎰', 'USA', 'Crime', '🕵️', '2000s', ARRAY['Ocean''s Eleven']::text[], 'The fountains, the vault, the heist — Ocean''s Eleven made this Vegas icon a movie star in its own right.', 'https://www.booking.com/hotel/us/bellagio-las-vegas.html', 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Bellagio_%2815675836063%29.jpg', 'Tomás Del Coro (Wikimedia Commons, CC BY-SA 2.0)', 'linear-gradient(135deg,#d4af37,#8a6d1a)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('caesars-palace', 'Caesars Palace', 'Las Vegas', '🎰', 'USA', 'Comedy', '😂', '2000s', ARRAY['The Hangover']::text[], 'The infamous rooftop, lobby, and pool from The Hangover — book the room, skip the tiger.', 'https://www.booking.com/hotel/us/caesars-palace.html', 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Caesars_Palace_hotel_%28Las_Vegas%29_Front_yard.JPG', 'Laslovarga (Wikimedia Commons, CC BY-SA 3.0)', 'linear-gradient(135deg,#c9482e,#8f2f1c)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('hotel-del-coronado', 'Hotel del Coronado', 'San Diego', '🏖️', 'USA', 'Comedy', '😂', '1950s', ARRAY['Some Like It Hot']::text[], 'The grand Victorian beach hotel that stood in for Florida in the 1959 classic.', 'https://www.booking.com/hotel/us/hotel-del-coronado.html', 'https://upload.wikimedia.org/wikipedia/commons/a/a8/2019_Hotel_del_Coronado_from_beach.jpg', 'Beyond My Ken (Wikimedia Commons, CC BY-SA 4.0)', 'linear-gradient(135deg,#e07a5f,#c14f36)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('timberline-lodge', 'Timberline Lodge', 'Oregon', '🏔️', 'USA', 'Horror', '🔪', '1980s', ARRAY['The Shining']::text[], 'The real Overlook Hotel exteriors from Kubrick''s The Shining — no Room 237, we promise.', 'https://www.booking.com/hotel/us/timberline-lodge.html', 'https://upload.wikimedia.org/wikipedia/commons/0/0a/2017-07-15_Timberline_01.jpg', 'Kingofthedead (Wikimedia Commons, CC BY-SA 4.0)', 'linear-gradient(135deg,#3d5a5c,#1f3335)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('park-hyatt-tokyo', 'Park Hyatt Tokyo', 'Tokyo', '🗼', 'Japan', 'Drama', '🎞️', '2000s', ARRAY['Lost in Translation']::text[], 'The New York Bar on the 52nd floor, where Bob and Charlotte first meet.', 'https://www.booking.com/hotel/jp/park-hyatt-tokyo.html', 'https://upload.wikimedia.org/wikipedia/commons/1/11/ParkHyattTokyoFront.JPG', 'moore (Wikimedia Commons, CC BY-SA 3.0)', 'linear-gradient(135deg,#7d8ca3,#3f4b5e)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('fairmont-banff-springs', 'Fairmont Banff Springs', 'Banff', '🏔️', 'Canada', 'Drama', '🎭', '1950s', ARRAY['River of No Return']::text[], 'Marilyn Monroe and Joe DiMaggio stayed at this Scottish Baronial-style castle hotel in 1953 while she filmed this Western adventure in the surrounding Rockies.', 'https://www.booking.com/hotel/ca/fairmont-banff-srpings.html', 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Banff_Springs_Hotel1.jpg', 'Diderot~commonswiki (Wikimedia Commons, CC BY-SA 3.0)', 'linear-gradient(135deg,#5c7a63,#2f4a38)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('fairmont-chateau-frontenac', 'Fairmont Le Château Frontenac', 'Quebec City', '🏰', 'Canada', 'Thriller', '🔪', '1950s', ARRAY['I Confess']::text[], 'Alfred Hitchcock used Quebec City''s Old Town and this castle-like landmark''s dramatic silhouette throughout his 1953 thriller.', 'https://www.booking.com/hotel/ca/fairmont-chateau-frontenac.html', 'https://upload.wikimedia.org/wikipedia/commons/8/8d/Ch%C3%A2teau_Frontenac_02.jpg', 'Bernard Gagnon (Wikimedia Commons, CC BY-SA 4.0)', 'linear-gradient(135deg,#3b5266,#1c2c38)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('millennium-biltmore-los-angeles', 'The Biltmore Los Angeles (Millennium Biltmore Hotel)', 'Los Angeles', '🌴', 'USA', 'Comedy', '👻', '1980s', ARRAY['Ghostbusters']::text[], 'The hotel''s opulent lobby became the fictional ''Sedgwick Hotel'' ballroom, where Venkman, Stantz, and Spengler take their first ghost-catching job.', 'https://www.booking.com/hotel/us/millennium-biltmore.html', 'https://upload.wikimedia.org/wikipedia/commons/8/80/Millennium_Biltmore_Hotel%2C_Los_Angeles.jpg', 'Downtowngal (Wikimedia Commons, CC BY-SA 3.0)', 'linear-gradient(135deg,#8a7355,#4a3d2c)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('hollywood-roosevelt', 'The Hollywood Roosevelt', 'Los Angeles', '🎬', 'USA', 'Drama', '🎭', '2000s', ARRAY['The Aviator']::text[], 'Martin Scorsese used the hotel''s ornate lobby and grand staircase to recreate 1930s-40s Hollywood for this Howard Hughes biopic.', 'https://www.booking.com/hotel/us/h-roosevelt-hollywood-california.html', 'https://upload.wikimedia.org/wikipedia/commons/9/97/Hollywood_Roosevelt_Hotel_2015.jpg', 'Jason Chang (Wikimedia Commons, CC BY-SA 3.0)', 'linear-gradient(135deg,#b08d57,#6b5530)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('chateau-marmont', 'Chateau Marmont', 'West Hollywood', '🌃', 'USA', 'Drama', '🎭', '2010s', ARRAY['Somewhere', 'La La Land']::text[], 'Sofia Coppola shot most of Somewhere on location here, and Damien Chazelle later filmed key La La Land scenes in Room 59 of the same hotel.', 'https://www.booking.com/hotel/us/chateau-marmont.html', 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Chateau_Marmont_West_Hollywood_%2851017770156%29.jpg', 'Tony Mariotti (Wikimedia Commons, CC BY 2.0)', 'linear-gradient(135deg,#6d5a4f,#3a2e28)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('the-stanley-hotel', 'The Stanley Hotel', 'Estes Park', '❄️', 'USA', 'Horror', '🪓', '1990s', ARRAY['The Shining (1997 miniseries)', 'Dumb and Dumber']::text[], 'This Colorado hotel inspired Stephen King''s original novel, and he returned to film here for the 1997 TV miniseries; it also played the ''Danbury Hotel'' in Dumb and Dumber.', 'https://www.booking.com/hotel/us/the-stanley.html', 'https://upload.wikimedia.org/wikipedia/commons/8/88/The_Stanley_Hotel.JPG', 'Renoman58 (Wikimedia Commons, CC BY-SA 3.0)', 'linear-gradient(135deg,#e8e6e8,#9a9aa0)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('peabody-memphis', 'The Peabody Memphis', 'Memphis', '🎸', 'USA', 'Thriller', '⚖️', '1990s', ARRAY['The Firm']::text[], 'This grand Southern hotel''s rooftop hosts a pivotal party scene in the Tom Cruise legal thriller, and its interior is where Mitch McDeere confronts the Morolto brothers.', 'https://www.booking.com/hotel/us/peabody-memphis.html', 'https://upload.wikimedia.org/wikipedia/commons/e/e7/PeabodyHotel.JPG', 'Airtuna08 (Wikimedia Commons, CC BY 3.0)', 'linear-gradient(135deg,#7a6248,#4a3a2a)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('willard-intercontinental-dc', 'Willard InterContinental Washington', 'Washington', '🏛️', 'USA', 'Sci-Fi', '🔮', '2000s', ARRAY['Minority Report']::text[], 'Steven Spielberg filmed the finale of this sci-fi thriller here, shooting Tom Cruise and Max von Sydow''s climactic confrontation in the Willard Room and Peacock Alley.', 'https://www.booking.com/hotel/us/inter-continental-hotels-resorts-the-willard-washington-dc.html', 'https://upload.wikimedia.org/wikipedia/commons/1/17/Willard_InterContinental.JPG', 'AgnosticPreachersKid (Wikimedia Commons, CC BY-SA 4.0)', 'linear-gradient(135deg,#4f5b6e,#282e38)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('hotel-monteleone', 'Hotel Monteleone', 'New Orleans', '🎷', 'USA', 'Thriller', '🔍', '1990s', ARRAY['Double Jeopardy']::text[], 'This French Quarter landmark''s lobby and famed rotating Carousel Bar were dressed as a chic Armani shop for a key scene in this Ashley Judd thriller.', 'https://www.booking.com/hotel/us/monteleone.html', 'https://upload.wikimedia.org/wikipedia/commons/7/79/Hotel_Monteleone_New_Orleans_October_2019_exterior.jpg', 'David Ohmer (Wikimedia Commons, CC BY 2.0)', 'linear-gradient(135deg,#9c7a4f,#5c4a2c)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('grand-wailea-maui', 'Grand Wailea, A Waldorf Astoria Resort', 'Maui', '🌺', 'USA', 'Comedy', '😂', '2010s', ARRAY['Just Go with It']::text[], 'This lush Maui beachfront resort served as the luxury tropical getaway where Adam Sandler and Jennifer Aniston''s characters fake a relationship.', 'https://www.booking.com/hotel/us/grand-wailea-resort-spa.html', 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Grand_Wailea_Resort_on_Maui_%288528532630%29.jpg', 'Dave Dugdale (Wikimedia Commons, CC BY-SA 2.0)', 'linear-gradient(135deg,#4fa89c,#2a6b62)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('grandhotel-pupp-karlovy-vary', 'Grandhotel Pupp', 'Karlovy Vary', '🏰', 'Czech Republic', 'Action', '🎯', '2000s', ARRAY['Casino Royale']::text[], 'The Grandhotel Pupp doubled as the fictional Hotel Splendide in Montenegro, where Bond and Vesper share dinner and Bond invents the ''Vesper'' martini.', 'https://www.booking.com/hotel/cz/grandhotel-pupp.html', 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Hotel_-_Grandhotel_Pupp%2C_Karlovy_Vary.JPG', 'Martin Mašek / Cassi.astronomy (Wikimedia Commons, CC BY-SA 4.0)', 'linear-gradient(135deg,#c2a15a,#7a6032)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('taj-lake-palace-udaipur', 'Taj Lake Palace', 'Udaipur', '🛶', 'India', 'Action', '🎯', '1980s', ARRAY['Octopussy']::text[], 'The floating marble palace on Lake Pichola served as Octopussy''s lair, including the lily-pond ambush and terrace scenes between Bond and Octopussy.', 'https://www.booking.com/hotel/in/taj-lake-palace.html', 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Taj_Lake_Palace%2C_Udaipur.jpg', 'Imsourabh1996 (Wikimedia Commons, CC BY-SA 4.0)', 'linear-gradient(135deg,#e8e0d0,#a89878)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('la-mamounia-marrakech', 'La Mamounia', 'Marrakech', '🕌', 'Morocco', 'Thriller', '🔪', '1950s', ARRAY['The Man Who Knew Too Much']::text[], 'Alfred Hitchcock filmed scenes for this 1956 thriller starring James Stewart and Doris Day in the storied Marrakech palace-hotel''s gardens and interiors.', 'https://www.booking.com/hotel/ma/mamounia.html', 'https://upload.wikimedia.org/wikipedia/commons/f/f9/La_Mamounia_entrance.jpg', 'Pi3.124 (Wikimedia Commons, CC BY-SA 4.0)', 'linear-gradient(135deg,#c76a4a,#7a3d28)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('ritz-paris', 'Hôtel Ritz Paris', 'Paris', '🗼', 'France', 'Romance', '💘', '1950s', ARRAY['Love in the Afternoon']::text[], 'Billy Wilder''s romance largely unfolds in a suite at the Ritz, where Audrey Hepburn''s character falls for Gary Cooper''s wealthy American playboy.', 'https://www.booking.com/hotel/fr/ritz-paris-paris.en-gb.html', 'https://upload.wikimedia.org/wikipedia/commons/1/17/Hotel_Ritz_Paris.jpg', 'Vlastimil Juricek (Wikimedia Commons, Public Domain)', 'linear-gradient(135deg,#8e7c6a,#4a3f34)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('hotel-danieli-venice', 'Hotel Danieli', 'Venice', '🛶', 'Italy', 'Action', '🕶️', '1960s', ARRAY['From Russia with Love']::text[], 'This Venetian palazzo-turned-hotel is a genuine James Bond filming location, appearing in From Russia with Love and again in Moonraker.', 'https://www.booking.com/hotel/it/danieli-a-four-seasons-hotel-venice.html', 'https://upload.wikimedia.org/wikipedia/commons/2/28/Hotel_Danieli_%28Palazzo_Dandolo%29%2C_Venice_%2830642136270%29.jpg', 'Dimitris Kamaras (Wikimedia Commons, CC BY 2.0)', 'linear-gradient(135deg,#b8433a,#6e241e)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('hotel-windsor-melbourne', 'The Hotel Windsor', 'Melbourne', '🇦🇺', 'Australia', 'Crime', '🕵️', '2010s', ARRAY['Miss Fisher''s Murder Mysteries']::text[], 'Grand dame detective Phryne Fisher takes up residence at this 1883 Melbourne landmark, whose lavish interiors and facade appear throughout the series.', 'https://www.booking.com/hotel/au/the-windsor.html', 'https://upload.wikimedia.org/wikipedia/commons/7/76/Hotel_Windsor%2C_Melbourne%2C_Australia.jpg', 'Mat Connolley (Wikimedia Commons, CC BY 2.5)', 'linear-gradient(135deg,#8a6d4f,#4a3a28)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('copacabana-palace-rio', 'Copacabana Palace, A Belmond Hotel', 'Rio de Janeiro', '🏖️', 'Brazil', 'Action', '🎯', '1970s', ARRAY['Moonraker']::text[], 'Roger Moore''s 007 stays at this iconic Copacabana Beach hotel during the film''s Rio de Janeiro sequence, a confirmed on-location Bond filming site.', 'https://www.booking.com/hotel/br/copacabana-palace.html', 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Copacabana_Palace_-_Rio_de_Janeiro_-_20240709110621.jpg', 'Joalpe (Wikimedia Commons, CC BY-SA 4.0)', 'linear-gradient(135deg,#e8d8b8,#a8885a)')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO hotels (id, name, city, city_emoji, country, genre, genre_emoji, era, movies, scene, booking_url, photo, photo_credit, photo_gradient)
+VALUES ('ciragan-palace-kempinski-istanbul', 'Çırağan Palace Kempinski Istanbul', 'Istanbul', '🕌', 'Turkey', 'Action', '🕶️', '2010s', ARRAY['Skyfall']::text[], 'This former Ottoman palace on the Bosphorus served as Bond''s refuge in Skyfall, with its infinity pool used for 007''s recovery scenes.', 'https://www.booking.com/hotel/tr/ciragan-palace-kempinski-istanbul.html', 'https://upload.wikimedia.org/wikipedia/commons/7/74/Ciragan_Palace_2014.JPG', 'Moroder (Wikimedia Commons, CC BY-SA 3.0)', 'linear-gradient(135deg,#5a7a8a,#2e4a56)')
+ON CONFLICT (id) DO NOTHING;
+

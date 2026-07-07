@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Cinematic Stays</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">🎬 Cinematic<span class="grad">Stays</span></a>
+  <nav>
+    <a href="index.html">Hotels</a>
+    <a href="movies.html">By Movie</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="kicker">🔐 Admin</div>
+  <h1>Manage <span class="grad">hotels</span></h1>
+  <p>Add, edit, or remove hotels — changes save straight to your live Supabase database and appear on the site immediately.</p>
+</section>
+
+<!-- Shown if supabase-config.js hasn't been filled in yet -->
+<div id="notConfigured" class="admin-panel" style="display:none;">
+  <div class="admin-card">
+    <h2>⚠️ Supabase isn't connected yet</h2>
+    <p>This admin panel needs your Supabase project's URL and anon key filled in inside <code>supabase-config.js</code> before it can work. See <code>README.md</code> → "Setting up the real backend" for the exact steps. Until then, the public site keeps working fine using the bundled <code>data.js</code> list.</p>
+  </div>
+</div>
+
+<!-- Login form -->
+<div id="loginPanel" class="admin-panel" style="display:none;">
+  <div class="admin-card">
+    <h2>Sign in</h2>
+    <p class="admin-hint">Use the admin email/password you created in your Supabase project (Authentication → Users → Add user).</p>
+    <form id="loginForm">
+      <label>Email
+        <input type="email" id="loginEmail" required>
+      </label>
+      <label>Password
+        <input type="password" id="loginPassword" required>
+      </label>
+      <button type="submit" class="admin-btn primary">Sign In</button>
+      <div id="loginError" class="admin-error"></div>
+    </form>
+  </div>
+</div>
+
+<!-- Main dashboard, shown once signed in -->
+<div id="dashboard" class="admin-panel" style="display:none;">
+  <div class="admin-toolbar">
+    <div id="whoami" class="admin-hint"></div>
+    <button id="signOutBtn" class="admin-btn">Sign Out</button>
+  </div>
+
+  <div class="admin-card">
+    <h2 id="formTitle">Add a new hotel</h2>
+    <form id="hotelForm">
+      <input type="hidden" id="editingId" value="">
+
+      <label>Unique ID (lowercase, no spaces, e.g. <code>plaza-nyc</code>)
+        <input type="text" id="f-id" required pattern="[a-z0-9\-]+" title="lowercase letters, numbers, and hyphens only">
+      </label>
+      <label>Hotel name
+        <input type="text" id="f-name" required>
+      </label>
+
+      <div class="admin-row">
+        <label>City / destination
+          <input type="text" id="f-city" required>
+        </label>
+        <label>City emoji
+          <input type="text" id="f-cityEmoji" required maxlength="4" placeholder="🗽">
+        </label>
+        <label>Country
+          <input type="text" id="f-country">
+        </label>
+      </div>
+
+      <div class="admin-row">
+        <label>Genre
+          <input type="text" id="f-genre" required placeholder="Comedy, Romance, Crime...">
+        </label>
+        <label>Genre emoji
+          <input type="text" id="f-genreEmoji" required maxlength="4" placeholder="😂">
+        </label>
+        <label>Era
+          <input type="text" id="f-era" required placeholder="1990s">
+        </label>
+      </div>
+
+      <label>Movie(s) — separate multiple with commas
+        <input type="text" id="f-movies" required placeholder="Home Alone 2, Sleepless in Seattle">
+      </label>
+
+      <label>Scene description
+        <textarea id="f-scene" required rows="2"></textarea>
+      </label>
+
+      <label>Booking.com URL
+        <input type="url" id="f-bookingUrl" required placeholder="https://www.booking.com/hotel/...">
+      </label>
+
+      <label>Photo URL <span class="admin-hint-inline">(Wikimedia Commons direct file link only — see Photo Policy in data.js/README)</span>
+        <input type="url" id="f-photo" placeholder="https://upload.wikimedia.org/...">
+      </label>
+      <label>Photo credit <span class="admin-hint-inline">(required if you filled in a photo — "Author (Wikimedia Commons, License)")</span>
+        <input type="text" id="f-photoCredit" placeholder="Jane Doe (Wikimedia Commons, CC BY-SA 4.0)">
+      </label>
+      <label>Fallback color (optional — auto-generated if left blank)
+        <input type="text" id="f-photoGradient" placeholder="linear-gradient(135deg,#8e7cc3,#5b4a8a)">
+      </label>
+
+      <div class="admin-form-actions">
+        <button type="submit" class="admin-btn primary" id="submitBtn">Add Hotel</button>
+        <button type="button" class="admin-btn" id="cancelEditBtn" style="display:none;">Cancel Edit</button>
+      </div>
+      <div id="formError" class="admin-error"></div>
+      <div id="formSuccess" class="admin-success"></div>
+    </form>
+  </div>
+
+  <div class="admin-card">
+    <h2>Current hotels (<span id="hotelListCount">0</span>)</h2>
+    <div id="hotelList" class="admin-list"></div>
+  </div>
+</div>
+
+<footer>
+  Cinematic Stays is a participant in the Booking.com Affiliate Partner Program. As an affiliate, we may earn a commission on qualifying bookings made through links on this site, at no extra cost to you.
+  <div class="footer-links"><a href="about.html">About & Disclosure</a></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="hotel-utils.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>
