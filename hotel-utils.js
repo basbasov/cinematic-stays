@@ -91,3 +91,44 @@ function uniqueOptions(hotels, valueField, emojiField) {
 function pillHTML(option) {
   return `<div class="pill" data-value="${option.value}">${option.emoji ? option.emoji + " " : ""}${option.value}</div>`;
 }
+
+
+/* Keeps every collapsed card in a row the same height (so buttons line up),
+   while an expanded "The story" only grows its own card. */
+(function () {
+  let timer = null, running = false;
+  function alignCards() {
+    running = true;
+    const cards = [...document.querySelectorAll(".card")];
+    cards.forEach((c) => (c.style.minHeight = ""));
+    const rows = new Map();
+    cards.forEach((c) => {
+      if (c.style.display === "none" || c.querySelector("details[open]")) return;
+      const key = (c.parentElement.id || c.parentElement.className) + "|" + Math.round(c.offsetTop) + "|" + [...document.querySelectorAll(".grid")].indexOf(c.parentElement);
+      rows.set(key, Math.max(rows.get(key) || 0, c.offsetHeight));
+    });
+    cards.forEach((c) => {
+      if (c.style.display === "none" || c.querySelector("details[open]")) return;
+      const key = (c.parentElement.id || c.parentElement.className) + "|" + Math.round(c.offsetTop) + "|" + [...document.querySelectorAll(".grid")].indexOf(c.parentElement);
+      c.style.minHeight = rows.get(key) + "px";
+    });
+    setTimeout(() => (running = false), 0);
+  }
+  function schedule() {
+    if (running) return;
+    clearTimeout(timer);
+    timer = setTimeout(alignCards, 60);
+  }
+  window.alignCards = alignCards;
+  window.addEventListener("load", schedule);
+  window.addEventListener("resize", schedule);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(schedule);
+  document.addEventListener("toggle", (e) => { if (e.target.tagName === "DETAILS" && !e.target.open) schedule(); }, true);
+  document.addEventListener("DOMContentLoaded", () => {
+    new MutationObserver((muts) => {
+      if (running) return;
+      if (muts.some((m) => m.type === "childList" || (m.target.classList && m.target.classList.contains("card") && m.attributeName === "style"))) schedule();
+    }).observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ["style"] });
+    schedule();
+  });
+})();

@@ -14,3 +14,11 @@
   for = "/admin.html"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
+
+# Only the main branch is built. Branch deploys and previews are skipped so
+# work-in-progress on the "staging" branch costs no deploy credits.
+[context.branch-deploy]
+  ignore = "exit 0"
+
+[context.deploy-preview]
+  ignore = "exit 0"
