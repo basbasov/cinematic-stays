@@ -85,3 +85,7 @@ Still a plain set of static files (no build step) — deploy by dragging the fol
 
 - `bookingUrl` values were found via web search and should be spot-checked before launch.
 - `admin.html` isn't linked from the site's nav on purpose (it's a management tool, not a visitor page) — bookmark it directly.
+
+
+## Maintenance & tools
+See `MAINTENANCE.md`. Scripts in `tools/`: `check-links.js` (health check), `sync-supabase-seed.js` (keep SQL in sync with data.js), `export-hotels.js` (backup JSON). Hotels may have an optional `story` field (shown as "The story" on cards).

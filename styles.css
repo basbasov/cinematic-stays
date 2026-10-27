@@ -358,6 +358,17 @@ nav a.active {
   color: var(--ink);
   margin-bottom: 18px;
 }
+.card .story {
+  margin: -8px 0 16px;
+  font-size: 13.5px;
+  color: var(--ink);
+}
+.card .story summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent, #6d4cff);
+}
+.card .story p { margin: 8px 0 0; line-height: 1.5; }
 .card .cta {
   display: inline-flex;
   align-items: center;

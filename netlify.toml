@@ -8,7 +8,7 @@
 [build]
   publish = "."
   # Save deploy credits: skip the build when only notes/docs changed.
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!hotels-log.md' ':!README.md' ':!supabase_schema.sql' ':!.gitignore'"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!hotels-log.md' ':!README.md' ':!supabase_schema.sql' ':!.gitignore' ':!MAINTENANCE.md' ':!backups' ':!tools' ':!.github'"
 
 [[headers]]
   for = "/admin.html"

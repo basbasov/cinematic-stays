@@ -54,6 +54,7 @@ function rowFromForm() {
     era: document.getElementById("f-era").value.trim(),
     movies,
     scene: document.getElementById("f-scene").value.trim(),
+    story: document.getElementById("f-story").value.trim() || null,
     booking_url: document.getElementById("f-bookingUrl").value.trim(),
     photo: document.getElementById("f-photo").value.trim() || null,
     photo_credit: document.getElementById("f-photoCredit").value.trim() || null,
@@ -74,6 +75,7 @@ function fillFormFromRow(row) {
   document.getElementById("f-era").value = row.era;
   document.getElementById("f-movies").value = (row.movies || []).join(", ");
   document.getElementById("f-scene").value = row.scene;
+  document.getElementById("f-story").value = row.story || "";
   document.getElementById("f-bookingUrl").value = row.booking_url;
   document.getElementById("f-photo").value = row.photo || "";
   document.getElementById("f-photoCredit").value = row.photo_credit || "";

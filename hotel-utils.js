@@ -71,6 +71,7 @@ function cardHTML(hotel) {
         <h3>${hotel.name}</h3>
         <div class="location">${hotel.cityEmoji} ${hotel.city}${hotel.country ? ", " + hotel.country : ""}</div>
         <p class="scene">${hotel.scene}</p>
+        ${hotel.story ? `<details class="story"><summary>The story</summary><p>${hotel.story}</p></details>` : ""}
         <a class="cta" href="${buildBookingLink(hotel.bookingUrl)}" target="_blank" rel="noopener sponsored">Check availability →</a>
       </div>
     </article>

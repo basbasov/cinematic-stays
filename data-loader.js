@@ -69,6 +69,7 @@ function rowToHotel(row) {
     era: row.era,
     movies: row.movies,
     scene: row.scene,
+    story: row.story || "",
     bookingUrl: row.booking_url,
     photo: row.photo,
     photoCredit: row.photo_credit,
