@@ -33,12 +33,12 @@ header {
   padding: 22px 6vw;
   position: sticky;
   top: 0;
-  background: rgba(251,250,255,0.85);
-  backdrop-filter: blur(10px);
+  background: #fbfaff;
   z-index: 50;
   border-bottom: 1px solid var(--line);
 }
 .logo {
+  white-space: nowrap;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.3px;
@@ -227,6 +227,8 @@ nav a.active {
   padding: 20px 0 10px;
 }
 .card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--line);
   border-radius: 22px;
   overflow: hidden;
@@ -327,7 +329,7 @@ nav a.active {
   text-align: right;
   white-space: normal;
 }
-.card .body { padding: 20px; }
+.card .body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
 .card .movie-tag {
   display: inline-flex;
   align-items: center;
@@ -370,6 +372,7 @@ nav a.active {
 }
 .card .story p { margin: 8px 0 0; line-height: 1.5; }
 .card .cta {
+  margin-top: auto;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -430,4 +433,19 @@ footer {
   font-size: 15px;
   color: var(--ink);
   line-height: 1.7;
+}
+
+/* ---- Mobile header: one tidy row, solid, pinned to the top ---- */
+@media (max-width: 640px) {
+  header {
+    position: sticky;
+    top: 0;
+    padding: 12px 5vw;
+    gap: 10px;
+    flex-wrap: nowrap;
+    background: #fbfaff;
+  }
+  .logo { font-size: 18px; }
+  nav { display: flex; align-items: center; gap: 14px; white-space: nowrap; }
+  nav a { margin-left: 0; font-size: 13px; }
 }
