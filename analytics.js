@@ -1,12 +1,14 @@
-/* Privacy-friendly analytics (Cloudflare Web Analytics: free, no cookies).
-   Paste your token below to switch it on. Empty = analytics off. */
-const ANALYTICS_CONFIG = { cloudflareToken: "" };
+/* Privacy-friendly analytics (GoatCounter: free, no cookies).
+   Put your GoatCounter code below (the part before .goatcounter.com).
+   Empty = analytics off. */
+const ANALYTICS_CONFIG = { goatcounterCode: "" };
 
 (function () {
-  if (!ANALYTICS_CONFIG.cloudflareToken) return;
+  const code = ANALYTICS_CONFIG.goatcounterCode;
+  if (!code) return;
   const s = document.createElement("script");
-  s.defer = true;
-  s.src = "https://static.cloudflareinsights.com/beacon.min.js";
-  s.setAttribute("data-cf-beacon", JSON.stringify({ token: ANALYTICS_CONFIG.cloudflareToken }));
+  s.async = true;
+  s.src = "https://gc.zgo.at/count.js";
+  s.setAttribute("data-goatcounter", "https://" + code + ".goatcounter.com/count");
   document.head.appendChild(s);
 })();
