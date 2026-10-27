@@ -6,7 +6,7 @@ A quick reference for coming back to this project later (by yourself or by askin
 
 - `index.html` — **Hotels.** The main browsable grid with search + filters (Destination/Genre/Era).
 - `movies.html` — **By Movie.** The same hotels, grouped by the film they appeared in.
-- `about.html` — **About.** Site story, photo policy, and the Booking.com affiliate disclosure.
+- `about.html` — **About.** Site story, photo policy, and and how the list is kept accurate.
 - `admin.html` — **Admin panel** (not linked in the nav — bookmark it). Sign in and add/edit/delete hotels without touching any code.
 
 ## Files
