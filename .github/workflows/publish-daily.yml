@@ -33,7 +33,7 @@ jobs:
           git config user.name "daily-publish"
           git config user.email "daily-publish@users.noreply.github.com"
           git fetch origin staging || { echo "No staging branch"; exit 0; }
-          if git diff --quiet origin/main origin/staging; then
+          if [ "$(git rev-list --count origin/main..origin/staging)" = "0" ]; then
             echo "Nothing new to publish."; exit 0
           fi
           CHANGES=$(git log --no-merges --pretty='- %s' origin/main..origin/staging)
