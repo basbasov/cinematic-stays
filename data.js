@@ -640,7 +640,7 @@ const HOTELS = [
     movies: ["GoldenEye", "Never Say Never Again"],
     scene: "Standing beside the Casino de Monte-Carlo, this Belle Époque hotel appears in the James Bond films Never Say Never Again (1983) and GoldenEye (1995).",
     story: "Opened in 1864 beside the Casino de Monte-Carlo, the Hôtel de Paris is the symbol of Monaco's Belle Époque glamour. Its location on the casino square made it a natural fit for James Bond's Riviera scenes.",
-    bookingUrl: "https://www.booking.com/searchresults.html?ss=H%C3%B4tel+de+Paris+Monte-Carlo",
+    bookingUrl: "https://www.booking.com/hotel/mc/ha-tel-de-paris.html",
     photo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/2016_Hotel_de_Paris_-_Monaco_01.jpg",
     photoCredit: "Jordiferrer (Wikimedia Commons, CC BY-SA 4.0)",
     photoGradient: "linear-gradient(135deg,#c9a24b,#6b4f17)",
