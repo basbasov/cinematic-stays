@@ -434,11 +434,17 @@ footer {
 
 /* About page */
 .about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 26px;
+  align-items: stretch;
   padding: 10px 6vw 80px;
-  max-width: 760px;
 }
 .about-block {
-  margin-bottom: 40px;
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 24px;
 }
 .about-block h2 {
   font-size: 20px;
