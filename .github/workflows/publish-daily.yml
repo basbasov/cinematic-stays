@@ -1,0 +1,40 @@
+# Publishes everything collected on the "staging" branch to "main" (which Netlify deploys)
+# once a day, then opens a GitHub issue listing what went live (GitHub emails you about it).
+# If staging has nothing new, nothing happens and no deploy is used.
+name: Publish daily
+on:
+  schedule:
+    - cron: "59 20 * * *"   # 23:59 Israel summer time (UTC+3)
+    - cron: "59 21 * * *"   # 23:59 Israel winter time (UTC+2)
+  workflow_dispatch:         # lets you run it manually from the Actions tab
+permissions:
+  contents: write
+  issues: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Merge staging into main and report
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Two crons cover Israel's daylight saving; only the one that lands on 23:xx Jerusalem time runs.
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(TZ=Asia/Jerusalem date +%H)" != "23" ]; then
+            echo "Not 23:xx in Israel yet; skipping."; exit 0
+          fi
+          git config user.name "daily-publish"
+          git config user.email "daily-publish@users.noreply.github.com"
+          git fetch origin staging || { echo "No staging branch"; exit 0; }
+          if git diff --quiet origin/main origin/staging; then
+            echo "Nothing new to publish."; exit 0
+          fi
+          CHANGES=$(git log --no-merges --pretty='- %s' origin/main..origin/staging)
+          FILES=$(git diff --name-only origin/main origin/staging | sed 's/^/- /')
+          git merge origin/staging --no-edit
+          git push origin main
+          printf '## Deployed to https://cinematicstay.com\n\n### Changes\n%s\n\n### Files changed\n%s\n' "$CHANGES" "$FILES" > body.md
+          gh issue create --title "Deployed $(date -u +%Y-%m-%d): $(echo "$CHANGES" | wc -l) change(s)" --body-file body.md
