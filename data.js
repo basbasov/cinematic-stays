@@ -645,6 +645,23 @@ const HOTELS = [
     photoCredit: "Jordiferrer (Wikimedia Commons, CC BY-SA 4.0)",
     photoGradient: "linear-gradient(135deg,#c9a24b,#6b4f17)",
   },
+  {
+    id: "raffles-singapore",
+    name: "Raffles Singapore",
+    city: "Singapore",
+    cityEmoji: "🦁",
+    country: "Singapore",
+    genre: "Romance",
+    genreEmoji: "💕",
+    era: "2010s",
+    movies: ["Crazy Rich Asians"],
+    scene: "The colonial-era landmark plays the fictional Kingsford Hotel in Crazy Rich Asians (2018), where Nick and Rachel stay when she isn't welcome at his family's home.",
+    story: "Opened in 1887 and named after Sir Stamford Raffles, the hotel was gazetted a national monument in 1987. Its Long Bar is where the Singapore Sling cocktail is said to have been invented.",
+    bookingUrl: "https://www.booking.com/hotel/sg/raffles.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/6/63/Front_facade_of_Raffles_Hotel,_Singapore,_from_southeast.jpg",
+    photoCredit: "Daniel Case (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#d9c9a3,#8a7a52)",
+  },
 ];
 
 /* NOTES FOR LATER:
