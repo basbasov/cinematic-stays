@@ -31,7 +31,7 @@ Add property `https://cinematicstay.com`, verify with the DNS TXT record in Clou
 
 ## Publishing: once a day, 23:59
 All changes (mine and yours) are pushed to the **staging** branch, which Netlify ignores (no credits used).
-The GitHub Action `.github/workflows/publish-daily.yml` merges staging into main every day at 23:59 (UTC+2) — only if something changed — and that single push is the day's one deploy.
+The GitHub Action `.github/workflows/publish-daily.yml` merges staging into main every day at 23:59 Israel time — only if something changed — and that single push is the day's one deploy.
 To publish immediately: GitHub → Actions → "Publish daily" → Run workflow.
 
 After each publish the workflow opens a GitHub issue titled "Deployed <date>" that lists every change and file that went live; GitHub emails it to you.
