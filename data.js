@@ -63,7 +63,7 @@ const CONFIG = {
   // Every "Check availability" link will automatically include it —
   // you never need to edit individual hotel links.
   affiliateId: null,
-  siteName: "Cinematic Stays",
+  siteName: "Cinematic Stay",
 };
 
 const HOTELS = [
