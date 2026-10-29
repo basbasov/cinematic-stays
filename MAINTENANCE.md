@@ -28,3 +28,10 @@ Set a calendar reminder ~10 days before expiry.
 
 ## Search Console (one time)
 Add property `https://cinematicstay.com`, verify with the DNS TXT record in Cloudflare, submit `https://cinematicstay.com/sitemap.xml`.
+
+## Publishing: every other day, 23:59
+All changes (mine and yours) are pushed to the **staging** branch, which Netlify ignores (no credits used).
+The GitHub Action `.github/workflows/publish-daily.yml` merges staging into main every other day at 23:59 Israel time — only if something changed — and that single push is the day's one deploy.
+To publish immediately: GitHub → Actions → "Publish every other day" → Run workflow.
+
+After each publish the workflow opens a GitHub issue titled "Deployed <date>" that lists every change and file that went live; GitHub emails it to you.
