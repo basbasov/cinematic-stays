@@ -45,29 +45,19 @@ async function init() {
     });
   });
 
-  // Sort movies alphabetically for a predictable, scannable list
+  // One tile per (movie, hotel), sorted A-Z by movie, laid out as a grid like the main page
   const movieTitles = Array.from(byMovie.keys()).sort((a, b) => a.localeCompare(b));
 
-  const html = movieTitles
-    .map((movie) => {
-      const hotelsForMovie = byMovie.get(movie);
-      const genres = uniqueOptions(hotelsForMovie, "genre", "genreEmoji");
-      const genreBadge = genres[0] ? `${genres[0].emoji} ${genres[0].value}` : "";
-      const era = hotelsForMovie[0].era;
-
-      return `
-        <section class="movie-group">
-          <div class="movie-group-header">
-            <h2>🎬 ${movie}</h2>
-            <span class="movie-meta">${genreBadge}${genreBadge && era ? " · " : ""}${era}</span>
-          </div>
-          <div class="grid movie-grid">
-            ${hotelsForMovie.map(cardHTML).join("")}
-          </div>
-        </section>
-      `;
-    })
+  const tiles = movieTitles
+    .flatMap((movie) =>
+      byMovie.get(movie).map((hotel) => {
+        const heading = `<div class="movie-heading">🎬 ${movie}<span>${hotel.genreEmoji} ${hotel.genre} · ${hotel.era}</span></div>`;
+        return cardHTML(hotel).replace('<div class="body">', '<div class="body">' + heading);
+      })
+    )
     .join("");
+
+  const html = `<div class="grid movie-grid">${tiles}</div>`;
 
   container.insertAdjacentHTML("afterbegin", html);
 }

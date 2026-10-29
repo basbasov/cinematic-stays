@@ -202,7 +202,7 @@ nav a.active {
 
 /* "By Movie" page groups */
 .movie-groups {
-  padding: 10px 6vw 40px;
+  padding: 0;
 }
 .movie-group { margin-bottom: 20px; }
 .movie-group-header {
@@ -224,9 +224,25 @@ nav a.active {
   color: var(--muted);
   font-weight: 500;
 }
-.movie-grid {
-  padding: 20px 0 10px;
+.movie-grid { padding-top: 10px; }
+.movie-heading {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+  margin-bottom: 12px;
 }
+.movie-heading span {
+  display: block;
+  margin-top: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+.movie-grid .card .movie-tag { display: none; }
 .card {
   display: flex;
   flex-direction: column;
