@@ -1,7 +1,7 @@
 # Publishes everything collected on the "staging" branch to "main" (which Netlify deploys)
-# once a day, then opens a GitHub issue listing what went live (GitHub emails you about it).
+# every other day at 23:59 Israel time, then opens a GitHub issue listing what went live (GitHub emails you about it).
 # If staging has nothing new, nothing happens and no deploy is used.
-name: Publish daily
+name: Publish every other day
 on:
   schedule:
     - cron: "59 20 * * *"   # 23:59 Israel summer time (UTC+3)
@@ -25,6 +25,10 @@ jobs:
           # Two crons cover Israel's daylight saving; only the one that lands on 23:xx Jerusalem time runs.
           if [ "${{ github.event_name }}" = "schedule" ] && [ "$(TZ=Asia/Jerusalem date +%H)" != "23" ]; then
             echo "Not 23:xx in Israel yet; skipping."; exit 0
+          fi
+          # Every other day: only on days of the year that are even (manual runs always go through).
+          if [ "${{ github.event_name }}" = "schedule" ] && [ $(( 10#$(TZ=Asia/Jerusalem date +%j) % 2 )) -ne 0 ]; then
+            echo "Off day (publishing every other day); skipping."; exit 0
           fi
           git config user.name "daily-publish"
           git config user.email "daily-publish@users.noreply.github.com"
