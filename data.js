@@ -662,6 +662,23 @@ const HOTELS = [
     photoCredit: "Daniel Case (Wikimedia Commons, CC BY-SA 4.0)",
     photoGradient: "linear-gradient(135deg,#d9c9a3,#8a7a52)",
   },
+  {
+    id: "plaza-athenee-paris",
+    name: "Hôtel Plaza Athénée",
+    city: "Paris",
+    cityEmoji: "🗼",
+    country: "France",
+    genre: "Romance",
+    genreEmoji: "💕",
+    era: "2000s",
+    movies: ["Sex and the City", "Something's Gotta Give", "Emily in Paris"],
+    scene: "Carrie Bradshaw stays at the Plaza Athénée in the Paris finale of Sex and the City, with its Eiffel Tower balcony view; the hotel also appears in Something's Gotta Give and Emily in Paris.",
+    story: "Opened in April 1913 on Avenue Montaigne, the Plaza Athénée has a classically French main building topped by Art Deco upper floors. Its red window awnings and geranium-filled window boxes make it easy to spot.",
+    bookingUrl: "https://www.booking.com/hotel/fr/ha-tel-plaza-atha-c-na-c-e-paris.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/5/58/Facade_of_the_H%C3%B4tel_Plaza_Ath%C3%A9n%C3%A9e,_Paris_17_July_2017.jpg",
+    photoCredit: "Joe deSousa (Wikimedia Commons, CC0)",
+    photoGradient: "linear-gradient(135deg,#c9585f,#7a2e3b)",
+  },
 ];
 
 /* NOTES FOR LATER:
