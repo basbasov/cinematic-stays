@@ -14,3 +14,8 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 ## 2026-10-29 (scheduled run, evening)
 - Added Hôtel Plaza Athénée, Paris (Sex and the City, Something's Gotta Give, Emily in Paris) — photo Joe deSousa, CC0. Film link confirmed by Wikipedia, Country Life and Cherie City; exact Booking.com page found.
 - Rejected: Four Seasons Resort Maui at Wailea (White Lotus S1) and Four Seasons Resort Koh Samui (White Lotus S3) — film link and Booking pages confirmed but no usable hotel photo on Commons; Hotel Cala di Volpe (The Spy Who Loved Me) — exact Booking.com hotel page not found via search; Villa d'Este Cernobbio (Ocean's Twelve) — not on Booking.com; Hotel Chelsea NY — film link weak, no good Commons photo.
+
+## 2026-10-30 (scheduled run)
+- Added Jumeirah Zabeel Saray, Dubai (Mission: Impossible – Ghost Protocol) — photo Сергей Секачёв, CC BY-SA 3.0. Lobby scene confirmed by The National and Travelling for Business; exact Booking.com page found.
+- Added Hotel Sacher Wien (Das Sacher 2016, Hotel Sacher 1939) — photo Andrzej Otrębski, CC BY-SA 4.0. Confirmed by Wikipedia and vienna.at; exact Booking.com page found.
+- Rejected: Grand Hotel Mackinac Island (Somewhere in Time) — exact Booking.com hotel page not found; Grand Hotel Europe St Petersburg — not pursued (Russia, unreliable availability); Hotel Adlon Berlin, Hassler Rome, Cipriani Venice, Splendido Portofino, Ashford Castle — Booking pages exist/partly, but film links not verified with two sources this run.
