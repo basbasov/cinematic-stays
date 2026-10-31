@@ -19,3 +19,8 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Added Jumeirah Zabeel Saray, Dubai (Mission: Impossible – Ghost Protocol) — photo Сергей Секачёв, CC BY-SA 3.0. Lobby scene confirmed by The National and Travelling for Business; exact Booking.com page found.
 - Added Hotel Sacher Wien (Das Sacher 2016, Hotel Sacher 1939) — photo Andrzej Otrębski, CC BY-SA 4.0. Confirmed by Wikipedia and vienna.at; exact Booking.com page found.
 - Rejected: Grand Hotel Mackinac Island (Somewhere in Time) — exact Booking.com hotel page not found; Grand Hotel Europe St Petersburg — not pursued (Russia, unreliable availability); Hotel Adlon Berlin, Hassler Rome, Cipriani Venice, Splendido Portofino, Ashford Castle — Booking pages exist/partly, but film links not verified with two sources this run.
+
+## 2026-10-31 (scheduled run)
+- Added Burgh Island Hotel, Devon (Evil Under the Sun 2001, Nemesis 1987, Catch Us If You Can 1965) — photo Jason Ballard, CC BY 2.0. Film links confirmed by Wikipedia and Third Eye Traveller; exact Booking.com page found.
+- Added Rosewood Schloss Fuschl, Austria (Sissi 1955) — photo waterborough, Public Domain. Film link confirmed by Wikipedia and Rosewood history page; exact Booking.com page found.
+- Rejected: One&Only Ocean Club Bahamas (Casino Royale) — film link fine but Booking.com lists it as "The Ocean Club, A Four Seasons Resort" (rebranded, name mismatch); Mena House Cairo — no film appearance found in search.
