@@ -21,14 +21,14 @@ async function init() {
   }
 
   const { hotels: rawHotels, source } = await loadHotels();
-  console.info(`Cinematic Stays: hotel data loaded from ${source === "supabase" ? "Supabase (live)" : "the bundled data.js file"}.`);
+  console.info(`Cinematic Stay: hotel data loaded from ${source === "supabase" ? "Supabase (live)" : "the bundled data.js file"}.`);
 
   const { valid: hotels, errors } = validateHotels(rawHotels);
 
   if (errors.length > 0) {
     errorBanner.style.display = "block";
     errorBanner.innerHTML = `⚠️ ${errors.length} hotel entr${errors.length === 1 ? "y was" : "ies were"} skipped due to missing info:<br>` + errors.join("<br>");
-    console.warn("Cinematic Stays data issues:\n" + errors.join("\n"));
+    console.warn("Cinematic Stay data issues:\n" + errors.join("\n"));
   }
 
   if (hotels.length === 0) {

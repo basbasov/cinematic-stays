@@ -45,7 +45,7 @@ async function loadHotels() {
       return { hotels: rows.map(rowToHotel), source: "supabase" };
     } catch (err) {
       console.warn(
-        "Cinematic Stays: couldn't load hotels from Supabase, falling back to the bundled data.js list.",
+        "Cinematic Stay: couldn't load hotels from Supabase, falling back to the bundled data.js list.",
         err
       );
     }
