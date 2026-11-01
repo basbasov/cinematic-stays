@@ -24,3 +24,9 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Added Burgh Island Hotel, Devon (Evil Under the Sun 2001, Nemesis 1987, Catch Us If You Can 1965) — photo Jason Ballard, CC BY 2.0. Film links confirmed by Wikipedia and Third Eye Traveller; exact Booking.com page found.
 - Added Rosewood Schloss Fuschl, Austria (Sissi 1955) — photo waterborough, Public Domain. Film link confirmed by Wikipedia and Rosewood history page; exact Booking.com page found.
 - Rejected: One&Only Ocean Club Bahamas (Casino Royale) — film link fine but Booking.com lists it as "The Ocean Club, A Four Seasons Resort" (rebranded, name mismatch); Mena House Cairo — no film appearance found in search.
+
+## 2026-11-01 (scheduled run)
+- Added lebua at State Tower, Bangkok (The Hangover Part II) — photo Supanut Arunoprayote, CC BY 4.0. Confirmed by Wikipedia and Almost Ginger; exact Booking.com page found.
+- Added Danubius Hotel Gellért, Budapest (Red Sparrow, I Spy, Mephisto) — photo WikiTamasB, CC BY-SA 3.0. Confirmed by Wikipedia and Progressive Productions; exact Booking.com page found.
+- Added Biltmore Hotel Miami Coral Gables (Bad Boys, Miami Vice) — photo Ebyabe, CC BY-SA 3.0. Confirmed by Wikipedia and 30s Magazine; exact Booking.com page found.
+- Pending: none. Rejected: none this run (other ideas not pursued).
