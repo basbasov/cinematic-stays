@@ -1,0 +1,29 @@
+{
+  "type": "list",
+  "title": "James Bond Hotels You Can Really Book",
+  "description": "Three real hotels from James Bond films that you can book today: the Fontainebleau in Miami, Palácio Estoril in Portugal and Gran Hotel in Mexico City.",
+  "h1": "3 James Bond movie hotels you can really book",
+  "intro": "Bond has checked into plenty of fictional suites, but some of his hotel scenes were filmed in real places that welcome guests today. These three span six decades of the series.",
+  "hotels": [
+    {
+      "id": "fontainebleau-miami",
+      "note": "Principal photography for Goldfinger (1964) began here, and the hotel appears in the aerial shot after the opening credits."
+    },
+    {
+      "id": "palacio-estoril",
+      "note": "The coastal and hotel scenes before the credits of On Her Majesty's Secret Service were filmed at this Estoril hotel in 1969."
+    },
+    {
+      "id": "gran-hotel-ciudad-de-mexico",
+      "note": "Spectre's Day of the Dead opening was filmed around Mexico City's historic centre, including at this hotel."
+    }
+  ],
+  "outro": "Each hotel is in a very different setting, from a Miami beachfront to the Portuguese Riviera and Mexico's historic centre, so they work as separate trips rather than one itinerary.",
+  "updated": "2026-11-02",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Goldfinger_(film)",
+    "https://en.wikipedia.org/wiki/On_Her_Majesty%27s_Secret_Service_(film)",
+    "https://en.wikipedia.org/wiki/Spectre_(2015_film)",
+    "https://en.wikipedia.org/wiki/Fontainebleau_Miami_Beach"
+  ]
+}

@@ -22,7 +22,7 @@ document.addEventListener("click", function (e) {
   const link = e.target.closest && e.target.closest("a.cta");
   if (!link || !window.goatcounter || !window.goatcounter.count) return;
   const card = link.closest(".card");
-  const name = card && card.querySelector("h3") ? card.querySelector("h3").textContent.trim() : "unknown";
+  const name = link.dataset.hotel || (card && card.querySelector("h3") ? card.querySelector("h3").textContent.trim() : "unknown");
   const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const page = location.pathname.replace(/^\/|\.html$/g, "") || "home";
   window.goatcounter.count({

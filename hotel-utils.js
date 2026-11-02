@@ -72,6 +72,7 @@ function cardHTML(hotel) {
         <div class="location">${hotel.cityEmoji} ${hotel.city}${hotel.country ? ", " + hotel.country : ""}</div>
         <p class="scene">${hotel.scene}</p>
         ${hotel.story ? `<details class="story"><summary>The story</summary><p>${hotel.story}</p></details>` : ""}
+        ${typeof ARTICLE_IDS !== "undefined" && ARTICLE_IDS.includes(hotel.id) ? `<a class="read-more" href="hotels/${hotel.id}.html">Read the full story →</a>` : ""}
         <a class="cta" href="${buildBookingLink(hotel.bookingUrl)}" target="_blank" rel="noopener sponsored">Check availability →</a>
       </div>
     </article>
@@ -101,17 +102,19 @@ function pillHTML(option) {
     running = true;
     const cards = [...document.querySelectorAll(".card")];
     cards.forEach((c) => (c.style.minHeight = ""));
+    const grids = [...document.querySelectorAll(".grid")];
+    // Pass 1: measure every collapsed, visible card (all keys computed BEFORE any height is changed,
+    // because changing one row's height moves the rows below it).
+    const items = [];
     const rows = new Map();
     cards.forEach((c) => {
       if (c.style.display === "none" || c.querySelector("details[open]")) return;
-      const key = (c.parentElement.id || c.parentElement.className) + "|" + Math.round(c.offsetTop) + "|" + [...document.querySelectorAll(".grid")].indexOf(c.parentElement);
+      const key = grids.indexOf(c.parentElement) + "|" + Math.round(c.offsetTop);
+      items.push([c, key]);
       rows.set(key, Math.max(rows.get(key) || 0, c.offsetHeight));
     });
-    cards.forEach((c) => {
-      if (c.style.display === "none" || c.querySelector("details[open]")) return;
-      const key = (c.parentElement.id || c.parentElement.className) + "|" + Math.round(c.offsetTop) + "|" + [...document.querySelectorAll(".grid")].indexOf(c.parentElement);
-      c.style.minHeight = rows.get(key) + "px";
-    });
+    // Pass 2: apply
+    items.forEach(([c, key]) => (c.style.minHeight = rows.get(key) + "px"));
     setTimeout(() => (running = false), 0);
   }
   function schedule() {

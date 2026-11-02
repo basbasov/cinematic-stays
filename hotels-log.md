@@ -14,3 +14,30 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 ## 2026-10-29 (scheduled run, evening)
 - Added Hôtel Plaza Athénée, Paris (Sex and the City, Something's Gotta Give, Emily in Paris) — photo Joe deSousa, CC0. Film link confirmed by Wikipedia, Country Life and Cherie City; exact Booking.com page found.
 - Rejected: Four Seasons Resort Maui at Wailea (White Lotus S1) and Four Seasons Resort Koh Samui (White Lotus S3) — film link and Booking pages confirmed but no usable hotel photo on Commons; Hotel Cala di Volpe (The Spy Who Loved Me) — exact Booking.com hotel page not found via search; Villa d'Este Cernobbio (Ocean's Twelve) — not on Booking.com; Hotel Chelsea NY — film link weak, no good Commons photo.
+
+## 2026-10-30 (scheduled run)
+- Added Jumeirah Zabeel Saray, Dubai (Mission: Impossible – Ghost Protocol) — photo Сергей Секачёв, CC BY-SA 3.0. Lobby scene confirmed by The National and Travelling for Business; exact Booking.com page found.
+- Added Hotel Sacher Wien (Das Sacher 2016, Hotel Sacher 1939) — photo Andrzej Otrębski, CC BY-SA 4.0. Confirmed by Wikipedia and vienna.at; exact Booking.com page found.
+- Rejected: Grand Hotel Mackinac Island (Somewhere in Time) — exact Booking.com hotel page not found; Grand Hotel Europe St Petersburg — not pursued (Russia, unreliable availability); Hotel Adlon Berlin, Hassler Rome, Cipriani Venice, Splendido Portofino, Ashford Castle — Booking pages exist/partly, but film links not verified with two sources this run.
+
+## 2026-10-31 (scheduled run)
+- Added Burgh Island Hotel, Devon (Evil Under the Sun 2001, Nemesis 1987, Catch Us If You Can 1965) — photo Jason Ballard, CC BY 2.0. Film links confirmed by Wikipedia and Third Eye Traveller; exact Booking.com page found.
+- Added Rosewood Schloss Fuschl, Austria (Sissi 1955) — photo waterborough, Public Domain. Film link confirmed by Wikipedia and Rosewood history page; exact Booking.com page found.
+- Rejected: One&Only Ocean Club Bahamas (Casino Royale) — film link fine but Booking.com lists it as "The Ocean Club, A Four Seasons Resort" (rebranded, name mismatch); Mena House Cairo — no film appearance found in search.
+
+## 2026-11-01 (scheduled run)
+- Added lebua at State Tower, Bangkok (The Hangover Part II) — photo Supanut Arunoprayote, CC BY 4.0. Confirmed by Wikipedia and Almost Ginger; exact Booking.com page found.
+- Added Danubius Hotel Gellért, Budapest (Red Sparrow, I Spy, Mephisto) — photo WikiTamasB, CC BY-SA 3.0. Confirmed by Wikipedia and Progressive Productions; exact Booking.com page found.
+- Added Biltmore Hotel Miami Coral Gables (Bad Boys, Miami Vice) — photo Ebyabe, CC BY-SA 3.0. Confirmed by Wikipedia and 30s Magazine; exact Booking.com page found.
+- Pending: none. Rejected: none this run (other ideas not pursued).
+
+## 2026-11-02 (scheduled run)
+- Added Palácio Estoril Hotel, Golf & Wellness, Portugal (On Her Majesty's Secret Service) — photo Carcharoth, CC BY-SA 3.0. Confirmed by History Hit and MI6-HQ; exact Booking.com page found.
+- Added Gran Hotel Ciudad de México, Mexico (Spectre) — photo Thelmadatter, CC BY-SA 3.0. Interior confirmed by The James Bond Dossier and James Bond Lifestyle (exterior was filmed elsewhere; scene text says so); exact Booking.com page found.
+- Pending: none. Rejected: Hotel Continental Saigon (film link ambiguous — 2002 Quiet American was shot at the Caravelle; 2026 ownership status unclear); Hotel Negresco Nice (no documented film appearance found).
+
+## 2026-11-02 (scheduled run, evening)
+- Added Hotel María Cristina, a Luxury Collection Hotel, San Sebastián, Spain (Rifkin's Festival) — photo Zarateman, CC0. Film link confirmed by spain.info, the San Sebastián tourist board and Spain Screen Tourism; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Articles written: María Cristina (new) plus backfill for Beverly Wilshire, Fontainebleau Miami, Bellagio, Caesars Palace, Hotel del Coronado (37 hotels still lack an article).
+- Guide written: "James Bond Hotels You Can Really Book" (Fontainebleau, Palácio Estoril, Gran Hotel Ciudad de México).
+- Pending: none. Rejected: Hotel Alfonso XIII Seville (no documented film appearance on Wikipedia; only a tourism-site claim); Hotel Bellevue des Alpes, Kleine Scheidegg (Eiger Sanction 1975, but no exact Booking.com page found).

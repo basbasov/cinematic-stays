@@ -35,3 +35,9 @@ The GitHub Action `.github/workflows/publish-daily.yml` merges staging into main
 To publish immediately: GitHub → Actions → "Publish every other day" → Run workflow.
 
 After each publish the workflow opens a GitHub issue titled "Deployed <date>" that lists every change and file that went live; GitHub emails it to you.
+
+## Hotel article pages
+Each hotel can have a short SEO article at /hotels/<id>, written in `articles/<id>.json`. After editing any hotel (data.js) or article, run `node tools/build-pages.js` - it regenerates `hotels/*.html`, `articles-index.js` and `sitemap.xml`. Changing `CONFIG.affiliateId` also needs a rebuild so the article buttons get the affiliate id. `node tools/build-pages.js --list-missing` lists hotels without an article. The daily task writes new articles and backfills 5 old ones per run.
+
+## Guides
+`guides/<slug>.json` (type "movie" or "list") become pages at /guides/<slug>, plus the /guides index. `node tools/build-pages.js` builds them together with the hotel pages and sitemap. The daily task writes one new guide per run.

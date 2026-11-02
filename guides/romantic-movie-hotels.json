@@ -1,0 +1,41 @@
+{
+  "type": "list",
+  "title": "Romantic Movie Hotels You Can Really Book",
+  "description": "Six real hotels from classic romance films, from the Ritz Paris to the Carlton in Cannes, that you can book for your own love story.",
+  "h1": "6 romantic movie hotels you can really book",
+  "intro": "Some of cinema's best love stories happened inside real hotels. These six are still open, still beautiful, and you can book a room for your own scene.",
+  "hotels": [
+    {
+      "id": "ritz-paris",
+      "note": "Billy Wilder's Love in the Afternoon (1957) largely unfolds in a suite here, where Audrey Hepburn's character falls for Gary Cooper's wealthy American."
+    },
+    {
+      "id": "carlton-cannes",
+      "note": "Hitchcock used the Carlton and its Croisette setting for the 1955 Riviera romance To Catch a Thief, and the 1995 romcom French Kiss was filmed in and around the hotel."
+    },
+    {
+      "id": "plaza-athenee-paris",
+      "note": "Carrie Bradshaw stays here in the Paris finale of Sex and the City, with an Eiffel Tower view from the balcony. The hotel also appears in Emily in Paris."
+    },
+    {
+      "id": "beverly-wilshire",
+      "note": "This is the hotel where Vivian and Edward's story unfolds in Pretty Woman, and it still offers a themed suite experience."
+    },
+    {
+      "id": "rosewood-schloss-fuschl",
+      "note": "The lakeside castle was the setting for the first Sissi film in 1955. Romy Schneider stayed here during filming, and a suite is dedicated to her today."
+    },
+    {
+      "id": "marina-bay-sands-singapore",
+      "note": "The rooftop pool and skyline from Crazy Rich Asians make this a modern favourite for a romantic stay."
+    }
+  ],
+  "outro": "Whichever you choose, book early for weekends and holidays, and ask about suites with a view.",
+  "updated": "2026-11-02",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Love_in_the_Afternoon_(1957_film)",
+    "https://en.wikipedia.org/wiki/To_Catch_a_Thief",
+    "https://en.wikipedia.org/wiki/Pretty_Woman",
+    "https://en.wikipedia.org/wiki/Crazy_Rich_Asians_(film)"
+  ]
+}
