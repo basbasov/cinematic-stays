@@ -386,8 +386,8 @@ const HOTELS = [
     scene: "The Grandhotel Pupp doubled as the fictional Hotel Splendide in Montenegro, where Bond and Vesper share dinner and Bond invents the 'Vesper' martini.",
     story: "The Grandhotel Pupp is the grand spa hotel of Karlovy Vary in the Czech Republic and has welcomed guests for centuries. Its grand façade and halls stood in for the Hotel Splendide in Casino Royale.",
     bookingUrl: "https://www.booking.com/hotel/cz/grandhotel-pupp.html",
-    photo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Hotel_-_Grandhotel_Pupp%2C_Karlovy_Vary.JPG",
-    photoCredit: "Martin Mašek / Cassi.astronomy (Wikimedia Commons, CC BY-SA 4.0)",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/4/48/Hotel_-_Grandhotel_Pupp%2C_Karlovy_Vary.JPG",
+    photoCredit: "Martin Mašek (Wikimedia Commons, CC BY-SA 4.0)",
     photoGradient: "linear-gradient(135deg,#c2a15a,#7a6032)",
   },
   {
@@ -403,8 +403,8 @@ const HOTELS = [
     scene: "The floating marble palace on Lake Pichola served as Octopussy's lair, including the lily-pond ambush and terrace scenes between Bond and Octopussy.",
     story: "Built in the 18th century as a royal summer palace and opened as a hotel in 1971, the Lake Palace appears to float on Lake Pichola in Udaipur. Its white marble and lake setting gave Octopussy its most memorable location.",
     bookingUrl: "https://www.booking.com/hotel/in/taj-lake-palace.html",
-    photo: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Taj_Lake_Palace%2C_Udaipur.jpg",
-    photoCredit: "Imsourabh1996 (Wikimedia Commons, CC BY-SA 4.0)",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Lake_Palace_03.jpg",
+    photoCredit: "Antoine Taveneaux (Wikimedia Commons, CC BY-SA 3.0)",
     photoGradient: "linear-gradient(135deg,#e8e0d0,#a89878)",
   },
   {
