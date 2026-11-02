@@ -472,3 +472,24 @@ footer {
   nav { display: flex; align-items: center; gap: 14px; white-space: nowrap; }
   nav a { margin-left: 0; font-size: 13px; }
 }
+
+/* ---- Hotel article pages ---- */
+.card .read-more{display:inline-block;margin:0 0 12px;font-size:.9rem;font-weight:600;color:#6d28d9;text-decoration:none}
+.card .read-more:hover{text-decoration:underline}
+.article-page{max-width:760px;margin:0 auto;padding:28px 20px 56px;line-height:1.7}
+.article-page h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.7rem,4.5vw,2.4rem);line-height:1.2;margin:8px 0 10px}
+.article-page h2{font-family:'Space Grotesk',sans-serif;font-size:1.3rem;margin:32px 0 8px}
+.article-page .breadcrumbs{font-size:.85rem;opacity:.7}
+.article-page .breadcrumbs a{color:inherit}
+.article-page .article-meta{opacity:.75;margin:0 0 18px}
+.article-page .article-photo{margin:0 0 22px}
+.article-page .article-photo img{width:100%;height:auto;max-height:440px;object-fit:cover;border-radius:16px;display:block}
+.article-page figcaption{font-size:.78rem;opacity:.65;margin-top:6px}
+.article-page .article-intro{font-size:1.1rem}
+.article-page .fact-list,.article-page .related-list{padding-left:1.2rem}
+.article-page .fact-list li{margin-bottom:8px}
+.article-page .article-cta{display:inline-block;padding:12px 22px;border-radius:12px;text-decoration:none;font-weight:700}
+.article-page .article-sources{margin-top:32px;font-size:.85rem;opacity:.8}
+.article-page .article-sources li{word-break:break-all}
+.article-page .article-cta{color:#fff;background:linear-gradient(90deg,var(--grad-1),var(--grad-2))}
+.article-page .article-cta:hover{opacity:.9}

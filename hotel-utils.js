@@ -72,6 +72,7 @@ function cardHTML(hotel) {
         <div class="location">${hotel.cityEmoji} ${hotel.city}${hotel.country ? ", " + hotel.country : ""}</div>
         <p class="scene">${hotel.scene}</p>
         ${hotel.story ? `<details class="story"><summary>The story</summary><p>${hotel.story}</p></details>` : ""}
+        ${typeof ARTICLE_IDS !== "undefined" && ARTICLE_IDS.includes(hotel.id) ? `<a class="read-more" href="hotels/${hotel.id}.html">Read the full story →</a>` : ""}
         <a class="cta" href="${buildBookingLink(hotel.bookingUrl)}" target="_blank" rel="noopener sponsored">Check availability →</a>
       </div>
     </article>
