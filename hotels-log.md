@@ -30,3 +30,8 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Added Danubius Hotel Gellért, Budapest (Red Sparrow, I Spy, Mephisto) — photo WikiTamasB, CC BY-SA 3.0. Confirmed by Wikipedia and Progressive Productions; exact Booking.com page found.
 - Added Biltmore Hotel Miami Coral Gables (Bad Boys, Miami Vice) — photo Ebyabe, CC BY-SA 3.0. Confirmed by Wikipedia and 30s Magazine; exact Booking.com page found.
 - Pending: none. Rejected: none this run (other ideas not pursued).
+
+## 2026-11-02 (scheduled run)
+- Added Palácio Estoril Hotel, Golf & Wellness, Portugal (On Her Majesty's Secret Service) — photo Carcharoth, CC BY-SA 3.0. Confirmed by History Hit and MI6-HQ; exact Booking.com page found.
+- Added Gran Hotel Ciudad de México, Mexico (Spectre) — photo Thelmadatter, CC BY-SA 3.0. Interior confirmed by The James Bond Dossier and James Bond Lifestyle (exterior was filmed elsewhere; scene text says so); exact Booking.com page found.
+- Pending: none. Rejected: Hotel Continental Saigon (film link ambiguous — 2002 Quiet American was shot at the Caravelle; 2026 ownership status unclear); Hotel Negresco Nice (no documented film appearance found).
