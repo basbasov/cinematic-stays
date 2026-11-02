@@ -1,6 +1,8 @@
 # Publishes everything collected on the "staging" branch to "main" (which Netlify deploys)
-# every other day at 23:59 Israel time, then opens a GitHub issue listing what went live (GitHub emails you about it).
+# about every other day around 23:59 Israel time, then opens a GitHub issue listing what went live.
 # If staging has nothing new, nothing happens and no deploy is used.
+# GitHub often starts scheduled runs hours late, so instead of requiring an exact hour this checks:
+# (1) it is night in Israel (22:00-05:59) and (2) the last publish was 40+ hours ago.
 name: Publish every other day
 on:
   schedule:
@@ -22,13 +24,15 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # Two crons cover Israel's daylight saving; only the one that lands on 23:xx Jerusalem time runs.
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(TZ=Asia/Jerusalem date +%H)" != "23" ]; then
-            echo "Not 23:xx in Israel yet; skipping."; exit 0
-          fi
-          # Every other day: only on days of the year that are even (manual runs always go through).
-          if [ "${{ github.event_name }}" = "schedule" ] && [ $(( 10#$(TZ=Asia/Jerusalem date +%j) % 2 )) -ne 0 ]; then
-            echo "Off day (publishing every other day); skipping."; exit 0
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            H=$((10#$(TZ=Asia/Jerusalem date +%H)))
+            if [ "$H" -ge 6 ] && [ "$H" -lt 22 ]; then
+              echo "Daytime in Israel; skipping."; exit 0
+            fi
+            AGE=$(( $(date +%s) - $(git log -1 --format=%ct origin/main) ))
+            if [ "$AGE" -lt 144000 ]; then
+              echo "Last publish was less than 40 hours ago (publishing every other day); skipping."; exit 0
+            fi
           fi
           git config user.name "daily-publish"
           git config user.email "daily-publish@users.noreply.github.com"
