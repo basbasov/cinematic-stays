@@ -1,0 +1,24 @@
+{
+  "type": "movie",
+  "title": "Crazy Rich Asians Hotels: Where It Was Filmed",
+  "description": "Both Singapore hotels from Crazy Rich Asians are real and bookable: the Marina Bay Sands SkyPark and the colonial-era Raffles Hotel.",
+  "h1": "Crazy Rich Asians hotels you can actually book",
+  "intro": "Crazy Rich Asians (2018) turned Singapore into a glittering backdrop, and two of its most memorable settings are real hotels. Here is where the film's big moments took place and how to stay at each.",
+  "hotels": [
+    {
+      "id": "marina-bay-sands-singapore",
+      "note": "The 57th-floor SkyPark and its huge rooftop infinity pool set the scene for the film's glamorous engagement party, with the city skyline behind it."
+    },
+    {
+      "id": "raffles-singapore",
+      "note": "This colonial-era landmark plays the fictional Kingsford Hotel, where Nick and Rachel stay when she isn't welcome at his family's home."
+    }
+  ],
+  "outro": "The two hotels are only a short ride apart, so a film-fan weekend can easily include both: a swim at Marina Bay Sands and a drink at Raffles.",
+  "updated": "2026-11-02",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Crazy_Rich_Asians_(film)",
+    "https://en.wikipedia.org/wiki/Raffles_Hotel",
+    "https://en.wikipedia.org/wiki/Marina_Bay_Sands"
+  ]
+}
