@@ -187,4 +187,5 @@ fs.writeFileSync(path.join(root, "sitemap.xml"), `<?xml version="1.0" encoding="
 const missing = HOTELS.filter((h) => !articles.has(h.id)).map((h) => h.id);
 console.log(`Built ${ids.length} article page(s) and ${guideRes.count} guide(s). Hotels still without an article: ${missing.length}`);
 warnings.forEach((w) => console.log("WARN ", w));
+if (process.argv.includes("--require-all") && missing.length) { console.log("ERROR hotels without an article: " + missing.join(", ")); process.exit(1); }
 if (process.argv.includes("--list-missing")) console.log(missing.join("\n"));
