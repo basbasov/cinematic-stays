@@ -35,3 +35,9 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Added Palácio Estoril Hotel, Golf & Wellness, Portugal (On Her Majesty's Secret Service) — photo Carcharoth, CC BY-SA 3.0. Confirmed by History Hit and MI6-HQ; exact Booking.com page found.
 - Added Gran Hotel Ciudad de México, Mexico (Spectre) — photo Thelmadatter, CC BY-SA 3.0. Interior confirmed by The James Bond Dossier and James Bond Lifestyle (exterior was filmed elsewhere; scene text says so); exact Booking.com page found.
 - Pending: none. Rejected: Hotel Continental Saigon (film link ambiguous — 2002 Quiet American was shot at the Caravelle; 2026 ownership status unclear); Hotel Negresco Nice (no documented film appearance found).
+
+## 2026-11-02 (scheduled run, evening)
+- Added Hotel María Cristina, a Luxury Collection Hotel, San Sebastián, Spain (Rifkin's Festival) — photo Zarateman, CC0. Film link confirmed by spain.info, the San Sebastián tourist board and Spain Screen Tourism; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Articles written: María Cristina (new) plus backfill for Beverly Wilshire, Fontainebleau Miami, Bellagio, Caesars Palace, Hotel del Coronado (37 hotels still lack an article).
+- Guide written: "James Bond Hotels You Can Really Book" (Fontainebleau, Palácio Estoril, Gran Hotel Ciudad de México).
+- Pending: none. Rejected: Hotel Alfonso XIII Seville (no documented film appearance on Wikipedia; only a tourism-site claim); Hotel Bellevue des Alpes, Kleine Scheidegg (Eiger Sanction 1975, but no exact Booking.com page found).

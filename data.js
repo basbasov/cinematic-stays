@@ -832,6 +832,23 @@ const HOTELS = [
     photoCredit: "Thelmadatter (Wikimedia Commons, CC BY-SA 3.0)",
     photoGradient: "linear-gradient(135deg,#d99a3d,#7a4a14)",
   },
+  {
+    id: "hotel-maria-cristina-san-sebastian",
+    name: "Hotel María Cristina, a Luxury Collection Hotel",
+    city: "San Sebastián",
+    cityEmoji: "🏖️",
+    country: "Spain",
+    genre: "Comedy",
+    genreEmoji: "😂",
+    era: "2020s",
+    movies: ["Rifkin's Festival"],
+    scene: "In Woody Allen's Rifkin's Festival (2020), the hotel is where the characters attending the San Sebastián film festival stay; Allen's own family also moved in during the shoot.",
+    story: "Opened on 9 July 1912, the Belle Époque hotel was planned by French architect Charles Mewès, known for his work on Ritz hotels. It stands on Plaza Okendo beside the Urumea River, opposite the Victoria Eugenia Theatre, and reopened in 1987 after a full restoration.",
+    bookingUrl: "https://www.booking.com/hotel/es/maria-cristina-san-sebastian.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/0/0e/San_Sebastian_-_Hotel_Maria_Cristina_1.JPG",
+    photoCredit: "Zarateman (Wikimedia Commons, CC0)",
+    photoGradient: "linear-gradient(135deg,#8e7cc3,#5b4a8a)",
+  },
 ];
 
 /* NOTES FOR LATER:
