@@ -849,6 +849,23 @@ const HOTELS = [
     photoCredit: "Zarateman (Wikimedia Commons, CC0)",
     photoGradient: "linear-gradient(135deg,#8e7cc3,#5b4a8a)",
   },
+  {
+    id: "sunset-tower-hotel-los-angeles",
+    name: "Sunset Tower Hotel",
+    city: "West Hollywood",
+    cityEmoji: "🌴",
+    country: "United States",
+    genre: "Crime",
+    genreEmoji: "🕵️",
+    era: "1990s",
+    movies: ["The Player", "Get Shorty"],
+    scene: "Robert Altman's The Player (1992) features a pivotal scene shot by the hotel pool, and the Art Deco tower also appears in Get Shorty (1995).",
+    story: "Designed by Leland A. Bryant and completed in 1931, the Streamline Moderne tower first opened as a luxury apartment hotel on Sunset Boulevard. At 15 stories, it is considered one of the finest Art Deco buildings in the Los Angeles area and is listed on the National Register of Historic Places.",
+    bookingUrl: "https://www.booking.com/hotel/us/sunset-tower.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/2/22/Sunset_Tower,_8358_Sunset_Blvd._West_Hollywood_2364.jpg",
+    photoCredit: "MikeJiroch (Wikimedia Commons, CC BY-SA 3.0)",
+    photoGradient: "linear-gradient(135deg,#d4a373,#8c5a3c)",
+  },
 ];
 
 /* NOTES FOR LATER:
