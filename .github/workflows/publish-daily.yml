@@ -41,7 +41,12 @@ jobs:
             echo "Nothing new to publish."; exit 0
           fi
           CHANGES=$(git log --no-merges --pretty='- %s' origin/main..origin/staging)
-          FILES=$(git diff --name-only origin/main origin/staging | sed 's/^/- /')
+          FILES=$(git diff --name-only origin/main origin/staging | grep -v -e '^hotels/' -e '^guides/.*\.html
+          git merge origin/staging --no-edit
+          git push origin main
+          printf '@basbasov your site was just deployed: https://cinematicstay.com\n\n### What was deployed\n%s\n\n### Other files changed (generated hotel and guide pages not listed)\n%s\n\nArticle files changed: %s\n' "$CHANGES" "$FILES" "$NART" > body.md
+          gh issue create --assignee basbasov --title "Deployed $(date -u +%Y-%m-%d): $(echo "$CHANGES" | wc -l) change(s)" --body-file body.md
+ -e '^articles/' | sed 's/^/- /'); NART=$(git diff --name-only origin/main origin/staging | grep -c '^articles/' || true)
           git merge origin/staging --no-edit
           git push origin main
           printf '## Deployed to https://cinematicstay.com\n\n### Changes\n%s\n\n### Files changed\n%s\n' "$CHANGES" "$FILES" > body.md
