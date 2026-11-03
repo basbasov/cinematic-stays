@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Cinematic Stay</title>
-<meta name="description" content="Get in touch with Cinematic Stay: corrections, hotel suggestions, and press.">
+<meta name="description" content="Contact Cinematic Stay: ask a question, suggest a movie hotel or report a problem.">
 <link rel="canonical" href="https://cinematicstay.com/contact.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact — Cinematic Stay">
@@ -37,27 +37,109 @@
 <section class="hero">
   <div class="kicker">✉️ Contact</div>
   <h1>Say <span class="grad">hello</span></h1>
-  <p>Spotted a mistake, know a hotel with a great movie story, or want to work together? We read everything.</p>
+  <p>Spotted a mistake, know a hotel with a great movie story, or want to work together? Pick a topic below.</p>
 </section>
 
-<section class="about-content">
-  <div class="about-block">
-    <h2>📬 Email</h2>
-    <p><a href="mailto:dw.basov@gmail.com">dw.basov@gmail.com</a> — we aim to reply within a few days.</p>
+<section class="contact">
+  <div class="cf-tabs" role="tablist" aria-label="Choose a topic">
+    <button type="button" class="cf-tab active" data-topic="question" role="tab">💬 Say hello</button>
+    <button type="button" class="cf-tab" data-topic="suggest" role="tab">🏨 Suggest a hotel</button>
+    <button type="button" class="cf-tab" data-topic="report" role="tab">🛠️ Report a problem</button>
   </div>
 
-  <div class="about-block">
-    <h2>🏨 Suggest a hotel</h2>
-    <p>Send the hotel name, the film or show, and a source for the connection. We only list real, currently operating hotels with a documented screen appearance.</p>
+  <div class="cf-card">
+    <!-- 1. General question -->
+    <form class="cf-form" data-topic="question" name="contact-question" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact-question">
+      <p class="cf-hp"><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <p class="cf-lead">A question, an idea, or a collaboration? We read everything.</p>
+      <div class="cf-row">
+        <label>Name <span>optional</span><input type="text" name="name" autocomplete="name"></label>
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+      </div>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button class="cf-send" type="submit">Send message</button>
+    </form>
+
+    <!-- 2. Suggest a hotel -->
+    <form class="cf-form" data-topic="suggest" name="suggest-hotel" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="suggest-hotel">
+      <p class="cf-hp"><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <p class="cf-lead">We list real, currently operating hotels with a documented screen appearance.</p>
+      <div class="cf-row">
+        <label>Hotel name<input type="text" name="hotel" required></label>
+        <label>City, country<input type="text" name="location" required></label>
+      </div>
+      <div class="cf-row">
+        <label>Film or show<input type="text" name="movie" required></label>
+        <label>Source link <span>optional</span><input type="url" name="source" placeholder="https://"></label>
+      </div>
+      <label>Anything else <span>optional</span><textarea name="notes" rows="3"></textarea></label>
+      <label>Your email <span>optional, if you'd like a reply</span><input type="email" name="email" autocomplete="email"></label>
+      <button class="cf-send" type="submit">Suggest this hotel</button>
+    </form>
+
+    <!-- 3. Report a problem -->
+    <form class="cf-form" data-topic="report" name="report-problem" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="report-problem">
+      <p class="cf-hp"><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <p class="cf-lead">Closed hotel, wrong movie, broken link or photo credit? Tell us and we will correct it.</p>
+      <div class="cf-row">
+        <label>What is wrong?
+          <select name="issue" required>
+            <option value="">Choose…</option>
+            <option>Hotel is closed</option>
+            <option>Wrong or missing movie</option>
+            <option>Broken link</option>
+            <option>Photo or credit</option>
+            <option>Wrong fact in a story</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Page <span>optional</span><input type="text" name="page" id="cf-page" placeholder="Which page or hotel?"></label>
+      </div>
+      <label>Details<textarea name="details" rows="4" required></textarea></label>
+      <label>Your email <span>optional, if you'd like a reply</span><input type="email" name="email" autocomplete="email"></label>
+      <button class="cf-send" type="submit">Send report</button>
+    </form>
+
+    <div class="cf-thanks" hidden>
+      <div class="cf-check">✓</div>
+      <h2>Thank you</h2>
+      <p>Your message is in. We aim to reply within a few days.</p>
+    </div>
+    <p class="cf-error" hidden>Sorry, that did not go through. Please email <a href="mailto:dw.basov@gmail.com">dw.basov@gmail.com</a> instead.</p>
   </div>
-
-  <div class="about-block">
-    <h2>🛠️ Report a problem</h2>
-    <p>Closed hotel, wrong movie, broken link, or a photo credit that needs fixing? Tell us the page and what is wrong and we will correct it promptly.</p>
-  </div>
-
-
+  <p class="cf-alt">Prefer email? <a href="mailto:dw.basov@gmail.com">dw.basov@gmail.com</a></p>
 </section>
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll(".cf-tab"), forms = document.querySelectorAll(".cf-form");
+  var thanks = document.querySelector(".cf-thanks"), err = document.querySelector(".cf-error");
+  function show(topic) {
+    tabs.forEach(function (t) { t.classList.toggle("active", t.dataset.topic === topic); });
+    forms.forEach(function (f) { f.hidden = f.dataset.topic !== topic; });
+    thanks.hidden = true; err.hidden = true;
+  }
+  tabs.forEach(function (t) { t.addEventListener("click", function () { show(t.dataset.topic); }); });
+  var q = new URLSearchParams(location.search);
+  if (["question", "suggest", "report"].indexOf(q.get("topic")) > -1) show(q.get("topic"));
+  if (q.get("page")) document.getElementById("cf-page").value = q.get("page");
+  forms.forEach(function (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var btn = form.querySelector(".cf-send"); btn.disabled = true; btn.textContent = "Sending…";
+      fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(form)).toString() })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); form.hidden = true; form.reset(); thanks.hidden = false; err.hidden = true;
+          if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: "contact/" + form.dataset.topic, title: "Contact form: " + form.dataset.topic, event: true }); })
+        .catch(function () { err.hidden = false; })
+        .then(function () { btn.disabled = false; btn.textContent = "Send"; });
+    });
+  });
+})();
+</script>
 
 <footer>
   © Cinematic Stay

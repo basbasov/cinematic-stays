@@ -147,6 +147,8 @@ ${related.map((o) => `    <li><a href="/hotels/${o.id}">${esc(o.name)}</a> — $
   </ul>
 ` : `  <p><a href="/movies">Browse all movie hotels →</a></p>
 `}
+  <p class="article-report"><a href="/contact?topic=report&amp;page=${encodeURIComponent("/hotels/" + h.id)}">Spotted a mistake? Report it</a></p>
+
   <details class="article-sources">
     <summary>Sources</summary>
     <ul>
