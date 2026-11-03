@@ -1,0 +1,38 @@
+{
+  "type": "list",
+  "title": "Los Angeles Movie Hotels You Can Really Book",
+  "description": "Five real Los Angeles hotels seen on screen, from Pretty Woman and Ghostbusters to The Player, that you can book today.",
+  "h1": "5 Los Angeles movie hotels you can really book",
+  "intro": "Los Angeles has spent a century filming in its own hotels. These five have a documented place in well-known films and are open to guests today.",
+  "hotels": [
+    {
+      "id": "beverly-wilshire",
+      "note": "Pretty Woman (1990) is set in this hotel, although most of its interior scenes were shot at the nearby Ambassador Hotel."
+    },
+    {
+      "id": "hollywood-roosevelt",
+      "note": "A scene in The Fabulous Baker Boys (1989) was shot in the Cinegrill nightclub, and the pool appeared in an I Love Lucy episode."
+    },
+    {
+      "id": "chateau-marmont",
+      "note": "Somewhere (2010) was shot at the hotel, and the building also features in La La Land (2016)."
+    },
+    {
+      "id": "sunset-tower-hotel-los-angeles",
+      "note": "A pivotal scene in The Player (1992) was filmed by the pool, and the tower also appears in Get Shorty (1995)."
+    },
+    {
+      "id": "millennium-biltmore-los-angeles",
+      "note": "Its ornate rooms stand in for the Sedgwick Hotel in Ghostbusters (1984)."
+    }
+  ],
+  "outro": "The hotels sit in different parts of the city, from Downtown to Beverly Hills and the Sunset Strip, so choose the area that suits your trip and visit the others for a drink or a look at the lobby.",
+  "updated": "2026-11-03",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Beverly_Wilshire_Hotel",
+    "https://en.wikipedia.org/wiki/Hollywood_Roosevelt_Hotel",
+    "https://en.wikipedia.org/wiki/Chateau_Marmont",
+    "https://en.wikipedia.org/wiki/Sunset_Tower",
+    "https://www.academymuseum.org/en/hollywood-past-and-present/millennium-biltmore-hotel"
+  ]
+}

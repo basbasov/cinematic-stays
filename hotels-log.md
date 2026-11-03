@@ -41,3 +41,9 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Articles written: María Cristina (new) plus backfill for Beverly Wilshire, Fontainebleau Miami, Bellagio, Caesars Palace, Hotel del Coronado (37 hotels still lack an article).
 - Guide written: "James Bond Hotels You Can Really Book" (Fontainebleau, Palácio Estoril, Gran Hotel Ciudad de México).
 - Pending: none. Rejected: Hotel Alfonso XIII Seville (no documented film appearance on Wikipedia; only a tourism-site claim); Hotel Bellevue des Alpes, Kleine Scheidegg (Eiger Sanction 1975, but no exact Booking.com page found).
+
+## 2026-11-03 (scheduled run)
+- Added Sunset Tower Hotel, West Hollywood (The Player, Get Shorty) — photo MikeJiroch, CC BY-SA 3.0. Confirmed by Wikipedia and Visit West Hollywood; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Articles written: Sunset Tower Hotel (new). No older hotels lacked an article (0 still missing).
+- Guide written: "Los Angeles Movie Hotels You Can Really Book" (Beverly Wilshire, Hollywood Roosevelt, Chateau Marmont, Sunset Tower, Millennium Biltmore).
+- Pending: none. Rejected: Hotel Vertigo San Francisco (now listed on Booking.com as Hotel Julian, name mismatch); Pera Palace Istanbul (filming at the hotel only confirmed by the hotel's own site); Driskill Austin, Hotel Monte Vista Flagstaff, Omni Mount Washington, Hotel Bel-Air, Winter Palace Luxor (no film appearance found in sources read).
