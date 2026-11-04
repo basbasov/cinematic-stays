@@ -1,0 +1,34 @@
+{
+  "type": "list",
+  "title": "Paris Movie Hotels You Can Really Book",
+  "description": "Four real Paris hotels seen on screen, from the Ritz and Plaza Athénée to the Raphael and Regina, that you can book today.",
+  "h1": "4 Paris movie hotels you can really book",
+  "intro": "Paris has been a film set for more than a century, and its grand hotels have had plenty of close-ups. These four have a documented place in well-known films and shows and are open to guests today.",
+  "hotels": [
+    {
+      "id": "ritz-paris",
+      "note": "Love in the Afternoon (1957) is largely set here, and a romantic scene in How to Steal a Million (1966) takes place in the hotel bar."
+    },
+    {
+      "id": "plaza-athenee-paris",
+      "note": "The hotel appears in the final season of Sex and the City, as well as Something's Gotta Give and Emily in Paris."
+    },
+    {
+      "id": "hotel-raphael-paris",
+      "note": "Wes Anderson's short Hotel Chevalier (2007) is set in a hotel room here, and the hotel also appears in Place Vendôme (1998)."
+    },
+    {
+      "id": "hotel-regina-louvre-paris",
+      "note": "The lobby features in The Bourne Identity (2002), when Marie carries out a plan she has agreed with Bourne."
+    }
+  ],
+  "outro": "The Ritz and Plaza Athénée sit in the city's luxury shopping districts, while the Regina is steps from the Louvre and the Raphael close to the Arc de Triomphe. Pick the neighbourhood that suits your itinerary.",
+  "updated": "2026-11-04",
+  "sources": [
+    "https://en.wikipedia.org/wiki/H%C3%B4tel_Ritz_Paris",
+    "https://en.wikipedia.org/wiki/Plaza_Ath%C3%A9n%C3%A9e",
+    "https://en.wikipedia.org/wiki/Hotel_Chevalier",
+    "https://en.wikipedia.org/wiki/H%C3%B4tel_R%C3%A9gina",
+    "https://www.ryanair.com/try-somewhere-new/ie/en/travel-guides/10-of-europe-s-most-famous-hotels-from-the-movies/"
+  ]
+}

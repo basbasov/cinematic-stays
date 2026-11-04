@@ -47,3 +47,10 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Articles written: Sunset Tower Hotel (new). No older hotels lacked an article (0 still missing).
 - Guide written: "Los Angeles Movie Hotels You Can Really Book" (Beverly Wilshire, Hollywood Roosevelt, Chateau Marmont, Sunset Tower, Millennium Biltmore).
 - Pending: none. Rejected: Hotel Vertigo San Francisco (now listed on Booking.com as Hotel Julian, name mismatch); Pera Palace Istanbul (filming at the hotel only confirmed by the hotel's own site); Driskill Austin, Hotel Monte Vista Flagstaff, Omni Mount Washington, Hotel Bel-Air, Winter Palace Luxor (no film appearance found in sources read).
+
+## 2026-11-04 (scheduled run)
+- Added Hôtel Raphael, Paris (Hotel Chevalier, Place Vendôme) — photo Peter Potrowl, CC BY-SA 3.0. Confirmed by Wikipedia (Hotel Chevalier, Hôtel Raphael) and Luxe Nomad; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Added Hôtel Regina Louvre, Paris (The Bourne Identity, La Femme Nikita) — photo ndiggity from USA, CC BY-SA 2.0. Confirmed by Wikipedia, Ryanair travel guide and sceen-it; exact Booking.com page found.
+- Articles written: Hôtel Raphael, Hôtel Regina Louvre (new). No older hotels lacked an article (0 still missing).
+- Guide written: "Paris Movie Hotels You Can Really Book" (Ritz Paris, Plaza Athénée, Raphael, Regina).
+- Pending: none. Rejected: Turtle Bay Resort Oahu (Booking.com lists it as The Ritz-Carlton O'ahu, Turtle Bay, name mismatch; no film link in Wikipedia); Hotel Excelsior Dubrovnik (only a view of Game of Thrones' King's Landing, no hotel appearance); American Hotel Amsterdam (Booking lists as Clayton Hotel Amsterdam American; Wikipedia has no film link).
