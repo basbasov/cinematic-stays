@@ -54,3 +54,10 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Articles written: Hôtel Raphael, Hôtel Regina Louvre (new). No older hotels lacked an article (0 still missing).
 - Guide written: "Paris Movie Hotels You Can Really Book" (Ritz Paris, Plaza Athénée, Raphael, Regina).
 - Pending: none. Rejected: Turtle Bay Resort Oahu (Booking.com lists it as The Ritz-Carlton O'ahu, Turtle Bay, name mismatch; no film link in Wikipedia); Hotel Excelsior Dubrovnik (only a view of Game of Thrones' King's Landing, no hotel appearance); American Hotel Amsterdam (Booking lists as Clayton Hotel Amsterdam American; Wikipedia has no film link).
+
+## 2026-11-05 (scheduled run)
+- Added King David Hotel Jerusalem (Exodus) — photo Deror_avi, CC BY-SA 3.0. Confirmed by Wikipedia and Ynet; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Added Mount Lavinia Hotel, Colombo (The Bridge on the River Kwai) — photo dronepicr, CC BY 2.0. Confirmed by Wikipedia and movie-locations.com; exact Booking.com page found.
+- Articles written: King David Hotel, Mount Lavinia Hotel (new). No older hotels lacked an article (0 still missing).
+- Guide written: "Asia Movie Hotels You Can Really Book" (Park Hyatt Tokyo, Taj Lake Palace, Marina Bay Sands, Raffles Singapore, lebua, Mount Lavinia).
+- Pending: none. Rejected: Schloss Leopoldskron Salzburg (Wikipedia says the palace is never seen in The Sound of Music); The Peninsula Hong Kong (only a mention in The Man with the Golden Gun, not filmed); Midland Hotel Morecambe (no exact Booking.com page found); Rambagh Palace Jaipur (second source for film link not read); Royal Hawaiian (not completed this run).
