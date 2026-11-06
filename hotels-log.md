@@ -47,3 +47,24 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Articles written: Sunset Tower Hotel (new). No older hotels lacked an article (0 still missing).
 - Guide written: "Los Angeles Movie Hotels You Can Really Book" (Beverly Wilshire, Hollywood Roosevelt, Chateau Marmont, Sunset Tower, Millennium Biltmore).
 - Pending: none. Rejected: Hotel Vertigo San Francisco (now listed on Booking.com as Hotel Julian, name mismatch); Pera Palace Istanbul (filming at the hotel only confirmed by the hotel's own site); Driskill Austin, Hotel Monte Vista Flagstaff, Omni Mount Washington, Hotel Bel-Air, Winter Palace Luxor (no film appearance found in sources read).
+
+## 2026-11-04 (scheduled run)
+- Added Hôtel Raphael, Paris (Hotel Chevalier, Place Vendôme) — photo Peter Potrowl, CC BY-SA 3.0. Confirmed by Wikipedia (Hotel Chevalier, Hôtel Raphael) and Luxe Nomad; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Added Hôtel Regina Louvre, Paris (The Bourne Identity, La Femme Nikita) — photo ndiggity from USA, CC BY-SA 2.0. Confirmed by Wikipedia, Ryanair travel guide and sceen-it; exact Booking.com page found.
+- Articles written: Hôtel Raphael, Hôtel Regina Louvre (new). No older hotels lacked an article (0 still missing).
+- Guide written: "Paris Movie Hotels You Can Really Book" (Ritz Paris, Plaza Athénée, Raphael, Regina).
+- Pending: none. Rejected: Turtle Bay Resort Oahu (Booking.com lists it as The Ritz-Carlton O'ahu, Turtle Bay, name mismatch; no film link in Wikipedia); Hotel Excelsior Dubrovnik (only a view of Game of Thrones' King's Landing, no hotel appearance); American Hotel Amsterdam (Booking lists as Clayton Hotel Amsterdam American; Wikipedia has no film link).
+
+## 2026-11-05 (scheduled run)
+- Added King David Hotel Jerusalem (Exodus) — photo Deror_avi, CC BY-SA 3.0. Confirmed by Wikipedia and Ynet; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Added Mount Lavinia Hotel, Colombo (The Bridge on the River Kwai) — photo dronepicr, CC BY 2.0. Confirmed by Wikipedia and movie-locations.com; exact Booking.com page found.
+- Articles written: King David Hotel, Mount Lavinia Hotel (new). No older hotels lacked an article (0 still missing).
+- Guide written: "Asia Movie Hotels You Can Really Book" (Park Hyatt Tokyo, Taj Lake Palace, Marina Bay Sands, Raffles Singapore, lebua, Mount Lavinia).
+- Pending: none. Rejected: Schloss Leopoldskron Salzburg (Wikipedia says the palace is never seen in The Sound of Music); The Peninsula Hong Kong (only a mention in The Man with the Golden Gun, not filmed); Midland Hotel Morecambe (no exact Booking.com page found); Rambagh Palace Jaipur (second source for film link not read); Royal Hawaiian (not completed this run).
+
+## 2026-11-06 (scheduled run)
+- Added Waldorf Astoria New York (Week-End at the Waldorf, Scent of a Woman) — photo Ajay Suresh, CC BY 4.0. Confirmed by Wikipedia (hotel + film pages) and movie-locations.com; reopening confirmed by 6sqft; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Articles written: Waldorf Astoria New York (new). No older hotels lacked an article (0 still missing).
+- Guide: none written (no new topic with 3+ hotels whose facts were read this run).
+- Pending: none. Not completed (leads for a later run): The Westin Excelsior Rome (Two Weeks in Another Town, Nine; exact Booking page thewestinexcelsiorrome exists, but no second film source read and Commons category "Hotel Excelsior (Rome)" has no clearly identified exterior photo); The Langham Huntington Pasadena (Girls Just Want to Have Fun, Remington Steele; Booking page the-langham-huntington-spa-pasadena exists, but the only exterior photo's license is doubtful: uploaded by the hotel while EXIF names Hedrich Blessing as copyright holder).
+- Rejected: Mission Inn Riverside (exact Booking.com page not found); Hotel Eden Rome, Belmond Mount Nelson, Hotel Congress Tucson (no film appearance found on Wikipedia).

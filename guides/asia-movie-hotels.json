@@ -1,0 +1,43 @@
+{
+  "type": "list",
+  "title": "Asia Movie Hotels You Can Really Book",
+  "description": "Six real hotels across Asia seen on screen, from Tokyo and Singapore to Bangkok, Udaipur and Sri Lanka, that you can book today.",
+  "h1": "6 Asian movie hotels you can really book",
+  "intro": "From a Tokyo skyscraper to a palace on an Indian lake, Asia's grand hotels have had starring roles on screen. These six are open to guests and have a documented place in well-known films.",
+  "hotels": [
+    {
+      "id": "park-hyatt-tokyo",
+      "note": "Sofia Coppola shot Lost in Translation on location here, with the bar scenes set in the New York Bar on the 52nd floor."
+    },
+    {
+      "id": "taj-lake-palace-udaipur",
+      "note": "Octopussy (1983) used Udaipur for its title character's home, and the Lake Palace is widely identified as her lair."
+    },
+    {
+      "id": "marina-bay-sands-singapore",
+      "note": "The rooftop SkyPark and infinity pool provide a glamorous backdrop in Crazy Rich Asians (2018)."
+    },
+    {
+      "id": "raffles-singapore",
+      "note": "In Crazy Rich Asians the hotel plays the Kingsford, where Nick and Rachel stay."
+    },
+    {
+      "id": "lebua-state-tower-bangkok",
+      "note": "The Sky Bar on the 63rd floor served as a filming location for The Hangover Part II."
+    },
+    {
+      "id": "mount-lavinia-hotel-colombo",
+      "note": "A number of scenes from The Bridge on the River Kwai (1957) were filmed here, and the building stands in for the film's military hospital."
+    }
+  ],
+  "outro": "Several of these are city hotels with easy transport, while the Lake Palace and Mount Lavinia are best treated as destinations in themselves. Check the season before you book, as weather varies a lot across the region.",
+  "updated": "2026-11-05",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mount_Lavinia_Hotel",
+    "https://movie-locations.com/movies/b/Bridge-On-The-River-Kwai.php",
+    "https://en.wikipedia.org/wiki/Lake_Palace",
+    "https://en.wikipedia.org/wiki/Marina_Bay_Sands",
+    "https://focusfeatures.com/article/film-locations_japan_lost-in-translation",
+    "https://hauteliving.com/2011/05/a-look-inside-the-luxury-hotel-from-the-hangover-part-ii/161641/"
+  ]
+}
