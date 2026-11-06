@@ -468,14 +468,14 @@ footer {
   header {
     position: sticky;
     top: 0;
-    padding: 12px 5vw;
-    gap: 10px;
-    flex-wrap: nowrap;
+    padding: 10px 5vw 8px;
+    gap: 8px;
+    flex-wrap: wrap;
     background: #fbfaff;
   }
-  .logo { font-size: 18px; }
-  nav { display: flex; align-items: center; gap: 11px; white-space: nowrap; }
-  nav a { margin-left: 0; font-size: 13px; }
+  .logo { font-size: 18px; flex: 1 0 100%; }
+  header nav { display: flex; align-items: center; justify-content: space-between; gap: 0; white-space: nowrap; flex: 1 0 100%; }
+  header nav a { margin-left: 0; font-size: 14px; padding-bottom: 4px; }
 }
 
 /* ---- Hotel article pages ---- */
