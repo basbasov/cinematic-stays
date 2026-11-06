@@ -1,13 +1,14 @@
 # Publishes everything collected on the "staging" branch to "main" (which Netlify deploys)
-# about every other day around 23:59 Israel time, then opens a GitHub issue listing what went live.
-# If staging has nothing new, nothing happens and no deploy is used.
-# GitHub often starts scheduled runs hours late, so instead of requiring an exact hour this checks:
-# (1) it is night in Israel (22:00-05:59) and (2) the last publish was 40+ hours ago.
+# about every other day around 23:59 Israel time, then opens a GitHub issue (assigned to the owner, so GitHub emails it)
+# listing what went live. If staging has nothing new, nothing happens and no deploy is used.
+# GitHub often skips or delays single scheduled runs, so a run is attempted every hour overnight
+# (20:05-03:05 UTC = 22:05-06:05 Israel). Each run publishes only if (1) it is 23:00-05:59 in Israel and
+# (2) the last publish was 40+ hours ago, so at most one publish happens per window.
 name: Publish every other day
 on:
   schedule:
-    - cron: "59 20 * * *"   # 23:59 Israel summer time (UTC+3)
-    - cron: "59 21 * * *"   # 23:59 Israel winter time (UTC+2)
+    - cron: "5 20-23 * * *"
+    - cron: "5 0-3 * * *"
   workflow_dispatch:         # lets you run it manually from the Actions tab
 permissions:
   contents: write
@@ -26,8 +27,8 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then
             H=$((10#$(TZ=Asia/Jerusalem date +%H)))
-            if [ "$H" -ge 6 ] && [ "$H" -lt 22 ]; then
-              echo "Daytime in Israel; skipping."; exit 0
+            if [ "$H" -ge 6 ] && [ "$H" -lt 23 ]; then
+              echo "Not night in Israel yet; skipping."; exit 0
             fi
             AGE=$(( $(date +%s) - $(git log -1 --format=%ct origin/main) ))
             if [ "$AGE" -lt 144000 ]; then
@@ -41,13 +42,10 @@ jobs:
             echo "Nothing new to publish."; exit 0
           fi
           CHANGES=$(git log --no-merges --pretty='- %s' origin/main..origin/staging)
-          FILES=$(git diff --name-only origin/main origin/staging | grep -v -e '^hotels/' -e '^guides/.*\.html
+          ALL=$(git diff --name-only origin/main origin/staging)
+          NART=$(echo "$ALL" | grep -c '^articles/' || true)
+          FILES=$(echo "$ALL" | grep -v -e '^hotels/' -e '^guides/.*\.html$' -e '^articles/' | sed 's/^/- /')
           git merge origin/staging --no-edit
           git push origin main
           printf '@basbasov your site was just deployed: https://cinematicstay.com\n\n### What was deployed\n%s\n\n### Other files changed (generated hotel and guide pages not listed)\n%s\n\nArticle files changed: %s\n' "$CHANGES" "$FILES" "$NART" > body.md
           gh issue create --assignee basbasov --title "Deployed $(date -u +%Y-%m-%d): $(echo "$CHANGES" | wc -l) change(s)" --body-file body.md
- -e '^articles/' | sed 's/^/- /'); NART=$(git diff --name-only origin/main origin/staging | grep -c '^articles/' || true)
-          git merge origin/staging --no-edit
-          git push origin main
-          printf '## Deployed to https://cinematicstay.com\n\n### Changes\n%s\n\n### Files changed\n%s\n' "$CHANGES" "$FILES" > body.md
-          gh issue create --title "Deployed $(date -u +%Y-%m-%d): $(echo "$CHANGES" | wc -l) change(s)" --body-file body.md
