@@ -934,6 +934,23 @@ const HOTELS = [
     photoCredit: "dronepicr (Wikimedia Commons, CC BY 2.0)",
     photoGradient: "linear-gradient(135deg,#5aa3b8,#2d5d73)",
   },
+  {
+    id: "waldorf-astoria-new-york",
+    name: "Waldorf Astoria New York",
+    city: "New York",
+    cityEmoji: "🗽",
+    country: "United States",
+    genre: "Drama",
+    genreEmoji: "🎭",
+    era: "1990s",
+    movies: ["Week-End at the Waldorf", "Scent of a Woman"],
+    scene: "The 1945 comedy-drama Week-End at the Waldorf is set at the hotel and was partly filmed on location there. In Scent of a Woman (1992), Al Pacino's Frank Slade and Chris O'Donnell's Charlie check in for their New York weekend at the Waldorf.",
+    story: "The current Art Deco tower on Park Avenue was designed by Schultze and Weaver and completed in 1931, and was the world's tallest hotel until 1957. It replaced the original Waldorf-Astoria on Fifth Avenue, which was demolished in 1929 to make way for the Empire State Building. After closing in 2017, it reopened as a restored hotel with 375 rooms, with the upper floors turned into private residences.",
+    bookingUrl: "https://www.booking.com/hotel/us/the-waldorf-astoria.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Waldorf_Astoria_New_York_%2855272623437%29.jpg/1280px-Waldorf_Astoria_New_York_%2855272623437%29.jpg",
+    photoCredit: "Ajay Suresh (Wikimedia Commons, CC BY 4.0)",
+    photoGradient: "linear-gradient(135deg,#c9a45c,#6b4f1d)",
+  },
 ];
 
 /* NOTES FOR LATER:
