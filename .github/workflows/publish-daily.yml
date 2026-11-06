@@ -30,7 +30,7 @@ jobs:
             if [ "$H" -ge 6 ] && [ "$H" -lt 23 ]; then
               echo "Not night in Israel yet; skipping."; exit 0
             fi
-            AGE=$(( $(date +%s) - $(git log -1 --format=%ct origin/main) ))
+            AGE=$(( $(date +%s) - $(git log -1 --merges --format=%ct origin/main) ))
             if [ "$AGE" -lt 144000 ]; then
               echo "Last publish was less than 40 hours ago (publishing every other day); skipping."; exit 0
             fi
