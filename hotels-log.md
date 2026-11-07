@@ -68,3 +68,11 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Guide: none written (no new topic with 3+ hotels whose facts were read this run).
 - Pending: none. Not completed (leads for a later run): The Westin Excelsior Rome (Two Weeks in Another Town, Nine; exact Booking page thewestinexcelsiorrome exists, but no second film source read and Commons category "Hotel Excelsior (Rome)" has no clearly identified exterior photo); The Langham Huntington Pasadena (Girls Just Want to Have Fun, Remington Steele; Booking page the-langham-huntington-spa-pasadena exists, but the only exterior photo's license is doubtful: uploaded by the hotel while EXIF names Hedrich Blessing as copyright holder).
 - Rejected: Mission Inn Riverside (exact Booking.com page not found); Hotel Eden Rome, Belmond Mount Nelson, Hotel Congress Tucson (no film appearance found on Wikipedia).
+
+## 2026-11-07 (scheduled run)
+- Added The Savoy, London (Notting Hill) — photo Anthony O'Neil, CC BY-SA 2.0. Confirmed by Wikipedia, The Week and the hotel's own Lancaster Ballroom page; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Added Hilton London Hyde Park (Frenzy, filmed as the Coburg Hotel) — photo Stacey Harris, CC BY-SA 2.0. Confirmed by Wikipedia, hitchcock.zone and movie-locations.com; exact Booking.com page found.
+- Articles written: The Savoy, Hilton London Hyde Park (new). No older hotels lacked an article (0 still missing).
+- Guide written: "London Movie Hotels You Can Really Book" (The Savoy, Hilton London Hyde Park, St Pancras Renaissance).
+- Pending: none. Rejected: Hotel Alexandria Los Angeles (converted to apartments in 2005, no longer a hotel); Hassler Roma (no film source read).
+- Still open leads: Westin Excelsior Rome, The Langham Huntington Pasadena (see 2026-11-06).

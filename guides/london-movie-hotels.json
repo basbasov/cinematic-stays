@@ -1,0 +1,29 @@
+{
+  "type": "list",
+  "title": "London Movie Hotels You Can Really Book",
+  "description": "Three real London hotels seen on screen, from the Savoy and Hilton Hyde Park to St Pancras, that you can book today.",
+  "h1": "3 London movie hotels you can really book",
+  "intro": "London's grand hotels have turned up in romances, thrillers and superhero films. These three have a documented place on screen and welcome guests today.",
+  "hotels": [
+    {
+      "id": "the-savoy-london",
+      "note": "The finale of Notting Hill (1999) takes place at a press conference in the hotel's Lancaster Room."
+    },
+    {
+      "id": "hilton-london-hyde-park",
+      "note": "As the Coburg Hotel, it appears in Hitchcock's Frenzy (1972), where Blaney and Babs check in as Mr. and Mrs. Oscar Wilde."
+    },
+    {
+      "id": "st-pancras-renaissance-london",
+      "note": "Its staircase doubled for the Arkham Asylum stairwell in Batman Begins (2005)."
+    }
+  ],
+  "outro": "The Savoy is on the Strand near Covent Garden, the Hilton overlooks Hyde Park, and St Pancras sits beside the Eurostar terminal. Choose the base that suits your plans.",
+  "updated": "2026-11-07",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Savoy_Hotel",
+    "https://en.wikipedia.org/wiki/Hilton_London_Hyde_Park",
+    "https://en.wikipedia.org/wiki/St_Pancras_London_Hotel",
+    "https://hitchcock.zone/wiki/Coburg_Hotel"
+  ]
+}
