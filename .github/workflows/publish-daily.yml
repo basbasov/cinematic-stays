@@ -3,7 +3,7 @@
 # listing what went live. If staging has nothing new, nothing happens and no deploy is used.
 # GitHub often skips or delays single scheduled runs, so a run is attempted every hour overnight
 # (20:05-03:05 UTC = 22:05-06:05 Israel). Each run publishes only if (1) it is 23:00-05:59 in Israel and
-# (2) the last publish was 40+ hours ago, so at most one publish happens per window.
+# (2) the last publish was 28+ hours ago, so at most one publish happens per window.
 name: Publish every other day
 on:
   schedule:
@@ -31,7 +31,7 @@ jobs:
               echo "Not night in Israel yet; skipping."; exit 0
             fi
             AGE=$(( $(date +%s) - $(git log -1 --merges --format=%ct origin/main) ))
-            if [ "$AGE" -lt 144000 ]; then
+            if [ "$AGE" -lt 100800 ]; then
               echo "Last publish was less than 40 hours ago (publishing every other day); skipping."; exit 0
             fi
           fi
