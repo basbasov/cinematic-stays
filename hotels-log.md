@@ -76,3 +76,10 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Guide written: "London Movie Hotels You Can Really Book" (The Savoy, Hilton London Hyde Park, St Pancras Renaissance).
 - Pending: none. Rejected: Hotel Alexandria Los Angeles (converted to apartments in 2005, no longer a hotel); Hassler Roma (no film source read).
 - Still open leads: Westin Excelsior Rome, The Langham Huntington Pasadena (see 2026-11-06).
+
+## 2026-11-08 (scheduled run)
+- Added The Esplanade Zagreb Hotel, Croatia (Canary Black 2024, The Winds of War 1983) — photo Rangan Datta Wiki, CC BY-SA 4.0. Confirmed by Wikipedia and filmingincroatia.hr (Canary Black location list); exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Articles written: The Esplanade Zagreb (new). No older hotels lacked an article (0 still missing).
+- Guide: none written (no new topic with 3+ hotels whose facts were read this run).
+- Pending: none. Rejected: Ambassador East Chicago (North by Northwest; now Ambassador Gold Coast, Booking lists it as Ambassador Chicago, name mismatch); Hotel Chelsea NYC (no specific film confirmed on pages read); Hotel Le Royal Phnom Penh (no film appearance on Wikipedia); The Sentinel Portland (film links weak: one "citation needed").
+- Still open leads: Westin Excelsior Rome, The Langham Huntington Pasadena.

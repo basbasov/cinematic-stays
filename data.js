@@ -985,6 +985,23 @@ const HOTELS = [
     photoCredit: "Stacey Harris (Wikimedia Commons, CC BY-SA 2.0)",
     photoGradient: "linear-gradient(135deg,#6b7a8f,#2c3440)",
   },
+  {
+    id: "esplanade-zagreb",
+    name: "The Esplanade Zagreb Hotel",
+    city: "Zagreb",
+    cityEmoji: "🏙️",
+    country: "Croatia",
+    genre: "Action",
+    genreEmoji: "💥",
+    era: "2020s",
+    movies: ["Canary Black", "The Winds of War"],
+    scene: "The hotel was a filming location for the spy thriller Canary Black (2024), starring Kate Beckinsale, with both exterior and interior scenes shot here. It was also a filming site for the 1983 miniseries The Winds of War.",
+    story: "The Esplanade opened on 22 April 1925 to house passengers of the Orient Express. The winning design by Otto Rehnig was reworked by Dionis Sunko, and the Belle Epoque building underwent a major restoration before reopening in 2004. It has operated as an independent hotel since 2012.",
+    bookingUrl: "https://www.booking.com/hotel/hr/esplanade-zagreb-hotel.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/7/78/Hotel_Esplanade,_Zagreb_1.jpg",
+    photoCredit: "Rangan Datta Wiki (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#8e7cc3,#5b4a8a)",
+  },
 ];
 
 /* NOTES FOR LATER:
