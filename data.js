@@ -1002,6 +1002,23 @@ const HOTELS = [
     photoCredit: "Rangan Datta Wiki (Wikimedia Commons, CC BY-SA 4.0)",
     photoGradient: "linear-gradient(135deg,#8e7cc3,#5b4a8a)",
   },
+  {
+    id: "fairmont-san-francisco",
+    name: "Fairmont San Francisco",
+    city: "San Francisco",
+    cityEmoji: "🌉",
+    country: "United States",
+    genre: "Drama",
+    genreEmoji: "🎭",
+    era: "1980s",
+    movies: ["Hotel"],
+    scene: "Establishing shots and some interiors for the 1980s ABC series Hotel were filmed at the Fairmont, which stood in for the fictional St. Gregory Hotel.",
+    story: "The Fairmont opened on 18 April 1907, a year after the 1906 earthquake and fire gutted the original building. Architect Julia Morgan oversaw the rebuild of the Beaux-Arts landmark, and the tower was added in 1962. It sits on Nob Hill and still houses the Tonga Room.",
+    bookingUrl: "https://www.booking.com/hotel/us/the-fairmont-san-francisco-san-francisco-california.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/b/b8/San_Francisco_(CA,_USA),_Hotel_Fairmont_--_2022_--_2940.jpg",
+    photoCredit: "Dietmar Rabich (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#8e7cc3,#5b4a8a)",
+  },
 ];
 
 /* NOTES FOR LATER:
