@@ -29,6 +29,14 @@
   <p>Add, edit, or remove hotels — changes save straight to your live Supabase database and appear on the site immediately.</p>
 </section>
 
+<!-- Deployment status (public GitHub data, always visible) -->
+<div class="admin-panel" id="deployPanel">
+  <div class="admin-card">
+    <h2>🚀 Deployments</h2>
+    <p class="admin-hint" id="deployInfo">Loading…</p>
+  </div>
+</div>
+
 <!-- Shown if supabase-config.js hasn't been filled in yet -->
 <div id="notConfigured" class="admin-panel" style="display:none;">
   <div class="admin-card">
@@ -148,6 +156,26 @@
 <script src="supabase-config.js"></script>
 <script src="hotel-utils.js"></script>
 <script src="admin.js"></script>
+<script>
+(function () {
+  var el = document.getElementById("deployInfo");
+  if (!el) return;
+  var TZ = "Asia/Jerusalem", GAP_MS = 28 * 3600 * 1000;
+  var fmt = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", hour12: false });
+  var hourOf = function (d) { return +new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", hour12: false }).format(d) % 24; };
+  fetch("https://api.github.com/repos/basbasov/cinematic-stays/commits?sha=main&per_page=40")
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (commits) {
+      var last = commits.find(function (c) { return c.parents && c.parents.length > 1; });
+      if (!last) throw new Error("no merge");
+      var lastT = new Date(last.commit.committer.date);
+      var t = new Date(Math.ceil((lastT.getTime() + GAP_MS - 5 * 60000) / 3600000) * 3600000 + 5 * 60000);
+      for (var i = 0; i < 100; i++) { var h = hourOf(t); if (h >= 23 || h < 6) break; t = new Date(t.getTime() + 3600000); }
+      el.innerHTML = "<b>Next deployment:</b> " + fmt.format(t) + " (Israel time, approx. — GitHub can delay runs by a few hours)<br><b>Last deployment:</b> " + fmt.format(lastT) + " (Israel time)";
+    })
+    .catch(function () { el.textContent = "Couldn't load deployment info from GitHub."; });
+})();
+</script>
 
 </body>
 </html>
