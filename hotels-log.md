@@ -83,3 +83,18 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Guide: none written (no new topic with 3+ hotels whose facts were read this run).
 - Pending: none. Rejected: Ambassador East Chicago (North by Northwest; now Ambassador Gold Coast, Booking lists it as Ambassador Chicago, name mismatch); Hotel Chelsea NYC (no specific film confirmed on pages read); Hotel Le Royal Phnom Penh (no film appearance on Wikipedia); The Sentinel Portland (film links weak: one "citation needed").
 - Still open leads: Westin Excelsior Rome, The Langham Huntington Pasadena.
+
+## 2026-11-09 (scheduled run)
+- Added Fairmont San Francisco (Hotel, ABC 1983-88 series; stood in for the St. Gregory) — photo Dietmar Rabich, CC BY-SA 4.0. Confirmed by Wikipedia (hotel + series pages) and hotel-online.com history article; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Articles written: Fairmont San Francisco (new). No older hotels lacked an article (0 still missing).
+- Guide: none written (no new topic with 3+ hotels whose facts were read this run).
+- Pending: none. Rejected: The Dorchester London, Claridge's (only a 2001 TV drama mention), Hotel Cipriani Venice (film link only in a novel), Belmond Grand Hotel Timeo (no film appearance on Wikipedia).
+- Still open leads: Westin Excelsior Rome, The Langham Huntington Pasadena.
+
+## 2026-11-10 (scheduled run)
+- Added The Royal Hawaiian, Waikiki (Big Eyes, Mad Men S6 premiere, Punch-Drunk Love) — photo Nesnad, CC BY-SA 4.0. Confirmed by Wikipedia and Islands.com; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Added Le Meurice, Paris (Midnight in Paris, Is Paris Burning?) — photo DIMSFIKAS, CC BY-SA 3.0. Confirmed by Wikipedia, Gault&Millau and Untapped Cities; exact Booking.com page found.
+- Articles written: The Royal Hawaiian, Le Meurice (new). No older hotels lacked an article (0 still missing).
+- Guide: none written (no new topic with 3+ hotels whose facts were read this run).
+- Pending: none. Rejected: Cliveden House (Help!, Sherlock Holmes; film link fine but exact Booking.com hotel page not found; Scandal 1989 was NOT filmed there); Gleneagles (Succession only, no episode/scene documented in sources read); The Culver Hotel (Wikipedia only says "appeared in"; no filming detail).
+- Still open leads: Westin Excelsior Rome, The Langham Huntington Pasadena.
