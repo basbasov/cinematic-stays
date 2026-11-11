@@ -1053,6 +1053,23 @@ const HOTELS = [
     photoCredit: "DIMSFIKAS (Wikimedia Commons, CC BY-SA 3.0)",
     photoGradient: "linear-gradient(135deg,#c9a96e,#6d5a2e)",
   },
+  {
+    id: "intercontinental-paris-le-grand",
+    name: "InterContinental Paris Le Grand",
+    city: "Paris",
+    cityEmoji: "🗼",
+    country: "France",
+    genre: "Thriller",
+    genreEmoji: "🔪",
+    era: "1980s",
+    movies: ["Alphaville", "Frantic"],
+    scene: "Jean-Luc Godard shot large parts of his 1965 sci-fi film Alphaville in the hotel, using its lobby, corridors, winter garden and a pair of glass-walled elevators. In Roman Polanski's thriller Frantic (1988), Harrison Ford's character stays here, and the exteriors on Rue Scribe were filmed outside the building.",
+    story: "The Pereire brothers built Le Grand Hôtel, designed by Alfred Armand in the Haussmann style, and Empress Eugénie inaugurated it on 5 May 1862. It opened to guests on 30 June 1862 and houses the Café de la Paix on its ground floor. After closing in December 2001 for a major renovation, it reopened in April 2003 as the InterContinental Paris Le Grand.",
+    bookingUrl: "https://www.booking.com/hotel/fr/intercontinental-paris-le-grand.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Paris_9_-_Le_Grand_H%C3%B4tel_vu_de_la_place_Charles-Garnier_-151.JPG",
+    photoCredit: "MOSSOT (Wikimedia Commons, CC BY 3.0)",
+    photoGradient: "linear-gradient(135deg,#8e7cc3,#5b4a8a)",
+  },
 ];
 
 /* NOTES FOR LATER:
