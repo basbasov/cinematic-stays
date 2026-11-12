@@ -106,3 +106,11 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Pending: The Langham Huntington, Pasadena (film link and Booking page confirmed; photo author/license unclear, see pending-hotels.md).
 - Rejected: none beyond the above (other ideas not pursued this run).
 - Still open leads: Westin Excelsior Rome.
+
+## 2026-11-12 (scheduled run)
+- Added Hotel Adlon Kempinski Berlin (Unknown 2011) — photo Avi1111 dr. avishai teicher, CC BY-SA 4.0. Confirmed by Wikipedia (hotel + film pages) and movie-locations.com; exact Booking.com page found. Supabase url is empty, so no admin.html step needed.
+- Added The Pierre, New York (Scent of a Woman, For Love or Money) — photo Eden, Janine and Jim, CC BY 2.0. Confirmed by Wikipedia (hotel + film pages) and iamnotastalker.com; exact Booking.com page found.
+- Articles written: Hotel Adlon, The Pierre (new). No older hotels lacked an article (0 still missing).
+- Guide written: "Scent of a Woman Hotels: Where It Was Filmed" (Waldorf Astoria, The Pierre).
+- Pending: The Langham Huntington, Pasadena (unchanged). Rejected: Hôtel du Cap-Eden-Roc (no exact Booking.com hotel page found; only villa listings).
+- Still open leads: Westin Excelsior Rome.
