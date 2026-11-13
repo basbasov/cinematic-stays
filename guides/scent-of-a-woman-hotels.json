@@ -1,0 +1,25 @@
+{
+  "type": "movie",
+  "title": "Scent of a Woman Hotels: Where It Was Filmed",
+  "description": "Two real New York hotels from Scent of a Woman: the Waldorf Astoria and The Pierre, home of the famous tango. See how to book both.",
+  "h1": "Scent of a Woman hotels: where it was filmed",
+  "intro": "Al Pacino's Oscar-winning 1992 film sends its characters through some of Manhattan's grandest hotels. Two of them are open today and can be booked.",
+  "hotels": [
+    {
+      "id": "waldorf-astoria-new-york",
+      "note": "The Waldorf-Astoria is where Frank Slade and Charlie stay during their New York weekend."
+    },
+    {
+      "id": "the-pierre-new-york",
+      "note": "The film's tango scene was shot in the Pierre's Cotillion Ballroom."
+    }
+  ],
+  "outro": "The two hotels are a short trip apart in Manhattan, the Waldorf on Park Avenue and the Pierre on Fifth Avenue by Central Park. Book one for the stay and visit the other for a drink.",
+  "updated": "2026-11-12",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Scent_of_a_Woman_(1992_film)",
+    "https://en.wikipedia.org/wiki/The_Pierre",
+    "https://iamnotastalker.com/2018/07/02/the-pierre-hotels-cotillion-ballroom-from-scent-of-a-woman",
+    "https://thepierreny.com/history"
+  ]
+}
