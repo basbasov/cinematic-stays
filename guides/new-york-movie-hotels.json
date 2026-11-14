@@ -1,0 +1,33 @@
+{
+  "type": "list",
+  "title": "New York Movie Hotels You Can Really Book",
+  "description": "Four real New York hotels seen on screen, from the Plaza and Waldorf Astoria to The Pierre and Lotte New York Palace, that you can book today.",
+  "h1": "4 New York movie hotels you can really book",
+  "intro": "New York has been the backdrop for countless screen stories, and its grand hotels have often played themselves. These four have a documented place in well-known films and shows and are open to guests today.",
+  "hotels": [
+    {
+      "id": "plaza-nyc",
+      "note": "Kevin McCallister checks into The Plaza in Home Alone 2: Lost in New York (1992), and the hotel also appears in North by Northwest."
+    },
+    {
+      "id": "waldorf-astoria-new-york",
+      "note": "The Waldorf-Astoria is where Frank Slade and Charlie stay in Scent of a Woman."
+    },
+    {
+      "id": "the-pierre-new-york",
+      "note": "The Pierre's Cotillion Ballroom is the location of the tango scene in Scent of a Woman."
+    },
+    {
+      "id": "lotte-new-york-palace",
+      "note": "In Gossip Girl the hotel is depicted as the residence of Serena van der Woodsen."
+    }
+  ],
+  "outro": "The Plaza and The Pierre face Central Park, while the Waldorf and the Lotte New York Palace sit in Midtown, so choose the area that suits your trip and visit the others for a drink or a look at the lobby.",
+  "updated": "2026-11-15",
+  "sources": [
+    "https://en.wikipedia.org/wiki/The_Plaza",
+    "https://en.wikipedia.org/wiki/The_Pierre",
+    "https://en.wikipedia.org/wiki/Lotte_New_York_Palace",
+    "https://www.lottenypalace.com/production"
+  ]
+}
