@@ -1138,6 +1138,23 @@ const HOTELS = [
     photoCredit: "Onasill - Bill Badzo (Wikimedia Commons, CC BY-SA 2.0)",
     photoGradient: "linear-gradient(135deg,#e07a8c,#8a3a54)",
   },
+  {
+    id: "don-cesar-st-pete-beach",
+    name: "The Don CeSar",
+    city: "St. Pete Beach",
+    cityEmoji: "🌴",
+    country: "United States",
+    genre: "Crime",
+    genreEmoji: "🕵️",
+    era: "1980s",
+    movies: ["Once Upon a Time in America", "H.E.A.L.T.H.", "The Infiltrator"],
+    scene: "Sergio Leone shot a beach scene with Robert De Niro and James Woods behind the pink hotel for Once Upon a Time in America (1984), Robert Altman's H.E.A.L.T.H. (1980) used it as its centerpiece, and in The Infiltrator (2016) the pool deck stood in for a Miami Beach resort.",
+    story: "The Don CeSar opened on January 16, 1928 and is nicknamed the pink palace. During World War II the U.S. Army took it over as a military hospital, and it was listed on the National Register of Historic Places in 1975.",
+    bookingUrl: "https://www.booking.com/hotel/us/don-cesar.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/b/b0/The_Don_Cesar.jpg",
+    photoCredit: "MyHoofHearted (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#f2a0b5,#b5546f)",
+  },
 ];
 
 /* NOTES FOR LATER:

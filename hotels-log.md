@@ -123,3 +123,12 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Pending: The Langham Huntington, Pasadena (photo license unclear). Rejected: Hôtel de Crillon, Beau-Rivage Palace, Galle Face Hotel (no film link on Wikipedia), Mena House Cairo, Hotel Bel-Air, Hotel Negresco, Splendido Portofino (no documented film appearance), Ashford Castle and Grand Hotel Mackinac Island (no exact Booking.com page).
 - Booking.com links were checked by opening each page in a browser; a wrong slug redirects to search results.
 - Still open leads: Westin Excelsior Rome.
+
+## 2026-11-14 (scheduled run)
+- Added The Don CeSar, St. Pete Beach (Once Upon a Time in America, H.E.A.L.T.H., The Infiltrator) — photo MyHoofHearted, CC BY-SA 4.0. Confirmed by Wikipedia, St Pete Catalyst, Creative Loafing Tampa and WUSF; exact Booking.com page (don-cesar.html) opened and verified. Supabase url is empty, so no admin.html step needed.
+- Articles written: The Don CeSar (new). 0 hotels still lack an article.
+- Guide: none written (no new topic with source-read facts this run).
+- Pending: The Langham Huntington, Pasadena (unchanged).
+- Rejected: The Westin Excelsior Rome (Wikipedia says Two Weeks in Another Town was filmed in the hotel, but the film's own page does not confirm it; no second source read; Booking page valid; a Commons exterior by Krzysztof Golik, CC BY-SA 4.0, exists if a second source is found later); Omni Royal Orleans (Live and Let Die only says Bond stays at the hotel, no filming detail; Booking page valid).
+- Link audit (indexes 54-58): Esplanade Zagreb, Fairmont San Francisco, Royal Hawaiian, Le Meurice, InterContinental Paris Le Grand — all OK.
+- Still open leads: Westin Excelsior Rome (needs a second source).
