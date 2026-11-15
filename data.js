@@ -1155,6 +1155,23 @@ const HOTELS = [
     photoCredit: "MyHoofHearted (Wikimedia Commons, CC BY-SA 4.0)",
     photoGradient: "linear-gradient(135deg,#f2a0b5,#b5546f)",
   },
+  {
+    id: "taj-mahal-palace-mumbai",
+    name: "The Taj Mahal Palace, Mumbai",
+    city: "Mumbai",
+    cityEmoji: "🌆",
+    country: "India",
+    genre: "Thriller",
+    genreEmoji: "🔪",
+    era: "2010s",
+    movies: ["Hotel Mumbai"],
+    scene: "Hotel Mumbai (2018) tells the story of the November 2008 attack on the hotel; the film shot the real hotel's exteriors on location in Mumbai and recreated the interiors at Adelaide Studios in Australia.",
+    story: "The Taj Mahal Palace was commissioned by Jamsetji Tata and opened its doors to guests on 16 December 1903. During World War I it served as a 600-bed hospital, and after the 2008 attacks its less-damaged sections reopened on 21 December 2008.",
+    bookingUrl: "https://www.booking.com/hotel/in/the-taj-mahal-palace-mumbai.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/5/52/Hotel_Taj_Mahal_%28Opposite_Gateway_of_India%29.JPG",
+    photoCredit: "Tejas98 (Wikimedia Commons, CC BY-SA 3.0)",
+    photoGradient: "linear-gradient(135deg,#c9a24b,#7a5a1e)",
+  },
 ];
 
 /* NOTES FOR LATER:

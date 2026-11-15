@@ -132,3 +132,12 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Rejected: The Westin Excelsior Rome (Wikipedia says Two Weeks in Another Town was filmed in the hotel, but the film's own page does not confirm it; no second source read; Booking page valid; a Commons exterior by Krzysztof Golik, CC BY-SA 4.0, exists if a second source is found later); Omni Royal Orleans (Live and Let Die only says Bond stays at the hotel, no filming detail; Booking page valid).
 - Link audit (indexes 54-58): Esplanade Zagreb, Fairmont San Francisco, Royal Hawaiian, Le Meurice, InterContinental Paris Le Grand — all OK.
 - Still open leads: Westin Excelsior Rome (needs a second source).
+
+## 2026-11-15 (scheduled run)
+- Added The Taj Mahal Palace, Mumbai (Hotel Mumbai 2018; exteriors shot on location, interiors recreated in Adelaide) — photo Tejas98, CC BY-SA 3.0. Confirmed by Wikipedia and Bleecker Street Media's film editorial (sceen-it also read); exact Booking.com page (the-taj-mahal-palace-mumbai.html) opened and verified. Supabase url is empty, so no admin.html step needed.
+- Articles written: The Taj Mahal Palace, Mumbai (new). 0 hotels still lack an article.
+- Guide: none written (no new topic with source-read facts this run).
+- Pending: The Langham Huntington, Pasadena (unchanged).
+- Rejected: Winter Palace Luxor (only a 2004 Poirot episode on Wikipedia, and the hotel is closed for renovation until 2027); Hotel Nacional de Cuba (Godfather Part II only dramatises the 1946 conference, no filming there confirmed); Grand Hotel Villa d'Este Cernobbio (film link is The Pleasure Garden 1925, but no exact Booking.com page found).
+- Link audit (indexes 35-39): Plaza Athénée, Jumeirah Zabeel Saray, Hotel Sacher, Burgh Island, Rosewood Schloss Fuschl — all OK.
+- Still open leads: Westin Excelsior Rome (needs a second source).
