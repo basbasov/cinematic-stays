@@ -141,3 +141,11 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Rejected: Winter Palace Luxor (only a 2004 Poirot episode on Wikipedia, and the hotel is closed for renovation until 2027); Hotel Nacional de Cuba (Godfather Part II only dramatises the 1946 conference, no filming there confirmed); Grand Hotel Villa d'Este Cernobbio (film link is The Pleasure Garden 1925, but no exact Booking.com page found).
 - Link audit (indexes 35-39): Plaza Athénée, Jumeirah Zabeel Saray, Hotel Sacher, Burgh Island, Rosewood Schloss Fuschl — all OK.
 - Still open leads: Westin Excelsior Rome (needs a second source).
+
+
+## 2026-11-15 (scheduled run, third of the day)
+- Added: none. Nothing new passed all checks this run.
+- Rejected: Luton Hoo Hotel, Golf & Spa, Bedfordshire (Four Weddings and a Funeral second reception confirmed by movie-locations.com and Almost Ginger, plus Wikipedia; but booking.com/hotel/gb/luton-hoo-golf-and-spa.html redirects to search results — no direct Booking.com page); Palmer House Hilton Chicago (Booking page exists, but Wikipedia lists no film or TV appearance; only the Historic Hotels of America list claims one).
+- Articles written: none (0 hotels still lack an article). Guide: none.
+- Link audit (indexes 35-39): Plaza Athénée, Jumeirah Zabeel Saray, Hotel Sacher, Burgh Island, Rosewood Schloss Fuschl — all OK.
+- Still open leads: Westin Excelsior Rome (needs a second source); Fairmont Copley Plaza Boston, Hotel Le Bristol Paris, Grand Hôtel Cabourg (film links listed by Ryanair/Historic Hotels, not yet verified; no Booking slug found yet).
