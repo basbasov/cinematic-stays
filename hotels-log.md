@@ -156,3 +156,11 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Pending: The Langham Huntington, Pasadena (unchanged).
 - Rejected: Fairmont Copley Plaza Boston (The Firm, Boondock Saints; film link is thin, only Wikipedia plus one scene site, and no exact Booking.com slug found).
 - Link audit (indexes 11-15): Hollywood Roosevelt, Chateau Marmont, The Stanley Hotel, Peabody Memphis, Willard InterContinental — all OK.
+
+## 2026-11-15 (scheduled run, fifth of the day)
+- Added Mandarin Oriental, Bangkok (The White Lotus season 3, Frank's monologue to Rick) — photo Hajotthu, CC BY 3.0. Confirmed by Wikipedia (season 3 and hotel pages) and Travelling for Business (hotel-sourced article); exact Booking.com page (mandarin-oriental-bangkok.html) opened and verified. Supabase url is empty, so no admin.html step needed.
+- Articles written: Mandarin Oriental, Bangkok (new). 0 hotels still lack an article. Guide: none (no new topic with source-read facts this run).
+- Pending: The Langham Huntington, Pasadena (unchanged).
+- Rejected: Claridge's London (no film link confirmed by two sources; Hitchcock wiki says the hotel could not be filmed); Midland Hotel Morecambe (Poirot "Double Sin" on Wikipedia and Waymarking, but no exact Booking.com page found).
+- Link audit (indexes 54-58): Esplanade Zagreb, Fairmont San Francisco, Royal Hawaiian, Le Meurice, InterContinental Paris Le Grand — all OK.
+- Still open leads: Westin Excelsior Rome (needs a second source).
