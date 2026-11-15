@@ -1172,6 +1172,23 @@ const HOTELS = [
     photoCredit: "Tejas98 (Wikimedia Commons, CC BY-SA 3.0)",
     photoGradient: "linear-gradient(135deg,#c9a24b,#7a5a1e)",
   },
+  {
+    id: "le-bristol-paris",
+    name: "Le Bristol Paris",
+    city: "Paris",
+    cityEmoji: "🗼",
+    country: "France",
+    genre: "Romance",
+    genreEmoji: "💕",
+    era: "2010s",
+    movies: ["Midnight in Paris"],
+    scene: "Woody Allen's Midnight in Paris (2011) used the hotel for the hotel-room scenes of Gil and Inez on their trip to Paris.",
+    story: "Hippolyte Jammet opened Le Bristol in April 1925 after buying the mansion in 1923. The Jammet family sold it in 1978 to the Oetker family, who still own it, and its rooftop swimming pool is shaped like the bow of a sailboat.",
+    bookingUrl: "https://www.booking.com/hotel/fr/le-bristol-paris.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/d/dc/H%C3%B4tel_le_Bristol_%28Paris%29.jpg",
+    photoCredit: "Gzen92 (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#8e7cc3,#5b4a8a)",
+  },
 ];
 
 /* NOTES FOR LATER:
