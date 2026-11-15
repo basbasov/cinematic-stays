@@ -149,3 +149,10 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Articles written: none (0 hotels still lack an article). Guide: none.
 - Link audit (indexes 35-39): Plaza Athénée, Jumeirah Zabeel Saray, Hotel Sacher, Burgh Island, Rosewood Schloss Fuschl — all OK.
 - Still open leads: Westin Excelsior Rome (needs a second source); Fairmont Copley Plaza Boston, Hotel Le Bristol Paris, Grand Hôtel Cabourg (film links listed by Ryanair/Historic Hotels, not yet verified; no Booking slug found yet).
+
+## 2026-11-15 (scheduled run, fourth of the day)
+- Added Le Bristol Paris (Midnight in Paris 2011, hotel-room scenes of Gil and Inez) — photo Gzen92, CC BY-SA 4.0. Confirmed by Wikipedia, MovieMaps and Maxim; exact Booking.com page (le-bristol-paris.html) opened and verified. Supabase url is empty, so no admin.html step needed.
+- Articles written: Le Bristol Paris (new). 0 hotels still lack an article. Guide: none (no new topic with source-read facts this run).
+- Pending: The Langham Huntington, Pasadena (unchanged).
+- Rejected: Fairmont Copley Plaza Boston (The Firm, Boondock Saints; film link is thin, only Wikipedia plus one scene site, and no exact Booking.com slug found).
+- Link audit (indexes 11-15): Hollywood Roosevelt, Chateau Marmont, The Stanley Hotel, Peabody Memphis, Willard InterContinental — all OK.
