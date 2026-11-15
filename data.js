@@ -1189,6 +1189,23 @@ const HOTELS = [
     photoCredit: "Gzen92 (Wikimedia Commons, CC BY-SA 4.0)",
     photoGradient: "linear-gradient(135deg,#8e7cc3,#5b4a8a)",
   },
+  {
+    id: "mandarin-oriental-bangkok",
+    name: "Mandarin Oriental, Bangkok",
+    city: "Bangkok",
+    cityEmoji: "🌆",
+    country: "Thailand",
+    genre: "Drama",
+    genreEmoji: "🎞️",
+    era: "2020s",
+    movies: ["The White Lotus (Season 3)"],
+    scene: "Season 3 of The White Lotus (2025) filmed Frank's wild monologue to Rick at the Mandarin Oriental, Bangkok, and the hotel says it was the only Bangkok hotel chosen for the season.",
+    story: "The Oriental, on the Chao Phraya River, dates its founding to 1876 and is often described as the first hotel in Thailand. Somerset Maugham was among its famous guests, and the hotel became Mandarin Oriental, Bangkok in September 2008.",
+    bookingUrl: "https://www.booking.com/hotel/th/mandarin-oriental-bangkok.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Hotel_The_Oriental_Bangkok.JPG",
+    photoCredit: "Hajotthu (Wikimedia Commons, CC BY 3.0)",
+    photoGradient: "linear-gradient(135deg,#c9a24b,#7a5a1e)",
+  },
 ];
 
 /* NOTES FOR LATER:
