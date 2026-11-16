@@ -164,3 +164,10 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Rejected: Claridge's London (no film link confirmed by two sources; Hitchcock wiki says the hotel could not be filmed); Midland Hotel Morecambe (Poirot "Double Sin" on Wikipedia and Waymarking, but no exact Booking.com page found).
 - Link audit (indexes 54-58): Esplanade Zagreb, Fairmont San Francisco, Royal Hawaiian, Le Meurice, InterContinental Paris Le Grand — all OK.
 - Still open leads: Westin Excelsior Rome (needs a second source).
+
+## 2026-11-16 (scheduled run)
+- Added: none. Nothing new passed all checks this run.
+- Rejected: The Jefferson Hotel Richmond (My Dinner with Andre per Wikipedia only; no second source and no exact Booking.com page found); Mission Inn Riverside (many film shoots listed on Wikipedia only; Booking page the-mission-inn-and-spa.html exists, but no second source, and the film pages read do not mention the inn); Hawthorne Hotel Salem (Bewitched "Salem Saga" and Joy only on the hotel's own history page; Wikipedia does not list them; Booking page hawthorne.html exists); Omni William Penn Pittsburgh (Foxcatcher, Southpaw, Concussion only on the Historic Hotels of America page; no exact Booking.com page found); Hotel Alexandria Los Angeles (Seven; the film list has no citations and it is not a regular hotel listing).
+- Articles written: none (0 hotels still lack an article). Guide: none.
+- Link audit (indexes 59-63): Hotel Adlon, The Pierre, Lotte New York Palace, The Drake Chicago, The Don CeSar — all OK.
+- Still open leads: Westin Excelsior Rome (needs a second source); Hawthorne Hotel and Mission Inn (need an independent second source).
