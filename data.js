@@ -1223,23 +1223,6 @@ const HOTELS = [
     photoCredit: "Joe Mabel (Wikimedia Commons, CC BY-SA 3.0)",
     photoGradient: "linear-gradient(135deg,#4f7a5a,#23402e)",
   },
-  {
-    id: "salish-lodge-snoqualmie",
-    name: "Salish Lodge & Spa",
-    city: "Snoqualmie",
-    cityEmoji: "🌲",
-    country: "USA",
-    genre: "Drama",
-    genreEmoji: "🎞️",
-    era: "1990s",
-    movies: ["Twin Peaks"],
-    scene: "The lodge's exterior stands in for the Great Northern Hotel in David Lynch's Twin Peaks, and it appears above Snoqualmie Falls in the show's opening credits.",
-    story: "The property began in 1916 as an eight-room trapper's cabin and grew into the Snoqualmie Falls Lodge. A 1988 refurbishment renamed it the Salish, and in 2019 the Snoqualmie Indian Tribe became its owner.",
-    bookingUrl: "https://www.booking.com/hotel/us/salish-lodge.html",
-    photo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Salish_Lodge_01.jpg",
-    photoCredit: "Joe Mabel (Wikimedia Commons, CC BY-SA 3.0)",
-    photoGradient: "linear-gradient(135deg,#4f7a5a,#23402e)",
-  },
 ];
 
 /* NOTES FOR LATER:
