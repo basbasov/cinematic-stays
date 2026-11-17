@@ -132,3 +132,42 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Rejected: The Westin Excelsior Rome (Wikipedia says Two Weeks in Another Town was filmed in the hotel, but the film's own page does not confirm it; no second source read; Booking page valid; a Commons exterior by Krzysztof Golik, CC BY-SA 4.0, exists if a second source is found later); Omni Royal Orleans (Live and Let Die only says Bond stays at the hotel, no filming detail; Booking page valid).
 - Link audit (indexes 54-58): Esplanade Zagreb, Fairmont San Francisco, Royal Hawaiian, Le Meurice, InterContinental Paris Le Grand — all OK.
 - Still open leads: Westin Excelsior Rome (needs a second source).
+
+## 2026-11-15 (scheduled run)
+- Added The Taj Mahal Palace, Mumbai (Hotel Mumbai 2018; exteriors shot on location, interiors recreated in Adelaide) — photo Tejas98, CC BY-SA 3.0. Confirmed by Wikipedia and Bleecker Street Media's film editorial (sceen-it also read); exact Booking.com page (the-taj-mahal-palace-mumbai.html) opened and verified. Supabase url is empty, so no admin.html step needed.
+- Articles written: The Taj Mahal Palace, Mumbai (new). 0 hotels still lack an article.
+- Guide: none written (no new topic with source-read facts this run).
+- Pending: The Langham Huntington, Pasadena (unchanged).
+- Rejected: Winter Palace Luxor (only a 2004 Poirot episode on Wikipedia, and the hotel is closed for renovation until 2027); Hotel Nacional de Cuba (Godfather Part II only dramatises the 1946 conference, no filming there confirmed); Grand Hotel Villa d'Este Cernobbio (film link is The Pleasure Garden 1925, but no exact Booking.com page found).
+- Link audit (indexes 35-39): Plaza Athénée, Jumeirah Zabeel Saray, Hotel Sacher, Burgh Island, Rosewood Schloss Fuschl — all OK.
+- Still open leads: Westin Excelsior Rome (needs a second source).
+
+
+## 2026-11-15 (scheduled run, third of the day)
+- Added: none. Nothing new passed all checks this run.
+- Rejected: Luton Hoo Hotel, Golf & Spa, Bedfordshire (Four Weddings and a Funeral second reception confirmed by movie-locations.com and Almost Ginger, plus Wikipedia; but booking.com/hotel/gb/luton-hoo-golf-and-spa.html redirects to search results — no direct Booking.com page); Palmer House Hilton Chicago (Booking page exists, but Wikipedia lists no film or TV appearance; only the Historic Hotels of America list claims one).
+- Articles written: none (0 hotels still lack an article). Guide: none.
+- Link audit (indexes 35-39): Plaza Athénée, Jumeirah Zabeel Saray, Hotel Sacher, Burgh Island, Rosewood Schloss Fuschl — all OK.
+- Still open leads: Westin Excelsior Rome (needs a second source); Fairmont Copley Plaza Boston, Hotel Le Bristol Paris, Grand Hôtel Cabourg (film links listed by Ryanair/Historic Hotels, not yet verified; no Booking slug found yet).
+
+## 2026-11-15 (scheduled run, fourth of the day)
+- Added Le Bristol Paris (Midnight in Paris 2011, hotel-room scenes of Gil and Inez) — photo Gzen92, CC BY-SA 4.0. Confirmed by Wikipedia, MovieMaps and Maxim; exact Booking.com page (le-bristol-paris.html) opened and verified. Supabase url is empty, so no admin.html step needed.
+- Articles written: Le Bristol Paris (new). 0 hotels still lack an article. Guide: none (no new topic with source-read facts this run).
+- Pending: The Langham Huntington, Pasadena (unchanged).
+- Rejected: Fairmont Copley Plaza Boston (The Firm, Boondock Saints; film link is thin, only Wikipedia plus one scene site, and no exact Booking.com slug found).
+- Link audit (indexes 11-15): Hollywood Roosevelt, Chateau Marmont, The Stanley Hotel, Peabody Memphis, Willard InterContinental — all OK.
+
+## 2026-11-15 (scheduled run, fifth of the day)
+- Added Mandarin Oriental, Bangkok (The White Lotus season 3, Frank's monologue to Rick) — photo Hajotthu, CC BY 3.0. Confirmed by Wikipedia (season 3 and hotel pages) and Travelling for Business (hotel-sourced article); exact Booking.com page (mandarin-oriental-bangkok.html) opened and verified. Supabase url is empty, so no admin.html step needed.
+- Articles written: Mandarin Oriental, Bangkok (new). 0 hotels still lack an article. Guide: none (no new topic with source-read facts this run).
+- Pending: The Langham Huntington, Pasadena (unchanged).
+- Rejected: Claridge's London (no film link confirmed by two sources; Hitchcock wiki says the hotel could not be filmed); Midland Hotel Morecambe (Poirot "Double Sin" on Wikipedia and Waymarking, but no exact Booking.com page found).
+- Link audit (indexes 54-58): Esplanade Zagreb, Fairmont San Francisco, Royal Hawaiian, Le Meurice, InterContinental Paris Le Grand — all OK.
+- Still open leads: Westin Excelsior Rome (needs a second source).
+
+## 2026-11-16 (scheduled run)
+- Added: none. Nothing new passed all checks this run.
+- Rejected: The Jefferson Hotel Richmond (My Dinner with Andre per Wikipedia only; no second source and no exact Booking.com page found); Mission Inn Riverside (many film shoots listed on Wikipedia only; Booking page the-mission-inn-and-spa.html exists, but no second source, and the film pages read do not mention the inn); Hawthorne Hotel Salem (Bewitched "Salem Saga" and Joy only on the hotel's own history page; Wikipedia does not list them; Booking page hawthorne.html exists); Omni William Penn Pittsburgh (Foxcatcher, Southpaw, Concussion only on the Historic Hotels of America page; no exact Booking.com page found); Hotel Alexandria Los Angeles (Seven; the film list has no citations and it is not a regular hotel listing).
+- Articles written: none (0 hotels still lack an article). Guide: none.
+- Link audit (indexes 59-63): Hotel Adlon, The Pierre, Lotte New York Palace, The Drake Chicago, The Don CeSar — all OK.
+- Still open leads: Westin Excelsior Rome (needs a second source); Hawthorne Hotel and Mission Inn (need an independent second source).
