@@ -171,3 +171,10 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Articles written: none (0 hotels still lack an article). Guide: none.
 - Link audit (indexes 59-63): Hotel Adlon, The Pierre, Lotte New York Palace, The Drake Chicago, The Don CeSar — all OK.
 - Still open leads: Westin Excelsior Rome (needs a second source); Hawthorne Hotel and Mission Inn (need an independent second source).
+
+## 2026-11-17 (scheduled run)
+- Added Salish Lodge & Spa, Snoqualmie (Twin Peaks, Great Northern Hotel exterior) — photo Joe Mabel, CC BY-SA 3.0. Confirmed by Hotels.com magazine and PDX Monthly; exact Booking.com page (salish-lodge.html) opened and verified. Supabase url is empty, so no admin.html step needed.
+- Articles written: Salish Lodge & Spa (new). 0 hotels still lack an article. Guide: none (no new topic with 2+ hotels).
+- Pending: San Domenico Palace, Taormina (The White Lotus season 2; Booking page verified; only photo candidate is a garden view, no clear exterior), Four Seasons Resort Maui at Wailea (The White Lotus season 1; Booking page verified; Commons only has aerial shots), Hotel Cala di Volpe, Costa Smeralda (The Spy Who Loved Me; Booking page verified; no Commons photo of the real hotel, the "Hotel Cala di Volpe" files show a Montevideo hotel), Langham Huntington (unchanged).
+- Rejected: Mountain Lake Lodge, Virginia (Dirty Dancing; booking.com/hotel/us/mountain-lake-lodge.html redirects to search results, no direct Booking.com page).
+- Link audit (indexes 41-45): Biltmore Miami, Palácio Estoril, Gran Hotel Ciudad de México, Hotel María Cristina — OK. FAILED: Danubius Hotel Gellért (hotel/hu/gellert.html redirects to search results).

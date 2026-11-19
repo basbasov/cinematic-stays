@@ -9,3 +9,23 @@ Hotels whose film link and exact Booking.com page are verified but whose photo l
 - Sources: https://en.wikipedia.org/wiki/The_Langham_Huntington,_Pasadena ; https://www.iamnotastalker.com/2015/03/30/the-georgian-ballroom-from-girls-just-want-to-have-fun
 - Photo: no clearly licensed exterior. Commons candidates "Langham los angeles.jpg" (CC BY-SA 3.0, uploader OhanaUnited, author field says the hotel itself) and "The langham.jpg" (CC BY-SA 3.0, uploaded by Langhamhotelsinternational). Author/permission needs a human check. The HABS files show the demolished original building, so do not use them.
 
+
+## San Domenico Palace, Taormina — Italy
+- Movies: The White Lotus season 2 (2022), main location.
+- Scene: the hotel stands in for the White Lotus resort in Sicily.
+- Booking.com: https://www.booking.com/hotel/it/san-domenico-palace.html (verified 2026-11-17)
+- Sources: https://en.wikipedia.org/wiki/The_White_Lotus_season_2 ; https://www.frommers.com/blogs/passportable/blog_posts/the-lavish-italian-hotel-where-the-second-season-of-the-white-lotus-was-filmed
+- Photo: need a clear exterior. Candidate "Hotel San Domenico-Taormina-Sicilia-Italy - Creative Commons by gnuckx (3666625285).jpg" (CC BY 2.0, gnuckx, 1920 px) shows the garden with the building behind; also check Commons category "Hotel San Domenico (Taormina) - Facade".
+
+## Four Seasons Resort Maui at Wailea — USA
+- Movies: The White Lotus season 1 (2020).
+- Scene: the resort is the filming location of season 1, including the adult pool.
+- Booking.com: https://www.booking.com/hotel/us/four-seasons-resort-maui-at-wailea.html (verified 2026-11-17)
+- Sources: https://en.wikipedia.org/wiki/Four_Seasons_Resort_Maui ; https://press.fourseasons.com/maui/hotel-news/2025/the-white-lotus-bar-and-poolside-cabana/
+- Photo: Commons only has aerial Starr photos (CC BY 3.0/2.0); none is a clear exterior. Needs a human search.
+
+## Hotel Cala di Volpe, Costa Smeralda — Italy
+- Movies: The Spy Who Loved Me (1977), Bond and Anya's hotel.
+- Booking.com: https://www.booking.com/hotel/it/cala-di-volpe.html (verified 2026-11-17)
+- Sources: https://en.wikipedia.org/wiki/Cala_di_Volpe ; https://www.mi6-hq.com/sections/articles/hotels-tswlm-vala-di-volpe ; https://www.italia.it/en/sardinia/things-to-do/bond-in-costa-smeralda-what-to-do-and-see-follow-moore
+- Photo: none found. Commons files named "Hotel Cala di Volpe" show a Montevideo hotel, do not use them.
