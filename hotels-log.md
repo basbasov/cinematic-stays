@@ -178,3 +178,10 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Pending: San Domenico Palace, Taormina (The White Lotus season 2; Booking page verified; only photo candidate is a garden view, no clear exterior), Four Seasons Resort Maui at Wailea (The White Lotus season 1; Booking page verified; Commons only has aerial shots), Hotel Cala di Volpe, Costa Smeralda (The Spy Who Loved Me; Booking page verified; no Commons photo of the real hotel, the "Hotel Cala di Volpe" files show a Montevideo hotel), Langham Huntington (unchanged).
 - Rejected: Mountain Lake Lodge, Virginia (Dirty Dancing; booking.com/hotel/us/mountain-lake-lodge.html redirects to search results, no direct Booking.com page).
 - Link audit (indexes 41-45): Biltmore Miami, Palácio Estoril, Gran Hotel Ciudad de México, Hotel María Cristina — OK. FAILED: Danubius Hotel Gellért (hotel/hu/gellert.html redirects to search results).
+
+## 2026-11-22 (scheduled run)
+- Added The Langham, London (GoldenEye 1995, exterior stands in for the Grand Hotel Europe in St Petersburg; also Burnt) — photo Tony Hisgett, CC BY 2.0. Confirmed by Wikipedia and Time Out; exact Booking.com page (the-langham-london.html) opened and verified. Supabase url is empty, so no admin.html step needed.
+- Articles written: The Langham, London (new). 0 hotels still lack an article. Guide: none (no new topic).
+- Pending: unchanged (Langham Huntington, San Domenico Palace, Four Seasons Maui, Cala di Volpe).
+- Rejected: Hotel Métropole Brussels (permanently closed since 2020, reopening not confirmed); Umaid Bhawan Palace Jodhpur (Viceroy's House link only on one travel blog, no second source); Park Lane Hotel London (no exact Booking.com page found); Lanesborough, Lancaster London, Covent Garden Hotel (film links only from Time Out).
+- Link audit (indexes 43-47): Palácio Estoril, Gran Hotel Ciudad de México, Hotel María Cristina, Sunset Tower — OK. FAILED: Hôtel Raphael (hotel/fr/raphael.html redirects to search results).
