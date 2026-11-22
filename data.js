@@ -1223,6 +1223,23 @@ const HOTELS = [
     photoCredit: "Joe Mabel (Wikimedia Commons, CC BY-SA 3.0)",
     photoGradient: "linear-gradient(135deg,#4f7a5a,#23402e)",
   },
+  {
+    id: "the-langham-london",
+    name: "The Langham, London",
+    city: "London",
+    cityEmoji: "🇬🇧",
+    country: "United Kingdom",
+    genre: "Action",
+    genreEmoji: "💥",
+    era: "1990s",
+    movies: ["GoldenEye", "Burnt"],
+    scene: "In the Bond film GoldenEye (1995), the hotel's entrance stands in for the Grand Hotel Europe in St Petersburg. It was also used for the Bradley Cooper chef drama Burnt.",
+    story: "The Langham opened on 10 June 1865, with the Prince of Wales performing the ceremony, and was then the largest and most modern hotel in London. After the Second World War the BBC occupied the building for decades, and it reopened as a hotel in 1991.",
+    bookingUrl: "https://www.booking.com/hotel/gb/the-langham-london.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/9/96/The_Langham_%288292694584%29.jpg",
+    photoCredit: "Tony Hisgett (Wikimedia Commons, CC BY 2.0)",
+    photoGradient: "linear-gradient(135deg,#7a8fa8,#3d4f68)",
+  },
 ];
 
 /* NOTES FOR LATER:
