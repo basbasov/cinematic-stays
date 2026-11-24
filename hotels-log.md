@@ -192,3 +192,11 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Rejected: Fairmont Royal York Toronto (Red 2010 and Red Lights only in the hotel's Wikipedia article, no second source); The Broadmoor (only a skating arena and a TV film); Hilton Hawaiian Village (only second-unit footage of Hawaiian Eye); Mohonk Mountain House (The Road to Wellville per Wikipedia, but no Booking.com page found).
 - Articles written: none (0 hotels still lack an article). Guide: none.
 - Link audit (indexes 48-52): Regina Louvre, King David, Waldorf Astoria, The Savoy — OK. FAILED: Mount Lavinia Hotel (hotel/lk/mount-lavinia.html redirects to search results).
+
+## 2026-11-24 (scheduled run)
+- Added Hotel New Otani Tokyo (You Only Live Twice 1967, Osato Chemicals headquarters) — photo Matsujima, CC BY-SA 4.0. Confirmed by Wikipedia, huntingbond.com and movie-locations.com; exact Booking.com page (new-otani-tokyo.html, listed as "Hotel New Otani Tokyo The Main") opened and verified. Supabase url is empty, so no admin.html step needed.
+- Articles written: Hotel New Otani Tokyo (new). 0 hotels still lack an article.
+- Guide written: "GoldenEye Hotels: Where It Was Filmed" (Hôtel de Paris Monte-Carlo, The Langham London).
+- Pending: unchanged (Langham Huntington, San Domenico Palace, Four Seasons Maui, Cala di Volpe, Es Saadi, Caravelle Saigon).
+- Rejected: Brown Palace Denver (Our Souls at Night on Wikipedia, but no exact Booking.com page found); Hotel Congress Tucson, Grand Hotel Tremezzo, Hôtel Lutetia (no film appearance found on Wikipedia); Peninsula Hong Kong (only a Rolls-Royce mention and a TV series, no filming detail).
+- Link audit (indexes 53-57): Hilton London Hyde Park, Esplanade Zagreb, Fairmont San Francisco, Royal Hawaiian, Le Meurice — all OK.
