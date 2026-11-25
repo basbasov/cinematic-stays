@@ -200,3 +200,10 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Pending: unchanged (Langham Huntington, San Domenico Palace, Four Seasons Maui, Cala di Volpe, Es Saadi, Caravelle Saigon).
 - Rejected: Brown Palace Denver (Our Souls at Night on Wikipedia, but no exact Booking.com page found); Hotel Congress Tucson, Grand Hotel Tremezzo, Hôtel Lutetia (no film appearance found on Wikipedia); Peninsula Hong Kong (only a Rolls-Royce mention and a TV series, no filming detail).
 - Link audit (indexes 53-57): Hilton London Hyde Park, Esplanade Zagreb, Fairmont San Francisco, Royal Hawaiian, Le Meurice — all OK.
+
+## 2026-11-25 (scheduled run)
+- Added: none. Nothing new passed all checks this run.
+- Pending: The Grand Hotel, Taipei (Eat Drink Man Woman 1994 and Yi Yi 2000, confirmed by Wikipedia and the Taipei city tourism magazine; booking.com/hotel/tw/grand-hotel-taipei.html redirects to search results, so no direct Booking.com page; photo not checked).
+- Rejected: Juvet Landscape Hotel Norway (Ex Machina, Succession; no Booking.com page, own-site booking only); Andaz West Hollywood (no film or TV appearance on Wikipedia); Raleigh Hotel Miami Beach (closed since 2017, reopening 2027); Hotel Bristol Warsaw (no film link on Wikipedia); Lodge at Wakulla Springs (films shot at the springs, not the lodge; no exact Booking.com page); Balmoral Edinburgh (no film appearance, only Harry Potter writing).
+- Articles written: none (0 hotels still lack an article). Guide: none.
+- Link audit (indexes 35-39): Plaza Athénée, Jumeirah Zabeel Saray, Hotel Sacher, Burgh Island, Rosewood Schloss Fuschl — all OK.
