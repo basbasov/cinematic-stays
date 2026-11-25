@@ -1240,6 +1240,23 @@ const HOTELS = [
     photoCredit: "Tony Hisgett (Wikimedia Commons, CC BY 2.0)",
     photoGradient: "linear-gradient(135deg,#7a8fa8,#3d4f68)",
   },
+  {
+    id: "hotel-new-otani-tokyo",
+    name: "Hotel New Otani Tokyo",
+    city: "Tokyo",
+    cityEmoji: "🗼",
+    country: "Japan",
+    genre: "Action",
+    genreEmoji: "💥",
+    era: "1960s",
+    movies: ["You Only Live Twice"],
+    scene: "In You Only Live Twice (1967), the hotel's Main building with its rooftop disc plays the Tokyo headquarters of Osato Chemical & Engineering, the Japanese front for Blofeld's SPECTRE, which Bond enters twice.",
+    story: "The hotel opened on 1 September 1964, just before the Tokyo Olympics, on the former grounds of a samurai lord's residence. It was built in seventeen months, was the tallest building in Tokyo until 1968, and kept a 400-year-old garden that is still part of the property.",
+    bookingUrl: "https://www.booking.com/hotel/jp/new-otani-tokyo.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/3/3a/New_Otani_Hotel_2019.jpg",
+    photoCredit: "Matsujima (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#c0504d,#6b2a3a)",
+  },
 ];
 
 /* NOTES FOR LATER:

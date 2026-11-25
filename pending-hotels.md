@@ -29,3 +29,17 @@ Hotels whose film link and exact Booking.com page are verified but whose photo l
 - Booking.com: https://www.booking.com/hotel/it/cala-di-volpe.html (verified 2026-11-17)
 - Sources: https://en.wikipedia.org/wiki/Cala_di_Volpe ; https://www.mi6-hq.com/sections/articles/hotels-tswlm-vala-di-volpe ; https://www.italia.it/en/sardinia/things-to-do/bond-in-costa-smeralda-what-to-do-and-see-follow-moore
 - Photo: none found. Commons files named "Hotel Cala di Volpe" show a Montevideo hotel, do not use them.
+
+
+## Es Saadi Marrakech Resort - Palace — Morocco
+- Movies: The Night Manager (2016 BBC series), the Cairo "Nefertiti Hotel" scenes of episode one.
+- Scene: Jonathan Pine's night-manager scenes were shot at the Es Saadi resort in Marrakech.
+- Booking.com: https://www.booking.com/hotel/ma/essaadi-palace-villas.html (verified 2026-11-23)
+- Sources: https://www.euronews.com/2026/04/13/iconic-hotels-made-famous-by-film-and-tv-shows ; https://www.travelzoo.com/uk/blog/where-was-the-night-manager-filmed/
+- Photo: Commons "PalaceEssaadi Marrakech.jpg" (Zainabade, CC BY-SA 4.0) is a balcony view with trees, not a clear exterior. Needs a better exterior photo.
+
+## Caravelle Saigon, Ho Chi Minh City — Vietnam
+- Movies: The Quiet American (2002), ground floor and suites used for filming.
+- Booking.com: https://www.booking.com/hotel/vn/caravelle.html (verified 2026-11-23)
+- Sources: https://en.wikipedia.org/wiki/Caravelle_Hotel (second source still to be read)
+- Photo: Commons "Caravelle Saigon-Facade-01.jpg", "Caravelle Hotel Saigon 2013.jpg" (CC BY-SA 4.0) are uploaded by hotel-linked accounts with no named author; "Sheraton und Caravelle Hotel.jpg" (RThiele, CC BY-SA 4.0) shows the hotel among other towers, not clear.

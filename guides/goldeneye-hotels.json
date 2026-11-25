@@ -1,0 +1,24 @@
+{
+  "type": "movie",
+  "title": "GoldenEye Hotels: Where It Was Filmed",
+  "description": "Two real hotels from GoldenEye: the Hôtel de Paris Monte-Carlo and The Langham London, which stood in for a St Petersburg hotel.",
+  "h1": "GoldenEye hotels: where it was filmed",
+  "intro": "Pierce Brosnan's first Bond film (1995) was shot in Monaco, Russia, Puerto Rico and the UK. Two of its hotels are real and open to guests today.",
+  "hotels": [
+    {
+      "id": "hotel-de-paris-monte-carlo",
+      "note": "GoldenEye's Monaco scenes were filmed at the Monte-Carlo Casino, Port Hercules and the Hôtel de Paris, according to the Monaco Tribune."
+    },
+    {
+      "id": "the-langham-london",
+      "note": "The Langham's exterior stood in for the Grand Hotel Europe in St Petersburg, according to Time Out. Interior scenes were not filmed here."
+    }
+  ],
+  "outro": "The two hotels are in different countries, so treat them as separate trips: Monaco for the casino square and London for a grand Victorian façade.",
+  "updated": "2026-11-24",
+  "sources": [
+    "https://en.wikipedia.org/wiki/GoldenEye",
+    "https://www.monaco-tribune.com/en/2020/08/from-grace-kelly-to-james-bond-the-most-famous-films-shot-in-monaco/",
+    "https://www.timeout.com/london/hotels/london-hotels-in-famous-films"
+  ]
+}
