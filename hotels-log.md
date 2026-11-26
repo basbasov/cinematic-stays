@@ -207,3 +207,8 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Rejected: Juvet Landscape Hotel Norway (Ex Machina, Succession; no Booking.com page, own-site booking only); Andaz West Hollywood (no film or TV appearance on Wikipedia); Raleigh Hotel Miami Beach (closed since 2017, reopening 2027); Hotel Bristol Warsaw (no film link on Wikipedia); Lodge at Wakulla Springs (films shot at the springs, not the lodge; no exact Booking.com page); Balmoral Edinburgh (no film appearance, only Harry Potter writing).
 - Articles written: none (0 hotels still lack an article). Guide: none.
 - Link audit (indexes 35-39): Plaza Athénée, Jumeirah Zabeel Saray, Hotel Sacher, Burgh Island, Rosewood Schloss Fuschl — all OK.
+
+## 2026-11-26 (scheduled run)
+- Added: none. Articles: 0 hotels lack one. Guide: none (no new topic).
+- Pending: unchanged. Rejected: Hotel Atlantic Hamburg (Tomorrow Never Dies; Wikipedia says parts filmed there, but MI6-HQ says interiors were shot at Stoke Poges and bondlocations puts the chase on a car park with a fake sign, so sources conflict; hotel also changed brand to Marriott Autograph in 2021, Booking name unchecked); El Paisano Hotel Marfa (Giant 1956 cast base only; hotel site says closed for renovation until 2027).
+- Link audit (index 40-44): OK: lebua at State Tower, Biltmore Miami Coral Gables, Palacio Estoril, Gran Hotel Ciudad de Mexico. FAILED: Danubius Hotel Gellert (booking.com/hotel/hu/gellert.html redirects to search results; data.js not edited).
