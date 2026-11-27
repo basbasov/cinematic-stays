@@ -212,3 +212,9 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Added: none. Articles: 0 hotels lack one. Guide: none (no new topic).
 - Pending: unchanged. Rejected: Hotel Atlantic Hamburg (Tomorrow Never Dies; Wikipedia says parts filmed there, but MI6-HQ says interiors were shot at Stoke Poges and bondlocations puts the chase on a car park with a fake sign, so sources conflict; hotel also changed brand to Marriott Autograph in 2021, Booking name unchecked); El Paisano Hotel Marfa (Giant 1956 cast base only; hotel site says closed for renovation until 2027).
 - Link audit (index 40-44): OK: lebua at State Tower, Biltmore Miami Coral Gables, Palacio Estoril, Gran Hotel Ciudad de Mexico. FAILED: Danubius Hotel Gellert (booking.com/hotel/hu/gellert.html redirects to search results; data.js not edited).
+
+## 2026-11-27 (scheduled run)
+- Added: none. Nothing new passed all checks this run. Articles: 0 hotels lack one. Guide: none (no new topic).
+- Pending: unchanged.
+- Rejected: Hotel Chelsea New York (Wikipedia names no film or TV show filmed there, and no exact Booking.com page found); Sofitel Legend Metropole Hanoi (Wikipedia documents no film appearance, only a novel and a song; Booking page sofitelmetropole.html exists); Grand Hotel Mackinac Island (Somewhere in Time 1980 is well documented, but no exact Booking.com property page found).
+- Link audit (indexes 45-49): Hotel Maria Cristina, Sunset Tower, Hotel Regina Louvre, King David Jerusalem — OK. FAILED: Hôtel Raphael (booking.com/hotel/fr/raphael.html redirects to search results; data.js not edited).
