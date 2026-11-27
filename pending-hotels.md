@@ -43,3 +43,10 @@ Hotels whose film link and exact Booking.com page are verified but whose photo l
 - Booking.com: https://www.booking.com/hotel/vn/caravelle.html (verified 2026-11-23)
 - Sources: https://en.wikipedia.org/wiki/Caravelle_Hotel (second source still to be read)
 - Photo: Commons "Caravelle Saigon-Facade-01.jpg", "Caravelle Hotel Saigon 2013.jpg" (CC BY-SA 4.0) are uploaded by hotel-linked accounts with no named author; "Sheraton und Caravelle Hotel.jpg" (RThiele, CC BY-SA 4.0) shows the hotel among other towers, not clear.
+
+
+## The Grand Hotel, Taipei — Taiwan
+- Movies: Eat Drink Man Woman (1994, Ang Lee), Yi Yi (2000, Edward Yang; lobby filmed there).
+- Booking.com: https://www.booking.com/hotel/tw/grand-hotel-taipei.html — NOT valid on 2026-11-25: redirects to search results (no direct Booking.com page). Re-check later or find another exact slug.
+- Sources: https://en.wikipedia.org/wiki/Grand_Hotel_(Taipei) ; https://travel.taipei/en/pictorial/article/47941
+- Photo: not checked yet.
