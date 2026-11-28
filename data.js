@@ -1257,6 +1257,23 @@ const HOTELS = [
     photoCredit: "Matsujima (Wikimedia Commons, CC BY-SA 4.0)",
     photoGradient: "linear-gradient(135deg,#c0504d,#6b2a3a)",
   },
+  {
+    id: "dolder-grand-zurich",
+    name: "The Dolder Grand",
+    city: "Zurich",
+    cityEmoji: "🏔️",
+    country: "Switzerland",
+    genre: "Thriller",
+    genreEmoji: "🔪",
+    era: "2010s",
+    movies: ["The Girl with the Dragon Tattoo"],
+    scene: "In David Fincher's The Girl with the Dragon Tattoo (2011), Lisbeth Salander arrives at the hotel in Zurich to begin her face-to-face meetings with the bankers whose accounts she plans to empty.",
+    story: "The hotel was built between 1897 and 1899 to a design by the Basel architect Jacques Gros and opened on 10 May 1899 as the Dolder Grand Hotel & Curhaus. It closed in 2004 for a renovation led by Norman Foster and reopened on 3 April 2008, with the 1899 look restored and two new wings added.",
+    bookingUrl: "https://www.booking.com/hotel/ch/the-dolder-grand.html",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/8/80/Dolder_Grand_Z%C3%BCrich_2019.jpg",
+    photoCredit: "Whgler (Wikimedia Commons, CC BY-SA 4.0)",
+    photoGradient: "linear-gradient(135deg,#5b7fa6,#2c3e5a)",
+  },
 ];
 
 /* NOTES FOR LATER:
