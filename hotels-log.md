@@ -218,3 +218,10 @@ Rejected: San Domenico Palace Taormina (White Lotus S2) — no hotel photo on Co
 - Pending: unchanged.
 - Rejected: Hotel Chelsea New York (Wikipedia names no film or TV show filmed there, and no exact Booking.com page found); Sofitel Legend Metropole Hanoi (Wikipedia documents no film appearance, only a novel and a song; Booking page sofitelmetropole.html exists); Grand Hotel Mackinac Island (Somewhere in Time 1980 is well documented, but no exact Booking.com property page found).
 - Link audit (indexes 45-49): Hotel Maria Cristina, Sunset Tower, Hotel Regina Louvre, King David Jerusalem — OK. FAILED: Hôtel Raphael (booking.com/hotel/fr/raphael.html redirects to search results; data.js not edited).
+
+## 2026-11-28 (scheduled run)
+- Added The Dolder Grand, Zurich (The Girl with the Dragon Tattoo 2011, Lisbeth Salander arrives to meet the bankers) — photo Whgler, CC BY-SA 4.0. Confirmed by Film Verdict and Switzerland Tourism; history from Wikipedia; exact Booking.com page (the-dolder-grand.html) opened and verified. Supabase url is empty, so no admin.html step needed.
+- Articles written: The Dolder Grand (new). 0 hotels still lack an article. Guide: none (no new topic).
+- Pending: unchanged.
+- Rejected: The St. Regis Rome (The Talented Mr. Ripley; sources name it as Ripley's hotel but almostginger says its interiors were shot at Palazzo Taverna, and no hotel history was confirmed); Gritti Palace Venice (Marriott page ambiguous about any shot at the hotel); Hotel Fanes, Strawberry Hill Jamaica, London Marriott County Hall (single source only, not pursued); Armani Hotel Dubai (already rejected); Juvet (already rejected).
+- Link audit (indexes 50-54): Waldorf Astoria, The Savoy, Hilton London Hyde Park, Esplanade Zagreb — OK. FAILED: Mount Lavinia Hotel (booking.com/hotel/lk/mount-lavinia.html redirects to search results; data.js not edited).
